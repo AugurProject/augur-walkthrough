@@ -12,3 +12,7 @@ This guide assumes you  are running a local environment and you have access to m
 # [Testing Markets List](/marketsList.md)
 
 # [Testing Trading](/trading.md)
+
+# [Testing Reporting](/reporting.md)
+
+# [Testing Disputing](/disputing.md)
