@@ -35,7 +35,7 @@ Click on one of the categories in the first subSideBarMenu (1-SSB).
 - [x] The 2nd subSideBarMenu (2-SSB) slides out to the right of 1-SSB
 - [x] 2-SSB should be populated with the tag values for the markets displayed
 - [x] Markets displayed should be filtered to only show markets with a category equal to the selected category tag in 1-SSB
-- [x] Clicking on one or more of the tags in 2-SSB should filter out tags and markets that don't match either the Category or Tag(s) selected.
+- [x] Clicking on one or more of the tags in 2-SSB should filter out tags and markets that don't match the Category and Tag(s) selected.
 
 click on "Market" button on the Side Bar to reset the page to showing all markets.
 
