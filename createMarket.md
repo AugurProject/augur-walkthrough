@@ -1,5 +1,7 @@
 # Testing Create Market:
 
+This section of the walk through focuses on the Create Market Process.
+
 Navigate to the "Create" page on the sidemenu. In order to see the "create" menu item on the side bar you must be logged into an account.
 
 In order to create a market, you will need to use an account that has both ETH and REP to cover the bonds and fees required to create a market.
@@ -29,7 +31,7 @@ The Outcome section of the Create Market Form differs based on what option you s
 
 In the following sections, "Binary Market", "Categorical Market", and "Scalar Market" we will go over the various modifications you might see on this Outcome's Page. You should make sure to test each permutation of market type, ideally more than once with varying values.
 
-## Binary Market:
+### Binary Market:
 
 To create a Binary Market select "Yes/No". 
 
@@ -38,7 +40,7 @@ To create a Binary Market select "Yes/No".
 
 Click on "Next: Resolution"
 
-## Categorical Market:
+### Categorical Market:
 
 To create a Categorical Market select "Multiple Choice". 
 
@@ -50,7 +52,7 @@ To create a Categorical Market select "Multiple Choice".
 
 Click on "Next: Resolution"
 
-## Scalar Market:
+### Scalar Market:
 
 To create a Scalar Market select "Numerical Range". 
 
@@ -108,3 +110,5 @@ On this page we should see a breakdown of our costs.
 Click on "Submit" and sign the transaction. 
 
 You should be redirected to the "Portfolio: Transaction" page.
+
+[Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)

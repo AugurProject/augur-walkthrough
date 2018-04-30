@@ -8,3 +8,5 @@ This guide assumes you  are running a local environment and you have access to m
 # [Testing Accounts](/account.md)
 
 # [Testing Create Market](/createMarket.md)
+
+# [Testing Markets List](/marketsList.md)

@@ -1,5 +1,7 @@
 # Testing Accounts:
 
+This section of the walk through focuses on the Account Page and it's functions.
+
 ## Deposit Page:
 
 Login to a metamask account with no REP but does have ETH.
@@ -34,3 +36,5 @@ Send some ETH to another Account you have access to.
 Send some REP to another Account (prefereably the same address for easy verification) you have access to.
 
 After both transactions complete, login to the account you sent the ETH and REP to, and *Verify* that you have recieved the ETH and REP from the first Account.
+
+[Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
