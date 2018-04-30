@@ -5,6 +5,6 @@ Augur Walkthrough
 
 This guide assumes you  are running a local environment and you have access to multiple accounts for testing with access to ETH and REP. We are also under the assumption that you are using Metamask for ease of testing. 
 
-# [Testing Accounts](/blob/master/account.md)
+# [Testing Accounts](/account.md)
 
-# [Testing Create Market](/blob/master/createMarket.md)
+# [Testing Create Market](/createMarket.md)
