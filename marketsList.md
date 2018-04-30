@@ -49,6 +49,7 @@ Enter in a keyword to search for, such as "augur".
 - [x] The markets should be filtered to only show you markets with the keyword searched matches info on that market.
 - [x] All markets shown shouldn't leave out markets that you know should match the keyword entered in the search but don't appear to filter.
 - [x] Clicking the X on the search bar (right side) should clear Search and show all markets again (still paginated of course).
+- [x] Search should not be case sensitive
 
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)

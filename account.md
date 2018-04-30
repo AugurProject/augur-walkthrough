@@ -40,4 +40,8 @@ After both transactions complete, login to the account you sent the ETH and REP 
 *Verify:* 
 - [x] the second Account recieved the ETH and REP from the first Account.
 
+## Universe Page:
+
+The Universe Page walkthrough will come a bit later, it requires flash and some forking and is more advanced then the other account pages.
+
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
