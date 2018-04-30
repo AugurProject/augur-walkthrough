@@ -42,6 +42,7 @@ Click the Review button.
 - [x] for this trade, fee should be 0 as we are only going to be placing an order on an empty book
 - [x] est. cost is still accurately calculated
 - [x] Confirm that Profit Loss calculations are correct. 
+- [x] your ETH balance has decreased by the amount of ETH the order cost
 
 Note: an example of Profit Loss calculations would be doing a trade for 1 share at .9 ETH. In that case: Max Gain is .1 ETH (11.11%); Max Loss is 0.9 ETH (100%).
 
@@ -82,8 +83,7 @@ Sign the transaction to cancel the order. Once succesfully complete:
 - [x] the order has been removed from the open order table, and our positions/orders table is empty again.
 - [x] The order has been removed from the orderbook chart
 - [x] The Outcome bar shows `--` across the board again except for the LAST value which should be equal to 0.5
-
-
+- [x] You should have been refunded ETH that was originally taken from placing the order.
 
 ### Categorical Market Trading
 
