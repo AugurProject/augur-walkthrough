@@ -14,6 +14,7 @@ This section focuses on operations in forking state. Flash scripts can be used t
 - [ ] Verify that the market that forced the fork is shown as the forking market
 - [ ] Verify no markets can be created
 - [ ] Verify trades are still possible on markets, including forking market
+- [ ] Verify markets can't be disputed when in forking period
 
 
 ## Migrating REP
@@ -40,8 +41,9 @@ A user has to manually call market finalization if 50% of REP isn't migrated and
 
 ## Disavow REP
 
-To test this behavior user needs to have REP staked on successful dispute. This needs to occur before forking period begins. This way user can disavow their REP when market goes into fork.
+To test this behavior user needs to have REP staked on dispute rounds. This needs to occur before forking period begins. Disputes can't occur during forking period. This way user can disavow their REP when market goes into fork.
 
 - [ ] Verify REP can be disavowed during forking period
 - [ ] Verify REP balance is correct after disavowed
 - [ ] Verify REP can be migrated after being disavowed
+- [ ] Verify REP on failed dispute rounds can be disavowed
