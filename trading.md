@@ -1,3 +1,7 @@
+<!-- 
+TODO:
+  reorg this page so that we have a general section for stuff that's shared, like general trade view verifies, cancel order, and close position... might be more.
+ -->
 # Testing Trading:
 
 Login to an account with ETH. For this test, you will need more than one account ready because we will want to test both sides of trading.
@@ -61,6 +65,7 @@ After the transaction is complete and successful...
 - [x] The Open Order should have an average price set to the limit price of the order placed on the book.
 - [x] The Open Order should have a clickable Cancel Button.
 
+<!-- START TODO: This section should just be a general section -->
 Click the Cancel button.
 
 *Verify:*
@@ -84,6 +89,8 @@ Sign the transaction to cancel the order. Once succesfully complete:
 - [x] The order has been removed from the orderbook chart
 - [x] The Outcome bar shows `--` across the board again except for the LAST value which should be equal to 0.5
 - [x] You should have been refunded ETH that was originally taken from placing the order.
+
+<!-- END TODO: -->
 
 With Account 1 still, place another BUY Order. You can use whatever values you want to test with, but for the sake of the walk through I'm going to use an example of 10 shares for 0.5 ETH.
 
@@ -133,18 +140,52 @@ After the transaction completes, we should now have a position, since this trade
 while still logged into Account 2...
 
 *Verify:*
-- [x] The Positions Table now has 1 row showing a "Yes" position
+- [x] The Positions Table now has a row showing a "Yes" position
 - [x] The Position should have a negative number for Quantity
 - [x] The Position should show the purchase price
+- [x] The charts have updated to show a new candlestick
+- [x] The Order Book Chart reflects that the open order is gone and has been filled.
 
 
 ### Categorical Market Trading
 
-(Work in Progress....)
+(Work in Progress...)
 
 ### Scalar Market Trading
+(Work in Progress...)
 
-(Work in Progress....)
+After creating a new scalar market, navigate to the markets page and find your new market's card.
+
+click on the "trade" button on the newly created market.
+
+When the market trading page loads, please *verfy* the following:
+
+*Verify:*
+- [x] "-" is the only outcome you can select and it's pre-selected. (if you can see the order form you have a selected outcome)
+- [x] Fee % shown is the settlement Fee value set (default is 2%) at creation + the current reporting fee (hardcoded to 1% in tests)
+- [x] Confirm the Expiration Date/time shown is accurate to your endtime set during market creation.
+- [x] clicking on the positions title should drop down an empty postitions and open orders table.
+- [x] The `LAST` price value should be equal to the midpoint for the market range (scale) since no trades have taken place.
+
+Using Account 1 (remember, Account 1 is the account that created the market) we will now attempt to place an order.
+
+Scalars are priced a differently from binary or categorical markets. Instead of a complete set only ever costing 1 ETH like in binary and categorical, a complete set for scalar markets costs 1 ETH per whole number of price scale. Example:
+
+Imagine a scalar market with a min price of -50, a max price of 50, and a tickSize of 0.0001.
+
+If you place a buy order for 1 share at 0 (the midpoint of this market) then the cost in this case would be 50 ETH. 
+Buy 1 share at -25 would be 25 ETH. Buy 1 share at 25 would be 75 ETH. Buy 1 share at 50 would cost 100 ETH. Buy 1 share at -49.9999 price would cost 0.0001 ETH. However, Sell orders are the opposite, so Selling 1 share at -25 would be 75 ETH, Selling 1 at 25 would be 25 ETH, Selling 1 at 49.9999 would cost 0.0001 ETH, and Selling 1 share at -50 would cost 100 ETH.
+
+Keeping those examples in mind, Place an order (buy or sell) on your scalar market for some quantity and some price. once signed, sent, and successfully added to the blockchain...
+
+*Verify:*
+- [x] the open orders bar is now populated with an order
+- [x] you have a quantity value with a `+` if it ws a buy, and a `-` if it was a sell order
+- [x] The average price should be the price you entered
+- [x] order should be cancelable (button is not greyed out)
+- [x] The Outcomes bar should also be updated to show a new BID QTY that matches the order quantity
+- [x] Outcomes Bar should also have the BEST BID price updated to the order price
+
 
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
