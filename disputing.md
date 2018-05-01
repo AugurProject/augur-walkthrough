@@ -42,7 +42,7 @@ When a dispute round completes successfully it will be available for dispute in 
 
 - [ ] Verify the disputing market can be disputed again in the next fee window
 - [ ] Verify the dispute bond grows as the dispute rounds complete successfully
-- [ ] Verify a fork is forced when a market is disputed to the point where the bond equals 275K REP
+- [ ] Verify a fork is forced when a market is disputed to the point where the successful bond equals 275K REP
 
 ## Participation
 
