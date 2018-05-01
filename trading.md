@@ -48,7 +48,7 @@ Note: an example of Profit Loss calculations would be doing a trade for 1 share 
 
 Click "Confirm".
 
-Sign your transaction on metamask. 
+Sign your transaction. 
 
 After the transaction is complete and successful...
 
@@ -75,7 +75,7 @@ Click Cancel.
 Click Yes.
 
 *Verify:*
-- [x] you are prompted to sign a transaction to cancel the order on metamask.
+- [x] you are prompted to sign a transaction to cancel the order.
 
 Sign the transaction to cancel the order. Once succesfully complete:
 
@@ -84,6 +84,59 @@ Sign the transaction to cancel the order. Once succesfully complete:
 - [x] The order has been removed from the orderbook chart
 - [x] The Outcome bar shows `--` across the board again except for the LAST value which should be equal to 0.5
 - [x] You should have been refunded ETH that was originally taken from placing the order.
+
+With Account 1 still, place another BUY Order. You can use whatever values you want to test with, but for the sake of the walk through I'm going to use an example of 10 shares for 0.5 ETH.
+
+After placing the order...
+
+*Verify:*
+- [x] Outcomes table has updated to show a Bid Qty and Best Bid value, should match your order details.
+- [x] The Order Book Chart should now show 1 order on the BID side (bottom) of the book, again confirm details.
+- [x] You should see an open order row under the "Positions" section. 
+- [x] The Open Order should be labeled "Yes"
+- [x] The Open Order should have a positive number for quantity
+- [x] The Open Order should have an average price set to the limit price of the order placed on the book.
+- [x] The Open Order should have a clickable Cancel Button.
+
+Login to Account 2. Account 2 should be an account with ETH that has never traded on Augur before.
+
+Navigate back to the market page.
+
+*Verify:* 
+- [x] Account 1's Order is displayed accurately on the order book
+- [x] The Outcome bar should be showing Bid QTY as 10 (for out example, again you can use whatever number you want)
+- [x] The Outcome bar should be showing Best Bid as equal to `0.5`
+
+Click on the `Sell` button on the order form.
+
+Enter the same values you entered in the previous order (if following the example, 10 quantity, .5 limit price)
+
+Click Review and then click Confirm.
+
+*Verify:*
+- [x] The "Approve Augur" modal displays on the screen
+
+Click the "Approve" button.
+
+*Verify:*
+- [x] You are prompted to sign an approval transaction
+
+Sign the approval transaction.
+
+*Verify:*
+- [x] You are prompted to sign the order transaction immediately after signing approval.
+
+Sign the trade transaction.
+
+After the transaction completes, we should now have a position, since this trade should result in a completely filled order from Account 1.
+
+while still logged into Account 2...
+
+*Verify:*
+- [x] The Positions Table now has 1 row showing a "Yes" position
+- [x] The Position should have a negative number for Quantity
+- [x] The Position should show the purchase price
+
 
 ### Categorical Market Trading
 
