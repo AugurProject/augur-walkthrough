@@ -7,7 +7,6 @@ In order for an initial report to occur the market's end time has to elapse. fla
   * Designate Report
   * Open Report
 
-
 ## Designate Report
 
 Navigate to Reporting -> Reporting to see the markets in designate reporting state. 
@@ -25,6 +24,7 @@ Navigate to Reporting -> Reporting to see the markets in open reporting state.
 - [x] Report on market, select outcome and sign transaction
 - [x] Verify no REP is needed to open report
 - [x] Verify the market's tentative winning outcome is correct
+
 
 
 ## Notes
