@@ -27,6 +27,8 @@ This section focuses on operations in forking state. Flash scripts can be used t
 
 ## Forking Ends
 
+A user has to manually call market finalization if 50% of REP isn't migrated and the forking period has ended. Use flash script to finalize market.
+
 - [ ] Verify winning outcome is chosen, when less than 5.5 mil REP has been migrated
 - [ ] Verify user doesn't get a bonus after forking period has ended
 
