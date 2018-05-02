@@ -17,9 +17,9 @@ When you navigate to the "create" page you should be greated by the first form p
 
 *Verify:* 
 
-- [x] A Market must have a Market Question and a Category.
-- [x] Tags are optional.
-- [x] Tags and Category must be unique.
+- [ ] A Market must have a Market Question and a Category.
+- [ ] Tags are optional.
+- [ ] Tags and Category must be unique.
 
 After you have entered some information and confirmed the validation is working, click the "Next: Outcome" button.
 
@@ -36,7 +36,7 @@ In the following sections, "Binary Market", "Categorical Market", and "Scalar Ma
 To create a Binary Market select "Yes/No". 
 
 *Verify:* 
-- [x] You should be greeted with a single input for "Additional Information". This is an optional field.
+- [ ] You should be greeted with a single input for "Additional Information". This is an optional field.
 
 Click on "Next: Resolution"
 
@@ -45,10 +45,10 @@ Click on "Next: Resolution"
 To create a Categorical Market select "Multiple Choice". 
 
 *Verify:* 
-- [x] You should see 8 smaller inputs under the "Potential Outcomes" label.
-- [x] The first two outcomes are required.
-- [x] Outcome names must be unique.
-- [x] You should be greeted with a input for "Additional Information" as well. This is an optional field.
+- [ ] You should see 8 smaller inputs under the "Potential Outcomes" label.
+- [ ] The first two outcomes are required.
+- [ ] Outcome names must be unique.
+- [ ] You should be greeted with a input for "Additional Information" as well. This is an optional field.
 
 Click on "Next: Resolution"
 
@@ -57,13 +57,13 @@ Click on "Next: Resolution"
 To create a Scalar Market select "Numerical Range". 
 
 *Verify:* 
-- [x] You should see 3 input boxes under the "Range Values" header, and an additional input under the "precision" header.
-- [x] Min Value is required, must be less than Max Value
-- [x] Max Value is required, must be greater than Min Value
-- [x] Denomination is an optional field to indicate the denomination of the range.
-- [x] Precision should be defaulted to `0.0001`.
-- [x] Precision is required.
-- [x] You should be greeted with a input for "Additional Information" as well. This is an optional field.
+- [ ] You should see 3 input boxes under the "Range Values" header, and an additional input under the "precision" header.
+- [ ] Min Value is required, must be less than Max Value
+- [ ] Max Value is required, must be greater than Min Value
+- [ ] Denomination is an optional field to indicate the denomination of the range.
+- [ ] Precision should be defaulted to `0.0001`.
+- [ ] Precision is required.
+- [ ] You should be greeted with a input for "Additional Information" as well. This is an optional field.
 
 Click on "Next: Resolution"
 
@@ -73,10 +73,10 @@ You should now see 4 input sections: "Resolution Source", "Designated Reporter",
 
 *Verify:*
 
-- [x] Each section is required.
-- [x] If you select "Outcome will be detailed on a public website" you should see a text input appear to allow website to be entered. This input should be required if shown.
-- [x] If you select "Someone Else" in the "Designated Reporter" section, then you should see a text input appear and you should be required to enter an ethereum address if this input is shown.
-- [x] Confirm that the Datepicker doesn't allow you to choose a day in the past. 
+- [ ] Each section is required.
+- [ ] If you select "Outcome will be detailed on a public website" you should see a text input appear to allow website to be entered. This input should be required if shown.
+- [ ] If you select "Someone Else" in the "Designated Reporter" section, then you should see a text input appear and you should be required to enter an ethereum address if this input is shown.
+- [ ] Confirm that the Datepicker doesn't allow you to choose a day in the past. 
 
 Click on "Next: Liquidity"
 
@@ -85,7 +85,7 @@ Click on "Next: Liquidity"
 The Liquidity page should be asking you for a Settlement Fee as the first input. 
 
 *Verify:* 
-- [x] settlement Fee is required and must be a number between 0 and 100.
+- [ ] settlement Fee is required and must be a number between 0 and 100.
 
 Under the Settlement Fee input you will see a Order Form and a Market Depth Chart and Order Book Chart displayed to the right of the form.
 
@@ -94,8 +94,8 @@ Here is where you can seed the market with liquidity by placing orders on the bo
 Placing orders is not required. However you should test that this is working, so place some orders on either side of the book.
 
 *Verify:* 
-- [x] that orders must be priced between min and max value for the market.
-- [x] adding order should update the charts
+- [ ] that orders must be priced between min and max value for the market.
+- [ ] adding order should update the charts
 
 During this time, keep track of approximately how much ETH you would need to place these orders as we will want to confirm that on the next page and after the orders have all been placed. 
 

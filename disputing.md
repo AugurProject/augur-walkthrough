@@ -56,3 +56,5 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 ## Notes
 
 Make sure when pushing time to the next fee window that a fee window has been created. Fee Window get created whenever a market has been successfully reported or when there has been a successful dispute. Flash script get-balance can be used to get account balances for REP, ETH and participation tokens.
+
+[Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
