@@ -51,7 +51,8 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 - [ ] Verify only users with REP can buy participation tokens
 - [ ] Verfiy REP balance reduces correctly after user buys participation tokens
 - [ ] Verify account has participation tokens
-
+- [ ] Verify account can redeem REP on next fee window
+- [ ] Verify account balances after redeeming
 
 ## Notes
 
