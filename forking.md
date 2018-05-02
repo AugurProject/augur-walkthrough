@@ -15,7 +15,7 @@ This section focuses on operations in forking state. Flash scripts can be used t
 - [ ] Verify no markets can be created
 - [ ] Verify trades are still possible on markets, including forking market
 - [ ] Verify markets can't be disputed when in forking period
-
+- [ ] Verify the forking market can't be finalized during forking period
 
 ## Migrating REP
 
