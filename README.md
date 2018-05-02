@@ -13,6 +13,8 @@ This guide assumes you  are running a local environment and you have access to m
 
 # [Testing Trading](/trading.md)
 
+# [Testing Portfolio](/portfolio.md)
+
 # [Testing Reporting](/reporting.md)
 
 # [Testing Disputing](/disputing.md)
