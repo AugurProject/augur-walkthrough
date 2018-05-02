@@ -41,20 +41,20 @@ Click on one of the categories in the first subSideBarMenu (1-SSB).
 - [ ] 2-SSB should be populated with the tag values for the markets displayed
 - [ ] Markets displayed should be filtered to only show markets with a category equal to the selected category tag in 1-SSB
 - [ ] Clicking on one or more of the tags in 2-SSB should filter out markets that don't match the Category and Tag(s) selected. The logic for selection is `Category && (Tag1 || Tag2)`
-
-click on "Market" button on the Side Bar to reset the page to showing all markets.
+- [ ] Click on "Market" button on the Side Bar to reset the page to showing all markets.
 
 ## Search
 
 Click on the search bar on the top of the page.
 
-Enter in a keyword to search for, such as "augur". 
+Enter in a keyword to search for, such as "augur" and "Augur". 
 
 *Verify:*
-- [ ] The markets should be filtered to only show you markets with the keyword searched matches info on that market.
-- [ ] All markets shown shouldn't leave out markets that you know should match the keyword entered in the search but don't appear to filter.
+- [ ] The markets should be filtered to only show you markets where the search keyword matches info on that market.
+- [ ] The markets shown should include _all_ markets that match the keyword entered in the search.
 - [ ] Clicking the X on the search bar (right side) should clear Search and show all markets again (still paginated of course).
 - [ ] Search should not be case sensitive
+- [ ] Markets should be searchable by title, tag, or category.
 
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
