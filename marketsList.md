@@ -4,28 +4,33 @@ This section of the walk through will focus on the Markets List.
 
 ## General View
 
-Load up Augur and Navigate to the "Markets" tab on the side bar.
+Load up Augur and Navigate to the "Markets" tab on the sidebar.
 
 *Verify:*
 
 - [ ] Assuming there are more than 10 markets in this universe, confirm that we are properly paginating in chunks of 10.
-- [ ] The side bar should have 1 submenu displaying 
-- [ ] The side bar SubMenu should list all the categories for every market that has been loaded.
+- [ ] The sidebar should have 1 submenu displaying (categories)
+- [ ] The sidebar submenu should list all the categories for every market that has been loaded.
 
-Now look at each Market Card and *Verify* the following:
+Now look at each Market Card and verify the following:
 
 *Verify that Market Cards Should:*
-- [ ] display the category and tags in the top left corner of each card.
+- [ ] display category and tags in the top left corner of each card.
 - [ ] display the question for the market
 - [ ] display a scale with the current mid-price for the market.
+- [ ] verify the mid-price display is accurate and that the midprice moves along the scale appropriately. Test this for binary and scalar markets, and with something other than the default value (place some trades).
 - [ ] display labels for denominations on the scale for price.
-- [ ] display the min and max values accurately on either ends of the scale. (min left side, max right side)
+- [ ] display the min and max values accurately on either ends of the scale. (0% - 100% for binary markets, min - max for scalar markets)
 - [ ] display stats about volume, settlement Fee, and Expiration Date
+- [ ] verify that the volume stat is accurate
+- [ ] verify that the settlement fee is the market creator fee + the current reporter fee
 - [ ] dislayed expiration date is in local time (with appropriate utc offset labeled)
 - [ ] display a togglable favorites star to the left of the action button on the bottom right of the card.
-- [ ] display a action button that reads "trade" which when clicked brings you to the trade view for that market.
+- [ ] display an action button that reads "trade" which when clicked brings you to the trade view for that market.
+- [ ] clicking on the market title brings you to the trade view for that market.
 - [ ] display the top 3 outcomes for a Categorical Market, with a "+ N More" where N is the number of remaining outcomes
 - [ ] display the other outcomes when the "+ N More" text is clicked on a Categorical Market.
+- [ ] "+ N More" should change to "- N More" when expanded, should collapse again on click.
 
 ## Filtering
 
@@ -35,7 +40,7 @@ Click on one of the categories in the first subSideBarMenu (1-SSB).
 - [ ] The 2nd subSideBarMenu (2-SSB) slides out to the right of 1-SSB
 - [ ] 2-SSB should be populated with the tag values for the markets displayed
 - [ ] Markets displayed should be filtered to only show markets with a category equal to the selected category tag in 1-SSB
-- [ ] Clicking on one or more of the tags in 2-SSB should filter out tags and markets that don't match the Category and Tag(s) selected.
+- [ ] Clicking on one or more of the tags in 2-SSB should filter out markets that don't match the Category and Tag(s) selected. The logic for selection is `Category && (Tag1 || Tag2)`
 
 click on "Market" button on the Side Bar to reset the page to showing all markets.
 
