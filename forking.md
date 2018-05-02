@@ -36,8 +36,8 @@ A user has to manually call market finalization if 50% of REP isn't migrated and
 ## Migrating Markets
 
 - [ ] Verify market can't be migrated during forking period
-- [ ] Verify markets only migrate to winning outcome universe
-- [ ] Verify anyone can migrate markets during forking period
+- [ ] Verify markets only migrate to winning universe
+- [ ] Verify anyone can migrate markets during forking
 
 ## Disavow REP
 
