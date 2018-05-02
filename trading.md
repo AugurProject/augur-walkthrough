@@ -21,7 +21,7 @@ When the market trading page loads, please *verfy* the following:
 
 *Verify:*
 
-- [x] "Yes" is the only outcome you can select and it's pre-selected. (if you can see the order form you have a selected outcome)
+- [ ] "Yes" is the only outcome you can select and it's pre-selected. (if you can see the order form you have a selected outcome)
 - [x] Fee % shown is the settlement Fee value set (default is 2%) at creation + the current reporting fee (hardcoded to 1% in tests)
 - [x] Confirm the Expiration Date/time shown is accurate to your endtime set during market creation.
 - [x] clicking on the positions title should drop down an empty postitions and open orders table.
