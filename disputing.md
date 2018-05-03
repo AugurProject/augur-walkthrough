@@ -1,6 +1,6 @@
 # Testing Disputing:
 
-This section focuses on the Disputing Process. Disputing happends in rounds, each round is in a fee window. A fee window is a seven day period. Flash scripts can be used to push time to the next fee window.
+This section focuses on the Disputing Process. Disputing happens in rounds, each round is in a fee window. A fee window is a seven day period. Flash scripts can be used to push time to the next fee window.
   * Disputing
   * Partial bond staked
   * Whole bond staked
@@ -12,8 +12,16 @@ When the user don't find any markets to dispute in a fee window they can buy par
 
 ## Disputing
 
-- [ ] Verify accounts without REP can't dispute
-- [ ] Verify market can't be disputed by using current tentative winning outcome
+- [ ] Verify that you are shown the "No-REP" message if your account has no REP.
+- [ ] Verify that you cannot submit a dispute without REP.
+- [ ] Verify that the market's reported-on outcome is listed as the tentative winning outcome on the market card.
+- [ ] Verify that the market's tentative winning outcome is not listed as one of the outcomes with an associated dispute bond on the market card.
+- [ ] Binary: Yes, No, and Market is Invalid should be listed (with one of these as the tentative winning outcome, and the other two with associated dispute bonds.
+- [ ] Categorical: All of the market's outcomes, along with Market is Invalid, should be listed. One of these will be listed as the tentative winning outcome and all others will have associated dispute bonds.
+- [ ] Scalar: The market's reported-on outcome will be listed as the tentative winning outcome. If the tentative winning outcome is Market is Invalid, no other outcomes will be listed. If the tentative winning outcome is not Market is Invalid, the reported-on outcome and Market is Invalid will be listed (Market is Invalid will have an associated dispute bond).
+- [ ] In the first dispute round, all of the dispute bonds on a market are equal to one another.
+- [ ] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
+- [ ] When a market is waiting for its first Dispute Window, and while in its first Dispute window, its round number should be 1. If a dispute is successful and a market is waiting for or is in its next dispute window, its round number should be 2, etc.
 
 ### Partial bond staked
 
