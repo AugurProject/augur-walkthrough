@@ -2,15 +2,13 @@
 
 This section focuses on the Initial Reporting Process.
 
-In order for an initial report to occur the market's end time has to elapse. flash scripts can be used to set timestamp within designate reporting or open reporting. Designate reporting timeframe is a 3 day window starting 1 second after market end time. Open reporting timeframe starts 1 second after designate reporting ends and doesn't have an end time. Two scenarios are covered here.
+In order for an initial report to occur the market's end time has to elapse. Flash scripts can be used to set timestamp within designated reporting or open reporting. The designated reporting timeframe is a 3 day window starting 1 second after market end time. Open reporting timeframe starts 1 second after designate reporting ends and doesn't have an end time.
 
-  * Designate Report
-  * Open Report
+## Designated Reporting
 
-## Designate Report
+Navigate to Reporting -> Reporting to see the markets in designated reporting state. 
 
-Navigate to Reporting -> Reporting to see the markets in designate reporting state. 
-
+- [ ] Verify that a market shows up in the Designated Reporting section one second after its end date has passed.
 - [ ] Create a market where the market creator is the designated reporter and then move time forward so the market is in the DR stage. Verify that only the market creator can see the market listed under Designated Reporting, and verify that only the market creator can report on the market.
 - [ ] Create a market where the someone other than the market creator is the designated reporter. Then, move time forward so the market is in the DR stage. Verify that only the designated reporter can see the market listed under Designated Reporting, and verify that only the designated reporter can report on the market.
 - [ ] Verify that the end date shown on the market card is correct.
@@ -25,7 +23,7 @@ Navigate to Reporting -> Reporting to see the markets in designate reporting sta
 - [ ] Move time forward so the dispute window begins. The "X Stake Placed" should reflect the amount of stake you placed in the report.
 - [ ] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
 
-## Open Report
+## Open Reporting
 
 Navigate to Reporting -> Reporting to see the markets in open reporting state.
 
@@ -37,6 +35,10 @@ Navigate to Reporting -> Reporting to see the markets in open reporting state.
 - [ ] Verify no REP is needed to open report.
 - [ ] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
 - [ ] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
+
+## Upcoming Reporting
+
+- [ ] Verify that the markets listed in Upcoming Reporting are markets where the user is the Designated Reporter.
 
 
 
