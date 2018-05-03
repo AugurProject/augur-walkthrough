@@ -82,8 +82,9 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 
 ## Resolved
 
-- [ ] When a market goes through a dispute window with no disputes, it should be moved to Reporting: Resolved.
-- [ ] When a market goes through a dispute window with only unsuccessful disputes, it should be moved to Reporting: Resolved.
+- [ ] Verify non-disputed finalized markets move to Reporting: Resolved.
+- [ ] Verify unsuccessful disputed finalized markets move to Reporting: Resolved.
+- [ ] Verify successfully disputed finalized markets move to Reporting: Resolved.
 - [ ] The Winning outcome should be listed on the Reporting: Resolved market card.
 
 ## Notes
