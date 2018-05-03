@@ -44,12 +44,16 @@ When the user don't find any markets to dispute in a fee window they can buy par
 = [ ] The Dispute Round # should have been incremented by 1.
 - [ ] Verfiy the amount of REP that you staked has been deducted from your account balance.
 - [ ] Verify that the amount of REP you staked is reflected in "X REP Staked" (next to the dispute window end time).
+- [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User2 is the winning outcome. 
+- [ ] (2.) Then, confirm that you can claim the User2 stake + 50% ROI via the Claim All button on Portfolio: Reporting.
+- [ ] (3.) Then, confirm that User1 has no REP to claim (since they reported on a losing outcome).
 
 ### Failed dispute round
 
-When the fee window ends and the market's dispute round has not complete the stake can be reclaimed. Use flash script to push time to next fee window.
+If Outcome1's dispute bond is not filled by the time Outcome2's dispute bond is successfully filled or the dispute window ends, then stake placed on Outcome1's dispute bond can be reclaimed.
 
-- [ ] Verify account balance is correct when user accounts relaims failed dispute bond REP
+- [ ] Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill an outcome's dispute bond. Push time forward to the next dispute window. Then, confirm that you can claim the REP you staked in the unsuccessful dispute via the Claim All button on Portfolio: Reporting.
+- [ ] Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill Outcome1's dispute bond. Switch to User2, and completely fill Outcome2's dispute bond so Outcome2 becomes the new tentative winning outcome and the market is moved to the Upcoming Dispute Window. Then, switch to User1 and confirm that you can claim the REP you staked in the unsuccessful dispute via the Claim All button on Portfolio: Reporting.
 - [ ] Verify account gets participation tokens for their failed dispute bond REP 
 
 ## Multiple dispute rounds
@@ -57,8 +61,11 @@ When the fee window ends and the market's dispute round has not complete the sta
 When a dispute round completes successfully it will be available for dispute in the next fee window or else force a fork. 
 
 - [ ] Verify the disputing market can be disputed again in the next fee window
-- [ ] Verify the dispute bond grows as the dispute rounds complete successfully
+- [ ] Verify the dispute bond amounts are correct. To do this, report on a market and then walk it through multiple dispute rounds, with varying amounts staked on different outcomes. Keep track of the amounts on each outcome as you do this. The dispute bond of Outcome should be equal to 2x the amount staked on all other outcomes (including stake from the initial report) minus the stake placed on Outcome in previous rounds/reports. REP staked in unsuccessful disputes (where the REP is returned to its owner after the dispute window) does not count toward this calculation.
 - [ ] Verify a fork is forced when a market is disputed to the point where the successful bond equals 275K REP
+- [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward to the next dispute window, switch to User1, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User1 is the winning outcome. 
+- [ ] (2.) Then, confirm that you can claim the User1 stake (from reporting and disputing) + 50% ROI via the Claim All button on Portfolio: Reporting.
+- [ ] (3.) Then, confirm that User2 has no REP to claim (since they reported on a losing outcome).
 
 ## Participation
 
