@@ -21,20 +21,29 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [ ] Scalar: The market's reported-on outcome will be listed as the tentative winning outcome. If the tentative winning outcome is Market is Invalid, no other outcomes will be listed. If the tentative winning outcome is not Market is Invalid, the reported-on outcome and Market is Invalid will be listed (Market is Invalid will have an associated dispute bond).
 - [ ] In the first dispute round, all of the dispute bonds on a market are equal to one another.
 - [ ] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
+- [ ] Verify that the two numbers to the right of the progress bars are "total staked so far in dispute bond / dispute bond target".
 - [ ] When a market is waiting for its first Dispute Window, and while in its first Dispute window, its round number should be 1. If a dispute is successful and a market is waiting for or is in its next dispute window, its round number should be 2, etc.
 
 ### Partial bond staked
 
-- [ ] Dispute market with partial bond amount, select new outcome, stake and sign transaction
-- [ ] Verify current tentative winning outcome didn't change
-- [ ] Verfiy the amount of REP staked has been deducted from account balance
+- [ ] Dispute market with partial bond amount, select new outcome, stake and sign transaction.
+- [ ] Verify current tentative winning outcome didn't change.
+- [ ] Verfiy the amount of REP staked has been deducted from account balance.
+- [ ] Verify that you can not place negative stake, or more stake than the amount remaining in the dispute bond.
+- [ ] Verify that the two numbers to the right of the progress bars are "total staked so far in dispute bond / dispute bond target".
+- [ ] When you place stake in a dispute bond, that should be shown in an animated, light-purple bar in the dispute progress bar.
+- [ ] When you've placed stake in a dispute bond (and confirmed the tx), your stake placed should be shown on the market card on the Reporting: Dispute page as a light purple bar in the dispute progress bar. You should be shown a hover state with the amount you staked when you hover over that light purple bar.
+- [ ] Stake placed by users other than you should be displayed as a dark purple bar in the dispute progress bar.
+- [ ] Verify that the amount of REP you staked is reflected in "X REP Staked" (next to the dispute window end time).
 
 ### Whole bond staked
 
-- [ ] Disput market with whole bond amount, select new outcome, stake remaining (click MAX) and sign transaction
-- [ ] Verfiy there's a new tentative winning outcome
-- [ ] Verfiy the amount of REP staked has been deducted from account balance
-
+- [ ] Fill a dispute bond: select an outcome, enter the full stake remaining for that dispute bond (click MAX), and sign the transaction
+- [ ] The market should be moved to the "Upcoming Dispute Window" section. This should happen without page refresh.
+- [ ] The outcome you placed stake on should be listed as the new tentative winning outcome.
+= [ ] The Dispute Round # should have been incremented by 1.
+- [ ] Verfiy the amount of REP that you staked has been deducted from your account balance.
+- [ ] Verify that the amount of REP you staked is reflected in "X REP Staked" (next to the dispute window end time).
 
 ### Failed dispute round
 
@@ -42,7 +51,6 @@ When the fee window ends and the market's dispute round has not complete the sta
 
 - [ ] Verify account balance is correct when user accounts relaims failed dispute bond REP
 - [ ] Verify account gets participation tokens for their failed dispute bond REP 
-
 
 ## Multiple dispute rounds
 
