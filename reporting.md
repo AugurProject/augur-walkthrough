@@ -32,7 +32,7 @@ Navigate to Reporting -> Reporting to see the markets in open reporting state.
 - [ ] Binary market: Report on market by selecting an outcome and signing the transaction.
 - [ ] Categorical market: Report on market by selecting an outcome and signing the transaction.
 - [ ] Scalar market: Report on market by entering an outcome and signing the transaction.
-- [ ] Verify no REP is needed to open report.
+- [ ] Verify that you can submit a report with an account that has no REP.
 - [ ] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
 - [ ] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
 
@@ -44,6 +44,6 @@ Navigate to Reporting -> Reporting to see the markets in open reporting state.
 
 ## Notes
 
-Account balances can be seen using flash get-balance script. 
+Account balances can be seen using flash get-balance script. However, balances should also be checked in the UI.
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
