@@ -80,6 +80,12 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 - [ ] Place and settle a couple trades on a market to create reporting fees. Push time forward to the next fee window. Then, verify that the Portfolio: Reporting page is showing the correct balance for REP available to claim (plus some ETH for reporting fees) and that you can claim it.
 - [ ] Verify that your account balance updates correctly after redeeming
 
+## Resolved
+
+- [ ] When a market goes through a dispute window with no disputes, it should be moved to Reporting: Resolved.
+- [ ] When a market goes through a dispute window with only unsuccessful disputes, it should be moved to Reporting: Resolved.
+- [ ] The Winning outcome should be listed on the Reporting: Resolved market card.
+
 ## Notes
 
 Make sure when pushing time to the next fee window that a fee window has been created. Fee Windows get created whenever a market has been successfully reported or when there has been a successful dispute. Flash script get-balance can be used to get account balances for REP, ETH and participation tokens.
