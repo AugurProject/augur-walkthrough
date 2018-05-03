@@ -52,9 +52,10 @@ When the user don't find any markets to dispute in a fee window they can buy par
 
 If Outcome1's dispute bond is not filled by the time Outcome2's dispute bond is successfully filled or the dispute window ends, then stake placed on Outcome1's dispute bond can be reclaimed.
 
-- [ ] Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill an outcome's dispute bond. Push time forward to the next dispute window. Then, confirm that you can claim the REP you staked in the unsuccessful dispute via the Claim All button on Portfolio: Reporting.
-- [ ] Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill Outcome1's dispute bond. Switch to User2, and completely fill Outcome2's dispute bond so Outcome2 becomes the new tentative winning outcome and the market is moved to the Upcoming Dispute Window. Then, switch to User1 and confirm that you can claim the REP you staked in the unsuccessful dispute via the Claim All button on Portfolio: Reporting.
-- [ ] Verify account gets participation tokens for their failed dispute bond REP 
+- [ ] Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill an outcome's dispute bond. Place and settle a couple trades on a market to creat reporting fees. Push time forward to the next dispute window. Then, confirm that you can claim the REP you staked in the unsuccessful dispute + a share of the reporting fees from the previous fee window via the Claim All button on Portfolio: Reporting.
+- [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill Outcome1's dispute bond. Switch to User2, and completely fill Outcome2's dispute bond so Outcome2 becomes the new tentative winning outcome and the market is moved to the Upcoming Dispute Window. Place and settle a couple trades on a market to creat reporting fees.
+- [ ] (2.) Confirm that nothing is available to claim for either user via the Portfolio: Reporting page (nothing should be available because the dispute window hasn't ended.
+- [ ] (3.) Push time forward to the next dispute window. Then, switch to User1 and confirm that you can claim the REP you staked in the unsuccessful dispute + a share of the reporting fees from the previous fee window via the Claim All button on Portfolio: Reporting.
 
 ## Multiple dispute rounds
 
@@ -73,12 +74,12 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 
 - [ ] Verify only users with REP can buy participation tokens
 - [ ] Verfiy REP balance reduces correctly after user buys participation tokens
-- [ ] Verify account has participation tokens
-- [ ] Verify account can redeem REP on next fee window
-- [ ] Verify account balances after redeeming
+- [ ] Verify that the amount of participation tokens you purchased has been added to "X REP Staked" on the Reporting: Dispute page.
+- [ ] Place and settle a couple trades on a market to create reporting fees. Push time forward to the next fee window. Then, verify that the Portfolio: Reporting page is showing the correct balance for REP available to claim (plus some ETH for reporting fees) and that you can claim it.
+- [ ] Verify that your account balance updates correctly after redeeming
 
 ## Notes
 
-Make sure when pushing time to the next fee window that a fee window has been created. Fee Window get created whenever a market has been successfully reported or when there has been a successful dispute. Flash script get-balance can be used to get account balances for REP, ETH and participation tokens.
+Make sure when pushing time to the next fee window that a fee window has been created. Fee Windows get created whenever a market has been successfully reported or when there has been a successful dispute. Flash script get-balance can be used to get account balances for REP, ETH and participation tokens.
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
