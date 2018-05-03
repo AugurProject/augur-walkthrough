@@ -19,6 +19,8 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [ ] Binary: Yes, No, and Market is Invalid should be listed (with one of these as the tentative winning outcome, and the other two with associated dispute bonds.
 - [ ] Categorical: All of the market's outcomes, along with Market is Invalid, should be listed. One of these will be listed as the tentative winning outcome and all others will have associated dispute bonds.
 - [ ] Scalar: The market's reported-on outcome will be listed as the tentative winning outcome. If the tentative winning outcome is Market is Invalid, no other outcomes will be listed. If the tentative winning outcome is not Market is Invalid, the reported-on outcome and Market is Invalid will be listed (Market is Invalid will have an associated dispute bond).
+- [ ] Test that the Dispute Window increments properly. Days remaining should be correct, end date should be correct, and these should update when time is pushed and a new dispute window starts.
+- [ ] Verify that a new dispute window is created properly even when no markets were reported on or disputed in the previous dispute window.
 - [ ] In the first dispute round, all of the dispute bonds on a market are equal to one another.
 - [ ] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
 - [ ] Verify that the two numbers to the right of the progress bars are "total staked so far in dispute bond / dispute bond target".
