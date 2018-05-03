@@ -22,6 +22,7 @@ Navigate to Reporting -> Reporting to see the markets in designated reporting st
 - [ ] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
 - [ ] Move time forward so the dispute window begins. The "X Stake Placed" should reflect the amount of stake you placed in the report.
 - [ ] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
+- [ ] While the market is in the dispute window, settle a couple trades on another market so some reporting fees are generated. Then, push time forward to end the dispute windoow (without disputing the tenative winning outcome on your market) so your market resolves. Verify that you can collect your staked REP and portion of ETH fees on the Portfolio: Reporting page. The balance should be shown, and you should be able to claim that balance with the Claim All button.
 
 ## Open Reporting
 
@@ -35,6 +36,7 @@ Navigate to Reporting -> Reporting to see the markets in open reporting state.
 - [ ] Verify that you can submit a report with an account that has no REP.
 - [ ] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
 - [ ] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
+- [ ] While the market is in the dispute window, settle a couple trades on another market so some reporting fees are generated. Then, push time forward to end the dispute windoow (without disputing the tenative winning outcome on your market) so your market resolves. Verify that you can collect the no-show bond that was used as stake on your market, the no-show gas bond, and your portion of ETH reporting fees on the Portfolio: Reporting page. The balance should be shown, and you should be able to claim that balance with the Claim All button.
 
 ## Upcoming Reporting
 
