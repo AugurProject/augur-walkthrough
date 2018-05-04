@@ -78,7 +78,9 @@ After both transactions complete, login to the account you sent the ETH and REP 
 
 Flash scripts can be used to force fork, need to migrate 5.5 mil REP to force forking market finalization.
 
-- [ ] Verify user can change to different existing universe
+- [ ] Verify user can switch to universe listed
 - [ ] Verify user account balances update correctly when universe is changed
+- [ ] Verify genesis universe is listed
+- [ ] Verify winning universe from fork is listed
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
