@@ -24,6 +24,8 @@ Positions includes trade positions, open orders and profit/loss. Trades will nee
 - [ ] Verify account balance updates correct when position is closed
 - [ ] Verify account balance updates correct when open order is closed
 - [ ] Verify profit/loss chart displays correct information based on user trading activity
+- [ ] Verify user can't claim their unrealized profits during waiting period
+- [ ] Verify user can claim their unrealized profits when the market is finalized and waiting period is over
 
 ## My Markets
 
