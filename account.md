@@ -76,6 +76,9 @@ After both transactions complete, login to the account you sent the ETH and REP 
 
 ## Universe Page:
 
-The Universe Page walkthrough will come a bit later, it requires flash and some forking and is more advanced then the other account pages.
+Flash scripts can be used to force fork, need to migrate 5.5 mil REP to force forking market finalization.
+
+- [ ] Verify user can change to different existing universe
+- [ ] Verify user account balances update correctly when universe is changed
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
