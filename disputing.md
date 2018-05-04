@@ -16,10 +16,15 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [ ] Verify that you cannot submit a dispute without REP.
 - [ ] Verify that the market's reported-on outcome is listed as the tentative winning outcome on the market card.
 - [ ] Verify that the market's tentative winning outcome is not listed as one of the outcomes with an associated dispute bond on the market card.
-- [ ] Binary: Yes, No, and Market is Invalid should be listed (with one of these as the tentative winning outcome, and the other two with associated dispute bonds.
-- [ ] Categorical: All of the market's outcomes, along with Market is Invalid, should be listed. One of these will be listed as the tentative winning outcome and all others will have associated dispute bonds.
-- [ ] Scalar: The market's reported-on outcome will be listed as the tentative winning outcome. If the tentative winning outcome is Market is Invalid, no other outcomes will be listed. If the tentative winning outcome is not Market is Invalid, the reported-on outcome and Market is Invalid will be listed (Market is Invalid will have an associated dispute bond).
-- [ ] Test that the Dispute Window increments properly. Days remaining should be correct, end date should be correct, and these should update when time is pushed and a new dispute window starts.
+- [ ] Binary: Verify these outcomes are present 'Yes', 'No', and 'Market is Invalid'
+- [ ] Binary: Verify there is a tentative winning outcome, and the other two have associated dispute bonds.
+- [ ] Categorical: Verify all market's outcomes are present, along with Market is Invalid
+- [ ] Categorical: Verify there is a tentative winning outcome and all others will have associated dispute bonds.
+- [ ] Scalar: Verify the reported-on outcome is tentative winning outcome. 
+- [ ] Scalar: Verify when the tentative winning outcome is Market is Invalid, no other outcomes will be listed.
+- [ ] Scalar: Verify when the tentative winning outcome is not Market is Invalid, Market is Invalid will have an associated dispute bond.
+- [ ] Scalar: Verify all successfuly dispute outcomes are listed with associated dispute bond.
+- [ ] Verify days remaining in dispute window is correct and increments properly, end date should be correct, and these should update when time is pushed and a new dispute window starts.
 - [ ] Verify that a new dispute window is created properly even when no markets were reported on or disputed in the previous dispute window.
 - [ ] In the first dispute round, all of the dispute bonds on a market are equal to one another.
 - [ ] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
@@ -43,7 +48,7 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [ ] Fill a dispute bond: select an outcome, enter the full stake remaining for that dispute bond (click MAX), and sign the transaction
 - [ ] The market should be moved to the "Upcoming Dispute Window" section. This should happen without page refresh.
 - [ ] The outcome you placed stake on should be listed as the new tentative winning outcome.
-= [ ] The Dispute Round # should have been incremented by 1.
+- [ ] The Dispute Round # should have been incremented by 1.
 - [ ] Verfiy the amount of REP that you staked has been deducted from your account balance.
 - [ ] Verify that the amount of REP you staked is reflected in "X REP Staked" (next to the dispute window end time).
 - [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User2 is the winning outcome. 
@@ -64,7 +69,8 @@ If Outcome1's dispute bond is not filled by the time Outcome2's dispute bond is 
 When a dispute round completes successfully it will be available for dispute in the next fee window or else force a fork. 
 
 - [ ] Verify the disputing market can be disputed again in the next fee window
-- [ ] Verify the dispute bond amounts are correct. To do this, report on a market and then walk it through multiple dispute rounds, with varying amounts staked on different outcomes. Keep track of the amounts on each outcome as you do this. The dispute bond of Outcome should be equal to 2x the amount staked on all other outcomes (including stake from the initial report) minus the stake placed on Outcome in previous rounds/reports. REP staked in unsuccessful disputes (where the REP is returned to its owner after the dispute window) does not count toward this calculation.
+- [ ] Verify the dispute bond amounts are correct. 
+* Note: To verify bond amouts are correct, report on a market and then walk it through multiple dispute rounds, with varying amounts staked on different outcomes. Keep track of the amounts on each outcome as you do this. The dispute bond of Outcome should be equal to 2x the amount staked successfully staked on all other outcomes (including stake from the initial report) minus the stake placed on Outcome in previous rounds/reports. REP staked in unsuccessful disputes (where the REP is returned to its owner after the dispute window) does not count toward this calculation.
 - [ ] Verify a fork is forced when a market is disputed to the point where the successful bond equals 275K REP
 - [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward to the next dispute window, switch to User1, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User1 is the winning outcome. 
 - [ ] (2.) Then, confirm that you can claim the User1 stake (from reporting and disputing) + 50% ROI via the Claim All button on Portfolio: Reporting.
