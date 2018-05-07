@@ -30,9 +30,10 @@ If you are logged in, hard refresh (ctrl + R / cmd + R) the app (and logout of m
 Navigate to the "account" menu again, this time click "Connect"
 
 *Verify:*
-- [ ] you can successfully login to metamask
-- [ ] you can successfully login to a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
-- [ ] you can successfully login to uPort (through the connect menu's QR code)
+- [ ] you can successfully login with metamask
+- [ ] you can successfully login with a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
+- [ ] you can successfully login with uPort (through the connect menu's QR code)
+- [ ] you can successfully login with Trezor
 
 To verify the above, you will need to hard refresh/logout after each verified login. 
 
@@ -57,6 +58,11 @@ With Ledger:
 - [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
 - [ ] Your balance should now have 47.00 more REP.
 
+With Trezor:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
 ## Withdraw Page:
 
 Now navigate to the "Account -> Withdraw" page. You'll be sending REP and ETH to a second account that you have access to. In the following section (Deposit page), you'll be sendinig the REP and ETH back to your original account.
@@ -76,6 +82,12 @@ With uPort:
 - [ ] Verify the second Account recieved the ETH and REP from the first Account.
 
 With Ledger:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
+With Trezor:
 
 - [ ] Use the form to send some ETH to another Account you have access to.
 - [ ] Use the form to send some REP to another Account you have access to.
@@ -112,6 +124,18 @@ With uPort:
 - [ ] Verify you recieved the ETH and REP.
 
 With Ledger:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
+
+With Trezor:
 
 - [ ] your ETH balance accurately displays.
 - [ ] your REP balance accurately displays. 
