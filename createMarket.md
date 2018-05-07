@@ -107,7 +107,7 @@ Placing orders is not required. However you should test that this is working, so
 *Verify:* 
 - [x] that orders must be priced between min and max value for the market.
 - [x] adding order should update the charts
-- [ ] the orders you added to the market are listed on the market's Trading page after market creation.
+- [x] the orders you added to the market are listed on the market's Trading page after market creation.
 
 During this time, keep track of approximately how much ETH you would need to place these orders as we will want to confirm that on the next page and after the orders have all been placed. 
 
@@ -118,7 +118,7 @@ Click on "Next: Review"
 On this page we should see a breakdown of our costs. 
 
 *Verify:* 
-- [ ] That the broken down stats appear to be accurate.
+- [x] That the broken down stats appear to be accurate.
 - [x] the ETH and gas required to place your orders is included in the totals.
 - [x] Click "Submit" and verify that the market is created successfully and your orders are placed.
 - [x] You should be redirected to the "Portfolio: Transaction" page after submission.
