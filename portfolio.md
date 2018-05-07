@@ -13,17 +13,19 @@ This section focuses on the Portfolio sections. Portfolio is mostly reviewing re
 
 Positions includes trade positions, open orders and profit/loss. Trades will need to be made to produce positions and open orders.
 
-- [ ] Verify view is blank if user doesn't have any positions or open orders
+- [ ] Verify that the null state is shown if user doesn't have any positions or open orders
 - [ ] Verify correct market card shows when position and/or open orders is created
-- [ ] Verify Open Orders updates when user creates new open order
-- [ ] Verify Positions updates when user creates a new position
-- [ ] Verify realized, unrealized and total profit/loss update when position is created
-- [ ] Verify realized, unrealized and total profit/loss update when position is closed
-- [ ] Verify position can be closed
-- [ ] Verify open order can be closed
-- [ ] Verify account balance updates correct when position is closed
-- [ ] Verify account balance updates correct when open order is closed
-- [ ] Verify profit/loss chart displays correct information based on user trading activity
+- [ ] Create a new order. Verify that the open order's Quantity and Average Price are correct.
+- [ ] Create a new position. Verify that the position's Quantity, Average Price, and Last Price are correct.
+- [ ] Verify "My Positions" and "Open Orders" can be toggled open and closed.
+- [ ] Verify realized, unrealized and total profit/loss update correctly when a position is created.
+- [ ] Verify realized, unrealized and total profit/loss update correctly when a position is closed.
+- [ ] Verify realized, unrealized and total profit/loss update correctly when an order is added to a position.
+- [ ] Verify position can be closed by clicking "Close".
+- [ ] Verify open order can be canceled by clicking "Cancel".
+- [ ] Verify account balance updates correctly when position is closed
+- [ ] Verify account balance updates correctly when open order is canceled
+- [ ] Verify profit/loss chart in header displays correct information based on user trading activity (talk to Paul about what this should display)
 - [ ] Verify user can't claim their unrealized profits during waiting period
 - [ ] Verify user can claim their unrealized profits when the market is finalized and waiting period is over
 
