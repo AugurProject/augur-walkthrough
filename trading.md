@@ -301,6 +301,7 @@ while still logged into Account 2...
 - [ ] The charts have updated to show a new candlestick
 - [ ] The Order Book Chart reflects that the open order is gone and has been filled.
 - [ ] Login to Account 1 and verify the above, but for their side of the trade. (account 1 should only have 10 shares of the selected outcome)
+- [ ] The Outcome Bar shows updated % for the traded outcome, which should be `lastTradeValue * 100` (so 50% for our .5 example)
 
 Now log back into Account 2, navigate to the market, and place an order to `Buy` for the same values you entered previously. (10 quantity at 0.5 ETH limitPrice if using the example)
 
