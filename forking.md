@@ -2,6 +2,7 @@
 
 This section focuses on operations in forking state. Flash scripts can be used to force market to forking state.
 
+  * Pre-Fork
   * Forking Market
   * Migrating REP
   * Forking Ends
@@ -34,6 +35,16 @@ This state occurs when at least one dispute bond is greater than 2.5% of all REP
 - [ ] Verify trades are still possible on markets, including forking market
 - [ ] Verify the forking market can't be finalized during forking period
 
+## Disavow REP
+
+To test this behavior the user needs to have REP staked on dispute rounds prior to when the Fork was initiated. Any REP that the user had staked on a dispute in a non-forking market should be claimable when the Fork begins.
+
+- [ ] Add REP to a couple dispute bonds in a couple different rounds on a couple different markets. Keep track of the total. Cause one of those markets to fork. (1) Verify that you can claim all of the REP you placed in dispute bonds in non-forking markets by clicking the "Claim All" button on the Portfolio: Reporting page. (2) Verify that the REP you staked on a dispute bond in the forking market is not claimable.
+- [ ] Prior to a fork, place stake on a report. Initiate a fork on that or another market. Verify that you cannot claim the stake you placed on a report.
+- [ ] Initiate a fork. Verify that you can still report on markets.
+- [ ] Add REP to a dispute bond (but don't fill the bond). Initiate a fork on the same market. Verify that you can claim your REP from the failed dispute.
+- [ ] Add REP to a dispute bond (but don't fill the bond). Initiate a fork on a different market. Verify that you can claim your REP from the failed dispute.
+
 ## Migrating REP
 
 - [ ] Verify user gets 5% bonus when migrating REP during fork period
@@ -42,6 +53,16 @@ This state occurs when at least one dispute bond is greater than 2.5% of all REP
 - [ ] Verify user can migrate some of their REP, verify balance after Tx confirmation
 - [ ] Verify user can migrate all their REP, verify balance after Tx confirmation
 - [ ] Verify outcome winner is declared when 50% REP supply has been migrated (5.5 mil REP)
+- [ ] Verify REP can be migrated after being disavowed
+
+## Universe Page:
+
+Flash scripts can be used to force fork, need to migrate 5.5 mil REP to force forking market finalization.
+
+- [ ] Verify user can switch to universe listed
+- [ ] Verify user account balances update correctly when universe is changed
+- [ ] Verify genesis universe is listed
+- [ ] Verify winning universe from fork is listed
 
 ## Forking Ends
 
@@ -55,14 +76,5 @@ A user has to manually call market finalization if 50% of REP isn't migrated and
 - [ ] Verify market can't be migrated during forking period
 - [ ] Verify markets only migrate to winning universe
 - [ ] Verify anyone can migrate markets during forking
-
-## Disavow REP
-
-To test this behavior user needs to have REP staked on dispute rounds. This needs to occur before forking period begins. Disputes can't occur during forking period. This way user can disavow their REP when market goes into fork.
-
-- [ ] Verify REP can be disavowed during forking period
-- [ ] Verify REP balance is correct after disavowed
-- [ ] Verify REP can be migrated after being disavowed
-- [ ] Verify REP on failed dispute rounds can be disavowed
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
