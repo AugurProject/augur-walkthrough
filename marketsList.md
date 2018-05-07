@@ -22,8 +22,8 @@ Now look at each Market Card and verify the following:
 - [x] display labels for denominations on the scale for price.
 - [x] display the min and max values accurately on either ends of the scale. (0% - 100% for binary markets, min - max for scalar markets)
 - [x] display stats about volume, settlement Fee, and Expiration Date
-- [ ] verify that the volume stat is accurate
-- [ ] verify that the settlement fee is the market creator fee + the current reporter fee
+- [x] verify that the volume stat is accurate
+- [x] verify that the settlement fee is the market creator fee + the current reporter fee
 - [x] dislayed expiration date is in local time (with appropriate utc offset labeled)
 - [x] display a togglable favorites star to the left of the action button on the bottom right of the card.
 - [x] display an action button that reads "trade" which when clicked brings you to the trade view for that market.
@@ -52,7 +52,7 @@ Enter in a keyword to search for, such as "augur" and "Augur".
 *Verify:*
 - [ ] The markets should be filtered to only show you markets where the search keyword matches info on that market.
 - [ ] The markets shown should include _all_ markets that match the keyword entered in the search.
-- [ ] Clicking the X on the search bar (right side) should clear Search and show all markets again (still paginated of course).
+- [x] Clicking the X on the search bar (right side) should clear Search and show all markets again (still paginated of course).
 - [ ] Search should not be case sensitive
 - [ ] Markets should be searchable by title, tag, or category.
 
