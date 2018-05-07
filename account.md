@@ -7,12 +7,12 @@ This section of the walk through focuses on the Account Page and it's functions.
 When you first load up the UI, assuming you haven't enabled and logged into metamask, you should be greated with the categories page and your side bar should only have two options.
 
 *Verify:*
-- [ ] when not logged into an account, only "Markets" and "Account" should be options on the sidebar
+- [x] when not logged into an account, only "Markets" and "Account" should be options on the sidebar
 
 Click on the "Account" menu.
 
 *Verify:*
-- [ ] should now be on an auth screen, with two options, "Connect" and "Create"
+- [x] should now be on an auth screen, with two options, "Connect" and "Create"
 
 ## Create Account:
 
@@ -21,7 +21,7 @@ Clicking on the "Create" button will give you instructions on how to download th
 After creating a uport account, scan the QR code.
 
 *Verify:*
-- [ ] after accepting on your mobile device, you should be logged into your Augur account
+- [x] after accepting on your mobile device, you should be logged into your Augur account
 
 ## Connect Account:
 
@@ -30,9 +30,9 @@ If you are already logged in, hard refresh (ctrl + R / cmd + R) the app (and log
 Navigate to the "account" menu again, this time click "Connect"
 
 *Verify:*
-- [ ] you can successfully login to metamask
+- [x] you can successfully login to metamask
 - [ ] you can successfully login to a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
-- [ ] you can successfully login to uport (through the connect menu's QR code)
+- [x] you can successfully login to uport (through the connect menu's QR code)
 
 To verify the above, you will need to hard refresh/logout after each verified login. 
 
@@ -45,10 +45,10 @@ Navigate to the Account Page using the sidebar.
 You should be greated with the "Deposit" page.
 
 *Verify:* 
-- [ ] your ETH balance accurately displays.
-- [ ] your REP balance accurately displays. 
-- [ ] your Account Address accurately displays.
-- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [x] your ETH balance accurately displays.
+- [x] your REP balance accurately displays. 
+- [x] your Account Address accurately displays.
+- [x] clicking on the Account Address will copy the Address to your clipboard.
 
 ## REP Faucet Page:
 
@@ -59,7 +59,7 @@ Click on the "Get REP" button.
 Sign the transaction that appears in Metamask.
 
 After the transaction completes *verify:*
-- [ ] you now have `47.00 REP`.
+- [x] you now have `47.00 REP`.
 
 ## Withdraw Page:
 
@@ -72,7 +72,7 @@ Send some REP to another Account (prefereably the same address for easy verifica
 After both transactions complete, login to the account you sent the ETH and REP to.
 
 *Verify:* 
-- [ ] the second Account recieved the ETH and REP from the first Account.
+- [x] the second Account recieved the ETH and REP from the first Account.
 
 ## Universe Page:
 
