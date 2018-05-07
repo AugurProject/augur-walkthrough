@@ -7,12 +7,12 @@ This section of the walk through focuses on the Account Page and it's functions.
 Load up the UI and make sure you're logged out of any authentication method. You should be greated with the categories page and your side bar should only have two options.
 
 *Verify:*
-- [ ] when not logged into an account, only "Markets" and "Account" should be options on the sidebar
+- [x] when not logged into an account, only "Markets" and "Account" should be options on the sidebar
 
 Click on the "Account" menu.
 
 *Verify:*
-- [ ] should now be on an auth screen, with two options, "Connect" and "Create"
+- [x] should now be on an auth screen, with two options, "Connect" and "Create"
 
 ## Create Account:
 
@@ -21,7 +21,7 @@ Clicking on the "Create" button will give you instructions on how to download th
 After creating a uPort account, scan the QR code.
 
 *Verify:*
-- [ ] after accepting on your mobile device, you should be logged into your Augur account
+- [x] after accepting on your mobile device, you should be logged into your Augur account
 
 ## Connect Account:
 
@@ -30,9 +30,9 @@ If you are logged in, hard refresh (ctrl + R / cmd + R) the app (and logout of m
 Navigate to the "account" menu again, this time click "Connect"
 
 *Verify:*
-- [ ] you can successfully login with metamask
+- [x] you can successfully login with metamask
 - [ ] you can successfully login with a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
-- [ ] you can successfully login with uPort (through the connect menu's QR code)
+- [x] you can successfully login with uPort (through the connect menu's QR code)
 - [ ] you can successfully login with Trezor
 
 To verify the above, you will need to hard refresh/logout after each verified login. 
