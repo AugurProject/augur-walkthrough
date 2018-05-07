@@ -38,16 +38,12 @@ Click the Review button.
 - [ ] Outcome is labeled correctly as "yes"
 - [ ] quantity is accurate to what you entered
 - [ ] limit price is accurate to what you entered
-- [ ] for this trade, fee should be 0 as we are only going to be placing an order on an empty book
+- [ ] for this trade, fee should be only for the GAS cost because we won't be closing shares here
 - [ ] est. cost is still accurately calculated
 - [ ] Confirm that Profit Loss calculations are correct. 
 - [ ] your ETH balance has decreased by the amount of ETH the order cost
 
 Note: an example of Profit Loss calculations would be doing a trade for 1 share at .9 ETH. In that case: Max Gain is .1 ETH (11.11%); Max Loss is 0.9 ETH (100%).
-
-Click "Confirm".
-
-Sign your transaction. 
 
 After the transaction is complete and successful...
 
@@ -170,10 +166,168 @@ Login to Account 2, navigate to market page.
 
 ### Categorical Market Trading
 
-(Work in Progress...)
+After creating a new categorical market, navigate to the markets page and find your new market's card.
+
+click on the "trade" button on the newly created market.
+
+When the market trading page loads, please *verfy* the following:
+
+*Verify:*
+
+- [ ] All outcomes are listed under the outcome table, with none of them pre-selected.
+- [ ] Fee % shown is the settlement Fee value set (default is 2%) at creation + the current reporting fee (hardcoded to 1% in tests)
+- [ ] Confirm the Expiration Date/time shown is accurate to your endtime set during market creation.
+- [ ] clicking on the positions title should drop down an empty postitions and open orders table.
+- [ ] The `LAST` price value should be equal to `1 / numOutcomes` on a new categorical market. (3 = .3333, 4 = .25, etc)
+
+Using Account 1 (remember, Account 1 is the account that created the market) we will now attempt to place an order.
+
+Select one of the outcomes.
+
+*Verify:*
+- [ ] The Trading Form is now visible on the right hand side of your screen.
+
+Enter a number for the amount of shares you would like to buy, and enter a price between 0 and 1. 
+
+*Verify:*
+- [ ] The Trading Form displays the name of the outcome we have selected.
+- [ ] quantity cannot be 0 or negative.
+- [ ] limit price cannot be outside of the range for this market (0-1 in this case)
+- [ ] est. cost is calculated correctly (quantity * price)
+
+Click the Review button.
+
+*Verify:*
+- [ ] Outcome is labeled correctly as the outcome you have selected.
+- [ ] quantity is accurate to what you entered
+- [ ] limit price is accurate to what you entered
+- [ ] for this trade, fee should be only for the GAS cost because we won't be closing shares here
+- [ ] est. cost is still accurately calculated
+- [ ] Confirm that Profit Loss calculations are correct. 
+- [ ] your ETH balance has decreased by the amount of ETH the order cost
+
+Note: an example of Profit Loss calculations would be doing a trade for 1 share at .9 ETH. In that case: Max Gain is .1 ETH (11.11%); Max Loss is 0.9 ETH (100%).
+
+After the transaction is complete and successful...
+
+*Verify:*
+- [ ] Outcomes table has updated to show a Bid Qty and Best Bid value, should match your order details.
+- [ ] The Order Book Chart should now show 1 order on the BID side (bottom) of the book, again confirm details.
+- [ ] You should see an open order row under the "Positions" section. 
+- [ ] The Open Order should be correcty labeled for the outcome selected
+- [ ] The Open Order should have a positive number for quantity
+- [ ] The Open Order should have an average price set to the limit price of the order placed on the book.
+- [ ] The Open Order should have a clickable Cancel Button.
+
+Click the Cancel button.
+
+*Verify:*
+- [ ] The Open Order row should change into a purple bar
+- [ ] The Open Order row should say `Cancel order for N shares of "<outcome label here>" at X ETH?` Where N is the quantity of your order and X is the price.
+- [ ] There should be a yes and a no button on the right side of the open order row.
+
+click no, the ribbon should disappear and the open order row should return to what it looked like prior to clicking the Cancel button.
+
+Click Cancel.
+
+Click Yes.
+
+*Verify:*
+- [ ] you are prompted to sign a transaction to cancel the order.
+
+Sign the transaction to cancel the order. Once succesfully complete:
+
+*Verify:*
+- [ ] the order has been removed from the open order table, and our positions/orders table is empty again.
+- [ ] The order has been removed from the orderbook chart
+- [ ] The Outcome bar shows `--` across the board again for order outcome except for the `LAST` value which should be equal to `1 / numOutcomes`
+- [ ] You should have been refunded ETH that was originally taken from placing the order.
+
+With Account 1 still, place a BUY Order on an Outcome. You can use whatever values you want to test with, but for the sake of the walk through I'm going to use an example of 10 shares for 0.5 ETH.
+
+After placing the order...
+
+*Verify:*
+- [ ] Outcomes table has updated to show a Bid Qty and Best Bid value, should match your order details.
+- [ ] The Order Book Chart should now show 1 order on the BID side (bottom) of the book, again confirm details.
+- [ ] You should see an open order row under the "Positions" section. 
+- [ ] The Open Order should be labeled with the correct outcome
+- [ ] The Open Order should have a positive number for quantity
+- [ ] The Open Order should have an average price set to the limit price of the order placed on the book.
+- [ ] The Open Order should have a clickable Cancel Button.
+
+Login to Account 2. Account 2 should be an account with ETH that has never traded on Augur before.
+
+Navigate back to the market page and select the same outcome as before.
+
+*Verify:* 
+- [ ] Account 1's Order is displayed accurately on the order book
+- [ ] The Outcome bar should be showing Bid QTY as 10 (for our example, again you can use whatever number you want)
+- [ ] The Outcome bar should be showing Best Bid as equal to `0.5` (for our example)
+
+Click on the `Sell` button on the order form.
+
+Enter the same values you entered in the previous order (if following the example, 10 quantity, .5 limit price)
+
+Click Review and then click Confirm.
+
+`Note: the the following approval flow will only happen the first time you attempt to trade with an account that isn't Account 1. After approving one time, assuming you don't reset the docker node, you shouldn't see approval again. This is expected.`
+
+*Verify:*
+- [ ] The "Approve Augur" modal displays on the screen
+
+Click the "Approve" button.
+
+*Verify:*
+- [ ] You are prompted to sign an approval transaction
+
+Sign the approval transaction.
+
+*Verify:*
+- [ ] You are prompted to sign the order transaction immediately after signing approval.
+
+`Note: This is the end of the approval flow, anything below should happen every trade.`
+
+Sign the trade transaction.
+
+After the transaction completes, we should now have a position, since this trade should result in a completely filled order from Account 1.
+
+while still logged into Account 2...
+
+*Verify:*
+- [ ] The Positions Table now has rows for each outcome
+- [ ] The Positions Table should show 10 shares (example value) for each outcome except for the one sold
+- [ ] The Position Table should show the purchase price
+- [ ] The charts have updated to show a new candlestick
+- [ ] The Order Book Chart reflects that the open order is gone and has been filled.
+- [ ] Login to Account 1 and verify the above, but for their side of the trade. (account 1 should only have 10 shares of the selected outcome)
+
+Now log back into Account 2, navigate to the market, and place an order to `Buy` for the same values you entered previously. (10 quantity at 0.5 ETH limitPrice if using the example)
+
+*Verify:*
+- [ ] You didn't send any ETH with this order (outside of gas) as you should be sending your SELL shares
+- [ ] The Open Order bar reflects the order we just placed
+- [ ] The Positions Table is unchanged despite escrowing your Shares into the open order.
+
+Switch to Account 1 (market creator account). Navigate to the market.
+
+Execute a `Sell` order that will fill the order on the book to `Buy` placed by Account 2. (10 quantity at 0.5 ETH limit price in example)
+
+Once the trade completes:
+
+*Verify:*
+- [ ] Account 1 also didn't send any ETH (outside of gas) to place this order
+- [ ] The Position and Open Order bar are now empty again
+- [ ] Verify that Account 1 Recieved `5 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~4.925 ETH` assuming 3% settlement).
+- [ ] Verify that the volume for this market has updated 
+
+Login to Account 2, navigate to market page.
+
+*Verify:*
+- [ ] The Position and Open Order bar are now empty again
+- [ ] Verify that Account 2 Recieved `5 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~4.925 ETH` assuming 3% settlement).
 
 ### Scalar Market Trading
-(Work in Progress...)
 
 After creating a new scalar market, navigate to the markets page and find your new market's card.
 
@@ -197,7 +351,19 @@ Imagine a scalar market with a min price of -50, a max price of 50, and a tickSi
 If you place a buy order for 1 share at 0 (the midpoint of this market) then the cost in this case would be 50 ETH. 
 Buy 1 share at -25 would be 25 ETH. Buy 1 share at 25 would be 75 ETH. Buy 1 share at 50 would cost 100 ETH. Buy 1 share at -49.9999 price would cost 0.0001 ETH. However, Sell orders are the opposite, so Selling 1 share at -25 would be 75 ETH, Selling 1 at 25 would be 25 ETH, Selling 1 at 49.9999 would cost 0.0001 ETH, and Selling 1 share at -50 would cost 100 ETH.
 
-Keeping those examples in mind, Place an order (buy or sell) on your scalar market for some quantity and some price. once signed, sent, and successful...
+Keeping those examples in mind, fill out the Order Form (buy or sell) on your scalar market for some quantity and some price. 
+
+Click the Review button.
+
+*Verify:*
+- [ ] quantity is accurate to what you entered
+- [ ] limit price is accurate to what you entered
+- [ ] for this trade, fee should be only for the GAS cost because we won't be closing shares here
+- [ ] est. cost is still accurately calculated
+- [ ] Confirm that Profit Loss calculations are correct. 
+- [ ] your ETH balance has decreased by the amount of ETH the order cost
+
+After the transaction is successful...
 
 *Verify:*
 - [ ] Outcomes table has updated to show a Bid(or Ask) Qty and Best Bid(or Ask) value, should match your order details.
@@ -239,7 +405,6 @@ After placing the order...
 - [ ] Outcomes table has updated to show a Bid Qty and Best Bid value, should match your order details.
 - [ ] The Order Book Chart should now show 1 order on the BID side of the book, again confirm details.
 - [ ] You should see an open order row under the "Positions" section. 
-<!-- - [ ] The Open Order should be labeled "0" -->
 - [ ] The Open Order should have a positive number for quantity
 - [ ] The Open Order should have an average price set to the limit price of the order placed on the book.
 - [ ] The Open Order should have a clickable Cancel Button.
