@@ -97,6 +97,8 @@ With Trezor:
 
 Test the following with each authentication type. Log in, then navigate to the Account Page using the sidebar. You should be greeted with the "Deposit" page.
 
+*Verify:* 
+
 With Metamask:
 
 - [ ] your ETH balance accurately displays.
