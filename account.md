@@ -1,10 +1,10 @@
 # Testing Accounts:
 
-This section of the walk through focuses on the Account Page and it's functions.
+This section of the walk through focuses on the Account Page and it's functions. All of the Account functions should be tested with each authentication method.
 
 ## Authentication:
 
-When you first load up the UI, assuming you haven't enabled and logged into metamask, you should be greated with the categories page and your side bar should only have two options.
+Load up the UI and make sure you're logged out of any authentication method. You should be greated with the categories page and your side bar should only have two options.
 
 *Verify:*
 - [ ] when not logged into an account, only "Markets" and "Account" should be options on the sidebar
@@ -16,43 +16,62 @@ Click on the "Account" menu.
 
 ## Create Account:
 
-Clicking on the "Create" button will give you instructions on how to download the uport app. Follow the instructions to test uport integration.
+Clicking on the "Create" button will give you instructions on how to download the uport app. Follow the instructions to test uPort account creation.
 
-After creating a uport account, scan the QR code.
+After creating a uPort account, scan the QR code.
 
 *Verify:*
 - [ ] after accepting on your mobile device, you should be logged into your Augur account
 
 ## Connect Account:
 
-If you are already logged in, hard refresh (ctrl + R / cmd + R) the app (and logout of metamask if you logged in using metamask).
+If you are logged in, hard refresh (ctrl + R / cmd + R) the app (and logout of metamask if needed).
 
 Navigate to the "account" menu again, this time click "Connect"
 
 *Verify:*
 - [ ] you can successfully login to metamask
 - [ ] you can successfully login to a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
-- [ ] you can successfully login to uport (through the connect menu's QR code)
+- [ ] you can successfully login to uPort (through the connect menu's QR code)
 
 To verify the above, you will need to hard refresh/logout after each verified login. 
 
 ## Deposit Page:
 
-Login to an account with no REP but does have ETH.
-
-Navigate to the Account Page using the sidebar.
-
-You should be greated with the "Deposit" page.
+Test the following with each authentication type. Log in, then navigate to the Account Page using the sidebar. You should be greated with the "Deposit" page.
 
 *Verify:* 
+
+With Metamask:
+
 - [ ] your ETH balance accurately displays.
 - [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+
+With uPort:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+
+With Ledger:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
 - [ ] your Account Address accurately displays.
 - [ ] clicking on the Account Address will copy the Address to your clipboard.
 
 ## REP Faucet Page:
 
-Navigate to the "Rep Faucet" page, we will check in on the "Withdraw" page after.
+Test the following with each authentication type. Log in, then navigate to the "Rep Faucet" page, we will check in on the "Withdraw" page after.
 
 Click on the "Get REP" button.
 
