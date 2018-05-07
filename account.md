@@ -36,9 +36,54 @@ Navigate to the "account" menu again, this time click "Connect"
 
 To verify the above, you will need to hard refresh/logout after each verified login. 
 
+## REP Faucet Page:
+
+Test the following with each authentication type. Log in, then navigate to the "Account -> Rep Faucet" page.
+
+*Verify:*
+
+With Metamask:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
+With uPort:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
+With Ledger:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
+## Withdraw Page:
+
+Now navigate to the "Account -> Withdraw" page. You'll be sending REP and ETH to a second account that you have access to. In the following section (Deposit page), you'll be sendinig the REP and ETH back to your original account.
+
+*Verify:* 
+
+With Metamask:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
+With uPort:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
+With Ledger:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
 ## Deposit Page:
 
-Test the following with each authentication type. Log in, then navigate to the Account Page using the sidebar. You should be greated with the "Deposit" page.
+Test the following with each authentication type. Log in, then navigate to the Account Page using the sidebar. You should be greeted with the "Deposit" page.
 
 *Verify:* 
 
@@ -50,6 +95,9 @@ With Metamask:
 - [ ] your REP balance in the Core Stats bar accurately displays. 
 - [ ] your Account Address accurately displays.
 - [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
 
 With uPort:
 
@@ -59,6 +107,9 @@ With uPort:
 - [ ] your REP balance in the Core Stats bar accurately displays. 
 - [ ] your Account Address accurately displays.
 - [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
 
 With Ledger:
 
@@ -68,38 +119,8 @@ With Ledger:
 - [ ] your REP balance in the Core Stats bar accurately displays. 
 - [ ] your Account Address accurately displays.
 - [ ] clicking on the Account Address will copy the Address to your clipboard.
-
-## REP Faucet Page:
-
-Test the following with each authentication type. Log in, then navigate to the "Rep Faucet" page, we will check in on the "Withdraw" page after.
-
-Click on the "Get REP" button.
-
-Sign the transaction that appears in Metamask.
-
-After the transaction completes *verify:*
-- [ ] you now have `47.00 REP`.
-
-## Withdraw Page:
-
-Now navigate to the "Withdraw" page.
-
-Send some ETH to another Account you have access to.
-
-Send some REP to another Account (prefereably the same address for easy verification) you have access to.
-
-After both transactions complete, login to the account you sent the ETH and REP to.
-
-*Verify:* 
-- [ ] the second Account recieved the ETH and REP from the first Account.
-
-## Universe Page:
-
-Flash scripts can be used to force fork, need to migrate 5.5 mil REP to force forking market finalization.
-
-- [ ] Verify user can switch to universe listed
-- [ ] Verify user account balances update correctly when universe is changed
-- [ ] Verify genesis universe is listed
-- [ ] Verify winning universe from fork is listed
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
