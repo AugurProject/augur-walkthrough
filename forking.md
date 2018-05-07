@@ -8,13 +8,30 @@ This section focuses on operations in forking state. Flash scripts can be used t
   * Migrating Markets
   * Disavow REP
 
+## Pre-Fork
+
+This state occurs when at least one dispute bond is greater than 2.5% of all REP, but no dispute bonds of that size have been filled yet. In other words, we're in a state where a fork _may_ occur, but hasn't yet.
+
+- [ ] The potentially forking market should be the first market listed on the Dispute page.
+- [ ] The potentially forking market should have a red bar along the top, and be labeled with "Potential Fork" (see mocks).
+- [ ] The outcomes with a dispute bond greater than 2.5% of all REP should have a red ! icon to the left of the outcome name (see mocks).
+
 ## Forking Market
 
-- [ ] Verify there is a forking banner
-- [ ] Verify that the market that forced the fork is shown as the forking market
-- [ ] Verify no markets can be created
+- [ ] Verify there is a forking banner along the top of the app (directly below the core stats bar) and that this is visible throughout the whole app.
+- [ ] "Additional Details" in the forking banner should be clickable to expand the additional details section.
+- [ ] Verify that the forking window end date is correct, both in the header ("Forking Window Ends...") and in the paragraph ("The forking period will end...")
+- [ ] Verify that the forking progress bar progress and "X days left" is correct
+- [ ] Verfiy that when the forking progress bar is nearly complete, the "X days left" text switches to the left side of the progress bar so it doesn't run off the page (see the Dispute progress bar for an example)
+- [ ] Clicking on the "Migrate REP" button should bring you to the Migrate REP form
+- [ ] On the Dispute page, verify that the forking header is displaying (see mocks). (This is the same content as shown in the forking banner additional details)
+- [ ] On the Dispute page, verify that the market that forced the fork is shown as the forking market
+- [ ] That forking market should have a red bar across the top and be labeled with text that says "Forking" (see mocks).
+- [ ] Verify that all other markets that were already in Dispute are now listed under Dispute paused
+- [ ] Navigate directly to the dispute form for a market and verify that a dispute cannot be submitted
+- [ ] Verify that, after a market is reported on, it is moved to the "Dispute Paused" list
+- [ ] The Create menu item should be disabled. If you navigate directly to the Create Market url, the tx to create a market should fail.
 - [ ] Verify trades are still possible on markets, including forking market
-- [ ] Verify markets can't be disputed when in forking period
 - [ ] Verify the forking market can't be finalized during forking period
 
 ## Migrating REP
