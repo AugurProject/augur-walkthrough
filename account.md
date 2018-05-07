@@ -45,8 +45,8 @@ Test the following with each authentication type. Log in, then navigate to the "
 
 With Metamask:
 
-- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
-- [ ] Your balance should now have 47.00 more REP.
+- [x] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [x] Your balance should now have 47.00 more REP.
 
 With uPort:
 
@@ -71,9 +71,9 @@ Now navigate to the "Account -> Withdraw" page. You'll be sending REP and ETH to
 
 With Metamask:
 
-- [ ] Use the form to send some ETH to another Account you have access to.
-- [ ] Use the form to send some REP to another Account you have access to.
-- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+- [x] Use the form to send some ETH to another Account you have access to.
+- [x] Use the form to send some REP to another Account you have access to.
+- [x] Verify the second Account recieved the ETH and REP from the first Account.
 
 With uPort:
 
@@ -101,12 +101,12 @@ Test the following with each authentication type. Log in, then navigate to the A
 
 With Metamask:
 
-- [ ] your ETH balance accurately displays.
-- [ ] your REP balance accurately displays. 
-- [ ] your ETH balance in the Core Stats bar accurately displays.
-- [ ] your REP balance in the Core Stats bar accurately displays. 
-- [ ] your Account Address accurately displays.
-- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [x] your ETH balance accurately displays.
+- [x] your REP balance accurately displays. 
+- [x] your ETH balance in the Core Stats bar accurately displays.
+- [x] your REP balance in the Core Stats bar accurately displays. 
+- [x] your Account Address accurately displays.
+- [x] clicking on the Account Address will copy the Address to your clipboard.
 - [ ] Use the QR code to send some ETH to this account from another account you have access to.
 - [ ] Use the QR code to send some REP to this account from another account you have access to.
 - [ ] Verify you recieved the ETH and REP.
