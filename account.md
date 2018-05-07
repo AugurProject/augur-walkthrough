@@ -1,10 +1,10 @@
 # Testing Accounts:
 
-This section of the walk through focuses on the Account Page and it's functions.
+This section of the walk through focuses on the Account Page and it's functions. All of the Account functions should be tested with each authentication method.
 
 ## Authentication:
 
-When you first load up the UI, assuming you haven't enabled and logged into metamask, you should be greated with the categories page and your side bar should only have two options.
+Load up the UI and make sure you're logged out of any authentication method. You should be greated with the categories page and your side bar should only have two options.
 
 *Verify:*
 - [x] when not logged into an account, only "Markets" and "Account" should be options on the sidebar
@@ -16,71 +16,133 @@ Click on the "Account" menu.
 
 ## Create Account:
 
-Clicking on the "Create" button will give you instructions on how to download the uport app. Follow the instructions to test uport integration.
+Clicking on the "Create" button will give you instructions on how to download the uport app. Follow the instructions to test uPort account creation.
 
-After creating a uport account, scan the QR code.
+After creating a uPort account, scan the QR code.
 
 *Verify:*
 - [x] after accepting on your mobile device, you should be logged into your Augur account
 
 ## Connect Account:
 
-If you are already logged in, hard refresh (ctrl + R / cmd + R) the app (and logout of metamask if you logged in using metamask).
+If you are logged in, hard refresh (ctrl + R / cmd + R) the app (and logout of metamask if needed).
 
 Navigate to the "account" menu again, this time click "Connect"
 
 *Verify:*
-- [x] you can successfully login to metamask
-- [ ] you can successfully login to a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
-- [x] you can successfully login to uport (through the connect menu's QR code)
+- [x] you can successfully login with metamask
+- [ ] you can successfully login with a Ledger Wallet (make sure browser data and contract data is enabled on ledger)
+- [x] you can successfully login with uPort (through the connect menu's QR code)
+- [ ] you can successfully login with Trezor
 
 To verify the above, you will need to hard refresh/logout after each verified login. 
 
-## Deposit Page:
-
-Login to an account with no REP but does have ETH.
-
-Navigate to the Account Page using the sidebar.
-
-You should be greated with the "Deposit" page.
-
-*Verify:* 
-- [x] your ETH balance accurately displays.
-- [x] your REP balance accurately displays. 
-- [x] your Account Address accurately displays.
-- [x] clicking on the Account Address will copy the Address to your clipboard.
-
 ## REP Faucet Page:
 
-Navigate to the "Rep Faucet" page, we will check in on the "Withdraw" page after.
+Test the following with each authentication type. Log in, then navigate to the "Account -> Rep Faucet" page.
 
-Click on the "Get REP" button.
+*Verify:*
 
-Sign the transaction that appears in Metamask.
+With Metamask:
 
-After the transaction completes *verify:*
-- [x] you now have `47.00 REP`.
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
+With uPort:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
+With Ledger:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
+
+With Trezor:
+
+- [ ] Click the "Get REP" button. Verify that the transaction succeeds and that you receive a Confirmed notification.
+- [ ] Your balance should now have 47.00 more REP.
 
 ## Withdraw Page:
 
-Now navigate to the "Withdraw" page.
-
-Send some ETH to another Account you have access to.
-
-Send some REP to another Account (prefereably the same address for easy verification) you have access to.
-
-After both transactions complete, login to the account you sent the ETH and REP to.
+Now navigate to the "Account -> Withdraw" page. You'll be sending REP and ETH to a second account that you have access to. In the following section (Deposit page), you'll be sendinig the REP and ETH back to your original account.
 
 *Verify:* 
-- [x] the second Account recieved the ETH and REP from the first Account.
 
-## Universe Page:
+With Metamask:
 
-Flash scripts can be used to force fork, need to migrate 5.5 mil REP to force forking market finalization.
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
 
-- [x] Verify user can switch to universe listed
-- [x] Verify user account balances update correctly when universe is changed
-- [x] Verify genesis universe is listed
-- [x] Verify winning universe from fork is listed
+With uPort:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
+With Ledger:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
+With Trezor:
+
+- [ ] Use the form to send some ETH to another Account you have access to.
+- [ ] Use the form to send some REP to another Account you have access to.
+- [ ] Verify the second Account recieved the ETH and REP from the first Account.
+
+## Deposit Page:
+
+Test the following with each authentication type. Log in, then navigate to the Account Page using the sidebar. You should be greeted with the "Deposit" page.
+
+With Metamask:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
+
+With uPort:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
+
+With Ledger:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
+
+With Trezor:
+
+- [ ] your ETH balance accurately displays.
+- [ ] your REP balance accurately displays. 
+- [ ] your ETH balance in the Core Stats bar accurately displays.
+- [ ] your REP balance in the Core Stats bar accurately displays. 
+- [ ] your Account Address accurately displays.
+- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [ ] Use the QR code to send some ETH to this account from another account you have access to.
+- [ ] Use the QR code to send some REP to this account from another account you have access to.
+- [ ] Verify you recieved the ETH and REP.
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
