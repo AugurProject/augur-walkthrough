@@ -77,8 +77,11 @@ During and after a fork:
 
 ## Migrating Markets
 
+- [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared.
 - [ ] Verify market can't be migrated before a winning universe is declared.
 - [ ] Verify markets only migrate to the winning universe.
+- [ ] Verify that you can migrate a market in any phase (pre-reporting, designated reporting, open reporting, waiting for dispute, in dispute, resolved).
+- [ ] Verify that if a market was already reported on in the forking universe, the report and associated REP get migrated with the market.
 - [ ] Verify markets are no longer listed in the parent universe after they are migrated.
 - [ ] Verify anyone can migrate markets after a winning universe is declared.
 - [ ] Verify that trading on a migrated market works.
