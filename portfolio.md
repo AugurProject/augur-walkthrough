@@ -13,24 +13,24 @@ This section focuses on the Portfolio sections. Portfolio is mostly reviewing re
 
 Positions includes trade positions, open orders and profit/loss. Trades will need to be made to produce positions and open orders.
 
-- [ ] Verify that the null state is shown if user doesn't have any positions or open orders.
-- [ ] Verify correct market card is listed on Positions page when position and/or open orders is created.
-- [ ] End date on market card should be listed in current user's timezone (UTC+/-#)
-- [ ] Binary: Create a new order. Verify that the stats accompanying the order are correct.
-- [ ] Categorical: Create a new order. Verify that the stats accompanying the order are correct.
+- [X] Verify that the null state is shown if user doesn't have any positions or open orders.
+- [X] Verify correct market card is listed on Positions page when position and/or open orders is created.
+- [X] End date on market card should be listed in current user's timezone (UTC+/-#)
+- [X] Binary: Create a new order. Verify that the stats accompanying the order are correct.
+- [X] Categorical: Create a new order. Verify that the stats accompanying the order are correct.
 - [ ] Scalar: Create a new order. Verify that the stats accompanying the order are correct.
-- [ ] Binary: Create a new position. Verify that the stats accompanying the order are correct.
-- [ ] Categorical: Create a new position. Verify that the stats accompanying the order are correct.
+- [X] Binary: Create a new position. Verify that the stats accompanying the order are correct.
+- [X] Categorical: Create a new position. Verify that the stats accompanying the order are correct.
 - [ ] Scalar: Create a new position. Verify that the stats accompanying the order are correct.
-- [ ] Verify "My Positions" and "Open Orders" can be toggled open and closed.
-- [ ] Verify that all "My Positions" start open when the page is loaded.
+- [X] Verify "My Positions" and "Open Orders" can be toggled open and closed.
+- [X] Verify that all "My Positions" start open when the page is loaded.
 - [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when a position is created.
 - [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when a position is closed.
 - [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when an order is added to a position.
-- [ ] Verify position can be closed by clicking "Close".
-- [ ] Verify open order can be canceled by clicking "Cancel".
-- [ ] Verify account balance updates correctly when position is closed.
-- [ ] Verify account balance updates correctly when open order is canceled.
+- [X] Verify position can be closed by clicking "Close".
+- [X] Verify open order can be canceled by clicking "Cancel".
+- [X] Verify account balance updates correctly when position is closed.
+- [X] Verify account balance updates correctly when open order is canceled.
 - [ ] Verify profit/loss chart in header displays correct information based on user trading activity (talk to Paul about what this should display)
 - [ ] Verify markets are moved to "In Reporting" on the Portfolio page when that phase starts.
 - [ ] Verify markets are moved to "Resolved" on the Portfolio page when Reporting & Disputing is over.
