@@ -13,19 +13,20 @@ This section focuses on the Portfolio sections. Portfolio is mostly reviewing re
 
 Positions includes trade positions, open orders and profit/loss. Trades will need to be made to produce positions and open orders.
 
-- [ ] Verify that the null state is shown if user doesn't have any positions or open orders
-- [ ] Verify correct market card is listed on Positions page when position and/or open orders is created
-- [ ] Binary: Create a new order. Verify that the open order's Quantity and Average Price are correct.
-- [ ] Categorical: Create a new order. Verify that the open order's Quantity and Average Price are correct.
-- [ ] Scalar: Create a new order. Verify that the open order's Quantity and Average Price are correct.
-- [ ] Binary: Create a new position. Verify that the position's Quantity, Average Price, and Last Price are correct.
-- [ ] Categorical: Create a new position. Verify that the position's Quantity, Average Price, and Last Price are correct.
-- [ ] Scalar: Create a new position. Verify that the position's Quantity, Average Price, and Last Price are correct.
+- [ ] Verify that the null state is shown if user doesn't have any positions or open orders.
+- [ ] Verify correct market card is listed on Positions page when position and/or open orders is created.
+- [ ] End date on market card should be listed in current user's timezone (UTC+/-#)
+- [ ] Binary: Create a new order. Verify that the stats accompanying the order are correct.
+- [ ] Categorical: Create a new order. Verify that the stats accompanying the order are correct.
+- [ ] Scalar: Create a new order. Verify that the stats accompanying the order are correct.
+- [ ] Binary: Create a new position. Verify that the stats accompanying the order are correct.
+- [ ] Categorical: Create a new position. Verify that the stats accompanying the order are correct.
+- [ ] Scalar: Create a new position. Verify that the stats accompanying the order are correct.
 - [ ] Verify "My Positions" and "Open Orders" can be toggled open and closed.
 - [ ] Verify that all "My Positions" start open when the page is loaded.
-- [ ] Verify realized, unrealized and total profit/loss update correctly when a position is created.
-- [ ] Verify realized, unrealized and total profit/loss update correctly when a position is closed.
-- [ ] Verify realized, unrealized and total profit/loss update correctly when an order is added to a position.
+- [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when a position is created.
+- [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when a position is closed.
+- [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when an order is added to a position.
 - [ ] Verify position can be closed by clicking "Close".
 - [ ] Verify open order can be canceled by clicking "Cancel".
 - [ ] Verify account balance updates correctly when position is closed.
@@ -37,7 +38,8 @@ Positions includes trade positions, open orders and profit/loss. Trades will nee
 - [ ] Report on a market, move time forward so the market resolves, then collect your stake. Verify that collecting your stake finalizes the market, and that the "Calculate Proceeds"/finalize button is no longer shown on the Portfolio page. The three day waiting period should show instead.
 - [ ] Verify user can't claim their unrealized profits during 3 day waiting period.
 - [ ] Verify user can claim their unrealized profits when the market is finalized and waiting period is over.
-- [ ] Verify that the claimed proceeds are now listed as realized profits.
+- [ ] Verify that the claimed proceeds are now listed as realized profits on the position.
+- [ ] Verify that the market card's total unrealized/realized profits updates correctly.
 
 ## My Markets
 
