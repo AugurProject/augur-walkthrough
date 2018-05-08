@@ -20,3 +20,5 @@ This guide assumes you  are running a local environment and you have access to m
 # [Testing Disputing](/disputing.md)
 
 # [Testing Fork](/forking.md)
+
+# [Testing Escape Hatch](/escapeHatch.md)
