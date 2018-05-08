@@ -11,7 +11,7 @@ Navigate to Reporting -> Reporting to see the markets in designated reporting st
 - [x] Verify that a market shows up in the Designated Reporting section one second after its end date has passed.
 - [x] Create a market where the market creator is the designated reporter and then move time forward so the market is in the DR stage. Verify that only the market creator can see the market listed under Designated Reporting, and verify that only the market creator can report on the market.
 - [x] Create a market where the someone other than the market creator is the designated reporter. Then, move time forward so the market is in the DR stage. Verify that only the designated reporter can see the market listed under Designated Reporting, and verify that only the designated reporter can report on the market.
-- [ ] Verify market creator gets their no-show REP bond when non market creator designated reporter reports
+- [x] Verify market creator gets their no-show REP bond when non market creator designated reporter reports
 - [ ] Verify market creator gets their initial reporter gas bond when non market creator designated reporter reports
 - [x] Verify that the end date shown on the market card is correct.
 - [x] Verify that the reporting end date shown on the market card is correct.
@@ -22,7 +22,7 @@ Navigate to Reporting -> Reporting to see the markets in designated reporting st
 - [x] Scalar market: Verify that you cannot enter an outcome below the min or above the max.
 - [x] Verify REP balance was deducted (If market creator and desigate reporter accounts are the same there's no balance change)
 - [x] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
-- [ ] Move time forward so the dispute window begins. The "X Stake Placed" should reflect the amount of stake you placed in the report.
+- [x] Move time forward so the dispute window begins. The "X Stake Placed" should reflect the amount of stake you placed in the report.
 - [x] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
 - [ ] While the market is in the dispute window, settle a couple trades on another market so some reporting fees are generated. Then, push time forward to end the dispute windoow (without disputing the tenative winning outcome on your market) so your market resolves. Verify that you can collect your staked REP and portion of ETH fees on the Portfolio: Reporting page. The balance should be shown, and you should be able to claim that balance with the Claim All button.
 
@@ -30,7 +30,7 @@ Navigate to Reporting -> Reporting to see the markets in designated reporting st
 
 Navigate to Reporting -> Reporting to see the markets in open reporting state.
 
-- [ ] Verify that a market moves into Open Reporting when the 3-day DR window is up. This should happen without page refresh.
+- [x] Verify that a market moves into Open Reporting when the 3-day DR window is up. This should happen without page refresh.
 - [x] Verify that anyone can report on a market in Open Reporting. Try this with an account other than the market creator and designated reporter.
 - [x] Binary market: Report on market by selecting an outcome and signing the transaction.
 - [x] Categorical market: Report on market by selecting an outcome and signing the transaction.
