@@ -31,18 +31,18 @@ Navigate to Reporting -> Reporting to see the markets in designated reporting st
 Navigate to Reporting -> Reporting to see the markets in open reporting state.
 
 - [ ] Verify that a market moves into Open Reporting when the 3-day DR window is up. This should happen without page refresh.
-- [ ] Verify that anyone can report on a market in Open Reporting. Try this with an account other than the market creator and designated reporter.
-- [ ] Binary market: Report on market by selecting an outcome and signing the transaction.
-- [ ] Categorical market: Report on market by selecting an outcome and signing the transaction.
-- [ ] Scalar market: Report on market by entering an outcome and signing the transaction.
-- [ ] Verify that you can submit a report with an account that has no REP.
-- [ ] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
-- [ ] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
+- [x] Verify that anyone can report on a market in Open Reporting. Try this with an account other than the market creator and designated reporter.
+- [x] Binary market: Report on market by selecting an outcome and signing the transaction.
+- [x] Categorical market: Report on market by selecting an outcome and signing the transaction.
+- [x] Scalar market: Report on market by entering an outcome and signing the transaction.
+- [x] Verify that you can submit a report with an account that has no REP.
+- [x] The market should be removed from the Reporting: Markets page and move to the Reporting: Dispute page. It should be listed under "Upcoming Dispute Window". This should happen without page refresh.
+- [x] Verify the tentative winning outcome shown on the market card on the Reporting: Dispute page is correct.
 - [ ] While the market is in the dispute window, settle a couple trades on another market so some reporting fees are generated. Then, push time forward to end the dispute windoow (without disputing the tenative winning outcome on your market) so your market resolves. Verify that you can collect the no-show bond that was used as stake on your market, the no-show gas bond, and your portion of ETH reporting fees on the Portfolio: Reporting page. The balance should be shown, and you should be able to claim that balance with the Claim All button.
 
 ## Upcoming Reporting
 
-- [ ] Verify that the markets listed in Upcoming Reporting are markets where the user is the Designated Reporter.
+- [x] Verify that the markets listed in Upcoming Reporting are markets where the user is the Designated Reporter.
 
 
 
