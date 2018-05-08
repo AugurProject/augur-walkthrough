@@ -15,7 +15,7 @@ This state occurs when at least one dispute bond is greater than 2.5% of all REP
 
 - [ ] The potentially forking market should be the first market listed on the Dispute page.
 - [ ] The potentially forking market should have a red bar along the top, and be labeled with "Potential Fork" (see mocks).
-- [ ] The outcomes with a dispute bond greater than 2.5% of all REP should have a red ! icon to the left of the outcome name (see mocks).
+- [ ] The outcomes with a dispute bond greater than 2.5% of all REP should have a red "!" icon to the left of the outcome name (see mocks).
 
 ## During Fork
 
@@ -52,7 +52,7 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 
 ## Migrating REP
 
-- [ ] Verify user gets 5% bonus when migrating REP during the forking period. (This 5% bonus will be available in the child universe that the REP was migrated to.)
+- [ ] Verify user gets 5% bonus when migrating REP during the 60 day forking period both before 50% of REP has been migrated and after 50% of REP has been migrated. (This 5% bonus will be available in the child universe that the REP was migrated to.)
 - [ ] Verify that users can still migrate REP after the forking period ends.
 - [ ] Verify that the user doesn't get the 5% bonus if they migrate after the forking period has ended.
 - [ ] Verify that the user can't migrate REP if they don't have any.
@@ -60,9 +60,10 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 - [ ] Verify that the user can migrate REP to a chosen scalar outcome.
 - [ ] Verify that the user can migrate only some of their REP at a time. Verify balance after Tx confirmation.
 - [ ] Verify that the user can migrate all their REP at one time. Verify balance after Tx confirmation.
-- [ ] Verify that the winning universe is declared when at least 50% of REP has been migrated (5.5 mil REP). The winning universe is the universe that has received the most REP. It should be labeled both in the Migrate REP form and on the Account: Universes page.
-- [ ] Verify that the winning universe is declared when the 60 day forking window ends, if 50% of REP is not migrated first.
+- [ ] Initiate a fork and migrate at least 50% of REP (5.5 mil REP). Verify that the winning universe is declared. It should be labeled both in the Migrate REP form and on the Account: Universes page.
+- [ ] Initiate a fork and migrate less than 50% of REP. Verify that the winning universe is declared when the 60 day window ends.
 - [ ] Verify that REP can be migrated after being disavowed.
+- [ ] Verify that the forking market can be manually finalized when the 60 day forking window ends (when less that 50% of REP has been migrated during that window). The flash script can be used to do this.
 
 ## Universe Page:
 
@@ -77,15 +78,16 @@ During and after a fork:
 
 ## Migrating Markets
 
-- [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared.
+- [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared via the 50% REP Migrated method.
+- [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared when the forking period ends (and less than 50% of REP has been migrated).
 - [ ] Verify market can't be migrated before a winning universe is declared.
 - [ ] Verify markets only migrate to the winning universe.
 - [ ] Verify that you can migrate a market in any phase (pre-reporting, designated reporting, open reporting, waiting for dispute, in dispute, resolved).
 - [ ] Verify that if a market was already reported on in the forking universe, the report and associated REP get migrated with the market.
 - [ ] Verify markets are no longer listed in the parent universe after they are migrated.
 - [ ] Verify anyone can migrate markets after a winning universe is declared.
-- [ ] Verify that trading on a migrated market works.
-- [ ] Verify that the migrated market can go through the normal reporting & dispute cycle after migration.
+- [ ] Verify that trading on a migrated market works in the child universe.
+- [ ] Verify that the migrated market can go through the normal reporting & dispute cycle after migration to the child universe.
 
 ## Child Universes
 
