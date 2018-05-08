@@ -52,34 +52,45 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 
 ## Migrating REP
 
-- [ ] Verify user gets 5% bonus when migrating REP during fork period
-- [ ] Verify user can't migrate REP if they don't have any
-- [ ] Verify user can migrate REP to any outcome of forking market
-- [ ] Verify user can migrate some of their REP, verify balance after Tx confirmation
-- [ ] Verify user can migrate all their REP, verify balance after Tx confirmation
-- [ ] Verify outcome winner is declared when 50% REP supply has been migrated (5.5 mil REP)
-- [ ] Verify REP can be migrated after being disavowed
+- [ ] Verify user gets 5% bonus when migrating REP during the forking period. (This 5% bonus will be available in the child universe that the REP was migrated to.)
+- [ ] Verify that users can still migrate REP after the forking period ends.
+- [ ] Verify that the user doesn't get the 5% bonus if they migrate after the forking period has ended.
+- [ ] Verify that the user can't migrate REP if they don't have any.
+- [ ] Verify that the user can migrate REP to any outcome of forking market, including Market is Invalid.
+- [ ] Verify that the user can migrate REP to a chosen scalar outcome.
+- [ ] Verify that the user can migrate only some of their REP at a time. Verify balance after Tx confirmation.
+- [ ] Verify that the user can migrate all their REP at one time. Verify balance after Tx confirmation.
+- [ ] Verify that the winning universe is declared when at least 50% of REP has been migrated (5.5 mil REP). The winning universe is the universe that has received the most REP. It should be labeled both in the Migrate REP form and on the Account: Universes page.
+- [ ] Verify that the winning universe is declared when the 60 day forking window ends, if 50% of REP is not migrated first.
+- [ ] Verify that REP can be migrated after being disavowed.
 
 ## Universe Page:
 
-Flash scripts can be used to force fork, need to migrate 5.5 mil REP to force forking market finalization.
+During and after a fork:
 
-- [ ] Verify user can switch to universe listed
-- [ ] Verify user account balances update correctly when universe is changed
-- [ ] Verify genesis universe is listed
-- [ ] Verify winning universe from fork is listed
-
-## Forking Ends
-
-A user has to manually call market finalization if 50% of REP isn't migrated and the forking period has ended. Use flash script to finalize market.
-
-- [ ] Verify winning outcome is chosen, when less than 5.5 mil REP has been migrated
-- [ ] Verify user doesn't get a bonus after forking period has ended
+- [ ] Migrate REP to an outcome/universe using the Migrate REP form. This should automatically create a universe for that outcome if it didn't already exist. Verify user can switch to universe on the Account: Universes page.
+- [ ] Verify user account balances update correctly when universe is changed. This should change on the Account page and in the Core Stats bar.
+- [ ] Verify that the forking universe is listed in the left-hand column and the child universes are listed in the middle column.
+- [ ] Switch around to a couple different universes. Verify that your current universe is always correctly labeled "Current".
+- [ ] Verify that the winning universe from fork is labeled as the winning universe.
+- [ ] Verify that the stats shown about each universe are correct (your REP, total REP, and # of markets).
 
 ## Migrating Markets
 
-- [ ] Verify market can't be migrated during forking period
-- [ ] Verify markets only migrate to winning universe
-- [ ] Verify anyone can migrate markets during forking
+- [ ] Verify market can't be migrated before a winning universe is declared.
+- [ ] Verify markets only migrate to the winning universe.
+- [ ] Verify markets are no longer listed in the parent universe after they are migrated.
+- [ ] Verify anyone can migrate markets after a winning universe is declared.
+- [ ] Verify that trading on a migrated market works.
+- [ ] Verify that the migrated market can go through the normal reporting & dispute cycle after migration.
+
+## Child Universes
+
+- [ ] Verify that a child universe starts out with no markets.
+- [ ] Verify you can create markets in a child universe and that the created market only shows up in the child universe.
+- [ ] Verify that you can trade on markets in a child universe.
+- [ ] Verify that the reporting & dispute cycle works in the child universe.
+- [ ] Cause a fork in the child universe, migrate REP to an outcome, then check the Universes page. The current universe should be shown in the middle column, the parent universe in the left column, and the child universes of the current universe should be shown in the right column. (see ch7720 for a more detailed description)
+- [ ] Cause one of the child universes from the most recent fork to be declared the winning outcome. Make sure this is labeled on the Universe page.
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
