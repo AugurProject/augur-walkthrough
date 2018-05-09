@@ -113,12 +113,12 @@ With Metamask:
 
 With uPort:
 
-- [ ] your ETH balance accurately displays.
-- [ ] your REP balance accurately displays. 
-- [ ] your ETH balance in the Core Stats bar accurately displays.
-- [ ] your REP balance in the Core Stats bar accurately displays. 
-- [ ] your Account Address accurately displays.
-- [ ] clicking on the Account Address will copy the Address to your clipboard.
+- [x] your ETH balance accurately displays.
+- [x] your REP balance accurately displays. 
+- [x] your ETH balance in the Core Stats bar accurately displays.
+- [x] your REP balance in the Core Stats bar accurately displays. 
+- [x] your Account Address accurately displays.
+- [x] clicking on the Account Address will copy the Address to your clipboard.
 - [ ] Use the QR code to send some ETH to this account from another account you have access to.
 - [ ] Use the QR code to send some REP to this account from another account you have access to.
 - [ ] Verify you recieved the ETH and REP.
