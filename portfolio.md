@@ -43,15 +43,17 @@ Positions includes trade positions, open orders and profit/loss. Trades will nee
 
 ## My Markets
 
-My markets is strictly for markets crated by the user account.
+My markets is strictly for markets created by the user account.
 
-- [ ] Verify this view is empty if user hasn't create any markets
-- [ ] Verify all user account created market is in this section 
-- [ ] Verify the market's volume updates correctly when trades occur
-- [ ] Verify the market's collected returns updats correctly when trades occur
-- [ ] Verify Open section only shows markets that haven't expired
-- [ ] Verify In Reporting section only shows markets that have expired
-- [ ] Verify Finalized section only shows markets that have been finalized
+- [ ] Verify this view is empty if user hasn't create any markets.
+- [ ] Verify all user account created market show in this section.
+- [ ] Verify that markets move through "Open", "In Reporting", and "Resolved" sections appropriately.
+- [ ] Verify the market's volume updates correctly when trades occur.
+- [ ] Verify that outstanding returns become available to the market creator when complete sets settle, and that the amount that becomes available is correct.
+- [ ] Verify that those outstanding returns from settled trades can be collected and the Collected Returns balance on the market updates correctly.
+- [ ] Verify that, when a market is resolved to something other than "Market is Invalid" (and the reporter claims their REP which triggers market finalization), the Validity bond becomes available in "Outstanding Returns", is claimable, and the Collected Returns balance updates properly.
+- [ ] Verify that, when a market is reported on by the Designated Reporter, the reporter gas bond becomes available in "Outstanding Returns", is claimable, and the Collected Returns balance updates properly.
+- [ ] Verify that most recently resolved markets appear at the top of the Resolved list.
 
 ## Favorites
 
