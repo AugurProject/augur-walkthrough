@@ -65,14 +65,16 @@ My markets is strictly for markets created by the user account.
 
 ## Transactions
 
-- [ ] Verify view is blank if user hasn't created any transactions
-- [ ] Verify create market transaction show when market is successfully created
-- [ ] Verify transfer transactions show then ETH is successfully transferred
-- [ ] Verify transfer transactions show then tokens are successfully transferred
-- [ ] Verify trade transactions show when user makes successful trade
-- [ ] Verify all sub trades are included as linked trades in trade transactions
-- [ ] Verify open order transactions get created when user creates open orders
-
+- [ ] Verify view shows a null state if user hasn't created any transactions.
+- [ ] Verify create market transaction is shown when a market is successfully created and that details are accurate.
+- [ ] Verify that transfer transactions are shown when ETH is successfully transferred and that details are accurate.
+- [ ] Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
+- [ ] Verify that trade transactions are shown when the user makes successful trade and that details are accurate.
+- [ ] Verify all sub trades are included as linked trades in trade transactions.
+- [ ] Verify open order transactions get created when user creates open orders.
+- [ ] Verify that the date on the transaction is correct.
+- [ ] Verify that the most recent transactions are listed first.
+- [ ] Verify that range dropdown filters correctly.
 
 ## Reporting
 
