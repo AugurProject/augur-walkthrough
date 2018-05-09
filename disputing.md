@@ -12,21 +12,21 @@ When the user don't find any markets to dispute in a fee window they can buy par
 
 ## Disputing
 
-- [ ] Verify that you are shown the "No-REP" message if your account has no REP.
-- [ ] Verify that you cannot submit a dispute without REP.
-- [ ] Verify that the market's reported-on outcome is listed as the tentative winning outcome on the market card.
-- [ ] Verify that the market's tentative winning outcome is not listed as one of the outcomes with an associated dispute bond on the market card.
-- [ ] Binary: Verify these outcomes are present 'Yes', 'No', and 'Market is Invalid'
-- [ ] Binary: Verify there is a tentative winning outcome, and the other two have associated dispute bonds.
+- [x] Verify that you are shown the "No-REP" message if your account has no REP.
+- [x] Verify that you cannot submit a dispute without REP.
+- [x] Verify that the market's reported-on outcome is listed as the tentative winning outcome on the market card.
+- [x] Verify that the market's tentative winning outcome is not listed as one of the outcomes with an associated dispute bond on the market card.
+- [x] Binary: Verify these outcomes are present 'Yes', 'No', and 'Market is Invalid'
+- [x] Binary: Verify there is a tentative winning outcome, and the other two have associated dispute bonds.
 - [ ] Categorical: Verify all market's outcomes are present, along with Market is Invalid
 - [ ] Categorical: Verify there is a tentative winning outcome and all others will have associated dispute bonds.
 - [ ] Scalar: Verify the reported-on outcome is tentative winning outcome. 
 - [ ] Scalar: Verify when the tentative winning outcome is Market is Invalid, no other outcomes will be listed.
 - [ ] Scalar: Verify when the tentative winning outcome is not Market is Invalid, Market is Invalid will have an associated dispute bond.
 - [ ] Scalar: Verify all successfuly dispute outcomes are listed with associated dispute bond.
-- [ ] Verify days remaining in dispute window is correct and increments properly, end date should be correct, and these should update when time is pushed and a new dispute window starts.
+- [x] Verify days remaining in dispute window is correct and increments properly, end date should be correct, and these should update when time is pushed and a new dispute window starts.
 - [ ] Verify that a new dispute window is created properly even when no markets were reported on or disputed in the previous dispute window.
-- [ ] In the first dispute round, all of the dispute bonds on a market are equal to one another.
+- [x] In the first dispute round, all of the dispute bonds on a market are equal to one another.
 - [ ] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
 - [ ] Verify that the two numbers to the right of the progress bars are "total staked so far in dispute bond / dispute bond target".
 - [ ] When a market is waiting for its first Dispute Window, and while in its first Dispute window, its round number should be 1. If a dispute is successful and a market is waiting for or is in its next dispute window, its round number should be 2, etc.
