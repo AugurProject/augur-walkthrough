@@ -13,31 +13,31 @@ This section focuses on the Portfolio sections. Portfolio is mostly reviewing re
 
 Positions includes trade positions, open orders and profit/loss. Trades will need to be made to produce positions and open orders.
 
-- [X] Verify that the null state is shown if user doesn't have any positions or open orders.
+- [X] (FAILED) Verify that the null state is shown if user doesn't have any positions or open orders.
 - [X] Verify correct market card is listed on Positions page when position and/or open orders is created.
 - [X] End date on market card should be listed in current user's timezone (UTC+/-#)
 - [X] Binary: Create a new order. Verify that the stats accompanying the order are correct.
 - [X] Categorical: Create a new order. Verify that the stats accompanying the order are correct.
-- [ ] Scalar: Create a new order. Verify that the stats accompanying the order are correct.
+- [X] Scalar: Create a new order. Verify that the stats accompanying the order are correct.
 - [X] Binary: Create a new position. Verify that the stats accompanying the order are correct.
 - [X] Categorical: Create a new position. Verify that the stats accompanying the order are correct.
-- [ ] Scalar: Create a new position. Verify that the stats accompanying the order are correct.
+- [X] Scalar: Create a new position. Verify that the stats accompanying the order are correct.
 - [X] Verify "My Positions" and "Open Orders" can be toggled open and closed.
 - [X] Verify that all "My Positions" start open when the page is loaded.
-- [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when a position is created.
-- [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when a position is closed.
-- [ ] Verify the market's total realized, unrealized and total profit/loss update correctly when an order is added to a position.
+- [X] (FAILED) Verify the market's total realized, unrealized and total profit/loss update correctly when a position is created.
+- [X] (FAILED) Verify the market's total realized, unrealized and total profit/loss update correctly when a position is closed.
+- [X] (FAILED) Verify the market's total realized, unrealized and total profit/loss update correctly when an order is added to a position.
 - [X] Verify position can be closed by clicking "Close".
 - [X] Verify open order can be canceled by clicking "Cancel".
 - [X] Verify account balance updates correctly when position is closed.
 - [X] Verify account balance updates correctly when open order is canceled.
-- [ ] Verify profit/loss chart in header displays correct information based on user trading activity (talk to Paul about what this should display)
-- [ ] Verify markets are moved to "In Reporting" on the Portfolio page when that phase starts.
-- [ ] Verify markets are moved to "Resolved" on the Portfolio page when Reporting & Disputing is over.
-- [ ] Verify the user can finalize the market from the Portfolio page if it has not been finalized already.
-- [ ] Report on a market, move time forward so the market resolves, then collect your stake. Verify that collecting your stake finalizes the market, and that the "Calculate Proceeds"/finalize button is no longer shown on the Portfolio page. The three day waiting period should show instead.
-- [ ] Verify user can't claim their unrealized profits during 3 day waiting period.
-- [ ] Verify user can claim their unrealized profits when the market is finalized and waiting period is over.
+- [X] (FAILED) Verify profit/loss chart in header displays correct information based on user trading activity (talk to Paul about what this should display)
+- [X] Verify markets are moved to "In Reporting" on the Portfolio page when that phase starts.
+- [X] Verify markets are moved to "Resolved" on the Portfolio page when Reporting & Disputing is over.
+- [X] (FAILED) Verify the user can finalize the market from the Portfolio page if it has not been finalized already.
+- [X] (FAILED) Report on a market, move time forward so the market resolves, then collect your stake. Verify that collecting your stake finalizes the market, and that the "Calculate Proceeds"/finalize button is no longer shown on the Portfolio page. The three day waiting period should show instead.
+- [X] Verify user can't claim their unrealized profits during 3 day waiting period.
+- [X] (FAILED) Verify user can claim their unrealized profits when the market is finalized and waiting period is over.
 - [ ] Verify that the claimed proceeds are now listed as realized profits on the position.
 - [ ] Verify that the market card's total unrealized/realized profits updates correctly.
 
