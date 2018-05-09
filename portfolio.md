@@ -40,6 +40,7 @@ Positions includes trade positions, open orders and profit/loss. Trades will nee
 - [X] (FAILED) Verify user can claim their unrealized profits when the market is finalized and waiting period is over.
 - [ ] Verify that the claimed proceeds are now listed as realized profits on the position.
 - [ ] Verify that the market card's total unrealized/realized profits updates correctly.
+- [ ] Verify that "Export Data" (in the top right of the header) works.
 
 ## My Markets
 
@@ -57,8 +58,10 @@ My markets is strictly for markets created by the user account.
 
 ## Favorites
 
-- [ ] Verify view is blank if user hasn't marked any markets as favorite
-- [ ] Verify only markets marked as favorite show up
+- [ ] Verify view is blank if user hasn't marked any markets as favorite.
+- [ ] Verify only markets marked as favorite show up.
+- [ ] Verify that unfavorited markets are removed from the view.
+- [ ] Verify pagination works.
 
 ## Transactions
 
