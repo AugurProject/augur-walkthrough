@@ -46,10 +46,10 @@ Positions includes trade positions, open orders and profit/loss. Trades will nee
 
 My markets is strictly for markets created by the user account.
 
-- [ ] Verify this view is empty if user hasn't create any markets.
-- [ ] Verify all user account created market show in this section.
-- [ ] Verify that markets move through "Open", "In Reporting", and "Resolved" sections appropriately.
-- [ ] Verify the market's volume updates correctly when trades occur.
+- [x] Verify this view is empty if user hasn't create any markets.
+- [x] Verify all user account created market show in this section.
+- [x] Verify that markets move through "Open", "In Reporting", and "Resolved" sections appropriately.
+- [x] Verify the market's volume updates correctly when trades occur.
 - [ ] Verify that outstanding returns become available to the market creator when complete sets settle, and that the amount that becomes available is correct.
 - [ ] Verify that those outstanding returns from settled trades can be collected and the Collected Returns balance on the market updates correctly.
 - [ ] Verify that, when a market is resolved to something other than "Market is Invalid" (and the reporter claims their REP which triggers market finalization), the Validity bond becomes available in "Outstanding Returns", is claimable, and the Collected Returns balance updates properly.
@@ -58,10 +58,10 @@ My markets is strictly for markets created by the user account.
 
 ## Favorites
 
-- [ ] Verify view is blank if user hasn't marked any markets as favorite.
-- [ ] Verify only markets marked as favorite show up.
-- [ ] Verify that unfavorited markets are removed from the view.
-- [ ] Verify pagination works.
+- [x] Verify view is blank if user hasn't marked any markets as favorite.
+- [x] Verify only markets marked as favorite show up.
+- [x] Verify that unfavorited markets are removed from the view.
+- [x] Verify pagination works.
 
 ## Transactions
 
