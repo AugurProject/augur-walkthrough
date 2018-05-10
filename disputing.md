@@ -27,7 +27,7 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [x] Verify days remaining in dispute window is correct and increments properly, end date should be correct, and these should update when time is pushed and a new dispute window starts.
 - [x] Verify that a new dispute window is created properly even when no markets were reported on or disputed in the previous dispute window.
 - [x] In the first dispute round, all of the dispute bonds on a market are equal to one another.
-- [ ] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
+- [x] In the first dispute round, the dispute bonds should be equal to twice the amount placed by the initial reporter. With markets reported on by the Designated Reporter, this is twice the stake placed by the Designated Reporter. With markets reported on in Open Reporting, this is twice the no-show bond. Test both.
 - [x] Verify that the two numbers to the right of the progress bars are "total staked so far in dispute bond / dispute bond target".
 - [x] When a market is waiting for its first Dispute Window, and while in its first Dispute window, its round number should be 1. If a dispute is successful and a market is waiting for or is in its next dispute window, its round number should be 2, etc.
 
@@ -88,9 +88,9 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 
 ## Resolved
 
-- [ ] Verify non-disputed finalized markets move to Reporting: Resolved.
-- [ ] Verify unsuccessful disputed finalized markets move to Reporting: Resolved.
-- [ ] Verify successfully disputed finalized markets move to Reporting: Resolved.
+- [x] Verify non-disputed finalized markets move to Reporting: Resolved.
+- [x] Verify unsuccessful disputed finalized markets move to Reporting: Resolved.
+- [x] Verify successfully disputed finalized markets move to Reporting: Resolved.
 - [ ] The Winning outcome should be listed on the Reporting: Resolved market card.
 
 ## Notes
