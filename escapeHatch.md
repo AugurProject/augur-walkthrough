@@ -32,8 +32,8 @@ flash escape-hatch
 Now that the escape hatch has been pulled the UI should present a blocking modal dialog for the escape hatch.
 
  - [ ] Verify that the escape hatch dialog now appears and prevents interaction with the UI as normal
- - [ ] Proceed by clicking "Withdraw all funds"
- - [ ] Click the button to retrieve funds
+ - [x] Proceed by clicking "Withdraw all funds"
+ - [x] Click the button to retrieve funds
  - [ ] You should get _many_ transaction approval messages. One for each market, one for participation tokens, one for the initial report, one for any dispute crowdsourcers you participated in, and one for each market you own shares in.
  - [ ] After approving the transactions your ETH and REP balance should be back to what it was initally but minus all of the gas that has been used to get this far.
  - [ ] Reload the UI and confirm that the dialog now does not present an option to "Withdraw all funds"
