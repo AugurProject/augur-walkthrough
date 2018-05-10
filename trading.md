@@ -2,75 +2,74 @@
 
 Login to an account with ETH. For this test, you will need more than one account ready because we will want to test both sides of trading.
 
-For these tests, you should [create a new market](/createMarket.md) and do not provide any liquidity for that market. Remember what you entered for an expiration date/time and the settlement fee % you set during creation. We will want to verify these values on the trading page later.
+For these tests, you should [create a new market](/createMarket.md) and do not provide any initial liquidity for that market. Remember what you entered for an expiration date/time and the settlement fee % you set during creation. We will want to verify these values on the trading page later.
 
 For these tests, we are going to assume that Account 1 is also the Market Creator.
 
 ### Binary Market Trading
 
-After creating a new binary market, navigate to the markets page and find your new market's card.
+After creating a new binary market, navigate to the Market List page and find your new market's card.
 
-click on the "trade" button on the newly created market.
+Click on the "trade" button on the newly created market.
 
 When the market trading page loads, please *verfy* the following:
 
 *Verify:*
 
-- [ ] "Yes" is the only outcome you can select and it's pre-selected. (if you can see the order form you have a selected outcome)
-- [ ] Fee % shown is the settlement Fee value set (default is 2%) at creation + the current reporting fee (hardcoded to 1% in tests)
-- [ ] Confirm the Expiration Date/time shown is accurate to your endtime set during market creation.
-- [ ] clicking on the positions title should drop down an empty postitions and open orders table.
-- [ ] The `LAST` price value should be equal to `0.5` on a new binary market, this value is the midpoint for the market since no trades have taken place.
+- [ ] "Yes" is the only outcome you can select and it's pre-selected. (If you can see the order form and candlestick chart, the outcome is selected.)
+- [ ] Fee % shown in the header is the Settlement Fee value set at market creation + the current reporting fee (hardcoded to 1% in tests).
+- [ ] Confirm the Expiration Date/time shown is accurate to your endtime set during market creation. It should be formatted to the user's current timezone.
+- [ ] Clicking on the My Positions title (underneath Outcomes) should drop down the empty positions/orders null state: "No positions or open orders".
+- [ ] The `LAST` price value on the "Yes" outcome should be equal to `0.5` on a new binary market. (This value is the midpoint for the market since no trades have taken place.)
 
-Using Account 1 (remember, Account 1 is the account that created the market) we will now attempt to place an order. 
+Switch to an account with 0 ETH.
+
+- [ ] Verify that you are shown the "Add funds to begin trading." message and "Add Funds" button where the order form is normally displayed.
+- [ ] Verfiy that clicking on the "Add Funds" button brings you to the Account: Deposit page.
+
+Switch back to Account 1 (the account that created the market. We will now attempt to place an order. 
 
 Enter a number for the amount of shares you would like to buy, and enter a price between 0 and 1. 
 
 *Verify:*
 
-- [ ] quantity cannot be 0 or negative.
-- [ ] limit price cannot be outside of the range for this market (0-1 in this case)
-- [ ] est. cost is calculated correctly (quantity * price)
+- [ ] Quantity cannot be 0 or negative.
+- [ ] Limit price cannot be outside of the range for this market (0-1 in this case)
+- [ ] Est. cost is calculated correctly (quantity * price)
 
 Click the Review button.
 
 *Verify:*
-- [ ] Outcome is labeled correctly as "yes"
-- [ ] quantity is accurate to what you entered
-- [ ] limit price is accurate to what you entered
-- [ ] for this trade, fee should be only for the GAS cost because we won't be closing shares here
-- [ ] est. cost is still accurately calculated
-- [ ] Confirm that Profit Loss calculations are correct. 
-- [ ] your ETH balance has decreased by the amount of ETH the order cost
+- [ ] Outcome is labeled correctly as "Yes".
+- [ ] Wuantity is accurate to what you entered.
+- [ ] Limit price is accurate to what you entered.
+- [ ] For this trade, the Fee should be 0 because we won't be closing shares here.
+- [ ] Est. cost is still accurately calculated. (quantity * price)
+- [ ] Confirm that Profit & Loss calculations are correct.
+- [ ] Hit the "Back" button. Verify the original values you entered are still there. (Then hit "Review" again.)
 
 Note: an example of Profit Loss calculations would be doing a trade for 1 share at .9 ETH. In that case: Max Gain is .1 ETH (11.11%); Max Loss is 0.9 ETH (100%).
 
 After the transaction is complete and successful...
 
 *Verify:*
-- [ ] Outcomes table has updated to show a Bid Qty and Best Bid value, should match your order details.
-- [ ] The Order Book Chart should now show 1 order on the BID side (bottom) of the book, again confirm details.
-- [ ] You should see an open order row under the "Positions" section. 
-- [ ] The Open Order should be labeled "Yes"
-- [ ] The Open Order should have a positive number for quantity
+- [ ] Your ETH balance has decreased by the amount of ETH the order cost.
+- [ ] The "Yes" outcome has updated to show a Bid Qty and Best Bid value that match your order details.
+- [ ] The Order Book Chart should now show 1 order on the BID side (bottom) of the book. Confirm details.
+- [ ] You should see an open order row under the "Positions" section.
+- [ ] The Open Order should be labeled "Yes".
+- [ ] The Open Order should have a positive number for quantity that matches your order.
 - [ ] The Open Order should have an average price set to the limit price of the order placed on the book.
 - [ ] The Open Order should have a clickable Cancel Button.
 
 Click the Cancel button.
 
 *Verify:*
-- [ ] The Open Order row should change into a purple bar
+- [ ] The Open Order row should change into a purple bar.
 - [ ] The Open Order row should say `Cancel order for N shares of "Yes" at X ETH?` Where N is the quantity of your order and X is the price.
-- [ ] There should be a yes and a no button on the right side of the open order row.
-
-click no, the ribbon should disappear and the open order row should return to what it looked like prior to clicking the Cancel button.
-
-Click Cancel.
-
-Click Yes.
-
-*Verify:*
-- [ ] you are prompted to sign a transaction to cancel the order.
+- [ ] There should be a Yes and a No button on the right side of the open order row.
+- [ ] Click No. The ribbon should disappear and the open order row should return to what it looked like prior to clicking the Cancel button.
+- [ ] Click Cancel again, then click Yes to cancel the open order. Verify you are prompted to sign a transaction to cancel the order.
 
 Sign the transaction to cancel the order. Once succesfully complete:
 
