@@ -78,40 +78,34 @@ My markets is strictly for markets created by the user account.
 
 ## Reporting
 
-Currently this section is for claiming ETH/REP from market trading fees, market creation bonds, open reporting no-show REP bonds, REP from successful disputes and ETH from reporting fees from participation tokens 
+Currently this section is for claiming ETH/REP reporting fees from fee window participation tokens, initial reports/dispute crowdsourcers of non-forked markets. If a forked market exists and the user has claimable ETH/REP in it, a Forked Market card should be displayed under the Claim button for non-forked markets, and the user should be able to click the Claim button to migrate those fees to the corresponding child universe.
 
-### Market Creator
+### Participation Tokens
 
-- [ ] Verify market creator can claim settlement fees based on market settlement percentage
-- [ ] Verify market creator can reclaim no-show bond when designate reporter reports
-- [ ] Verify market creator can't reclaim no-show bond when designate reporter doesn't reporter
-- [ ] Verify market creator can reclaim reporter gas bond when designated reporter reports
-- [ ] Verify market creator can't reclaim reporter gas bond when designate reporter doesn't repoert
-- [ ] Verify market creator can reclaim validity bond when their market resolves not invalid
-- [ ] Verify market creator can't reclaim validity bond when their market resolves as invalid
+- [ ] Verify user can claim participation tokens for fee windows in whch they have participation tokens
 
-### Open Reporters
+### Designated Reporters
 
-- [ ] Verify open reporter can claim no-show bond in REP
-- [ ] Verify open reporter can claim reporter gas bond in ETH
-- [ ] Verify open reporter can claim settlement fees for reporting in fee window
-- [ ] Verify open reporter can reclaim REP on finalized markets where their outcome won
-- [ ] Verify open reporter can't reclaim REP on finalized markets where their outcome lost
+- [ ] Verify designated reporter can claim settlement fees for reporting in fee window
+- [ ] Verify designated reporter can reclaim REP on finalized markets where their outcome won
+- [ ] Verify designated reporter can't reclaim REP on finalized markets where their outcome lost
 
-### Designate Reporters
+### Initial Reporters (i.e. reporters other than the designated reporter)
 
-- [ ] Verify designate reporter can claim settlement fees for reporting in fee window
-- [ ] Verify designate reporter can reclaim REP on finalized markets where their outcome won
-- [ ] Verify designate reporter can't reclaim REP on finalized markets where their outcome lost
+- [ ] Verify initial reporter can claim settlement fees for reporting in fee window
+- [ ] Verify initial reporter can reclaim REP on finalized markets where their outcome won
+- [ ] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
 
 ### Dispute Contributor
 
-- [ ] Verify contributor can claim settlement fees for contributing to successful dispute in fee window
-- [ ] Verify contributor can claim settlement fees for contributing to not successful dispute in fee window
 - [ ] Verify contributor can claim REP from finalized markets that resolve on same outcome as their successful dispute rounds
-- [ ] Verify contributor can reclaim REP on dispute bonds that didn't make
+- [ ] Verify contributor can reclaim REP on dispute bonds that didn't make crowdsourcing goal
 - [ ] Verify contributor can't claim REP from finalized markets that resolve on different outcome as their successful dispute rounds
 
+### Forked Market Initial Reporter/Dispute Contributor
+
+- [ ] Verify that if user is a designated reporter or inital reporter, they can migrate their REP to the correct child universe of the forked market
+- [ ] Verify that if user contributed to a dispute crowdsourcer of a forked market, they can migrate their REP to the correct child universe
 
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
