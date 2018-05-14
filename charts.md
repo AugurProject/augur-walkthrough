@@ -164,18 +164,18 @@ NOTE: Be sure to use a privacy window for all of this. It would appear metamask 
 5. Navigate to relevent trade page and select relevant outcome. The script goes to work on outcome 1, you may need to click around a bit.
 
 *Verify:*
-- [ ] Per period Volume bars are appearing at the bottom of the chart
-- [ ] Candlesticks are populating correctly
+- [x] Per period Volume bars are appearing at the bottom of the chart
+- [x] Candlesticks are populating correctly
 
 Hovering over a candlestick will....
-- [ ] Populate the candlestick header
-- [ ] Highlight the order in the depth chart
+- [x] Populate the candlestick header
+- [x] Highlight the order in the depth chart
 
 #### Further action:
 Select various period/range combinations
 
 *Verify:*
-- [ ] Time scale changes in chart
+- [x] Time scale changes in chart
 - [ ] If period/range is invalid "NO COMPLETE TRADES" is shown
 
 
