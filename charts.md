@@ -13,32 +13,26 @@ Start creating a categorical market with at least three outcomes. Then, when you
 
 Add buy order for 1st outcome with qty 0.1 and limit price 0.1
 
-*Verify:*
 - [ ] The market mid-point is set to 0.1 in both depth and order chart
 - [ ] The order shows up in the order book
 - [ ] Hover over order manifests depth chart lines accordingly
 
 Add a second buy order for 1st outcome with qty 0.2 and limit price 0.2
 
-*Verify:*
 - [ ] The new order is shown at the top of the buy order listing
 - [ ] The axis labels are visible and readable
 - [ ] The market mid-point is set to 0.2 in both depth and order chart
 
 Add a sell order for 1st outcome with qty 0.3 and limit price 0.3
 
-*Verify:*
 - [ ] The new order is shown at the bottom of the sell order listing
 - [ ] The axis labels are visible and readable
 - [ ] The market mid-point is set to 0.25 in both depth and order chart
 - [ ] Clicking on an order in the order book does not auto-fill the order form
-
-*Verify:*
 - [ ] Hit the "Next: Review" button, then hit "Previous: Liquidity". The orders you entered should still be listed in the depth chart/order book.
 
 Select second outcome in the order form
 
-*Verify:*
 - [ ] Charts again display "No open Orders"
 - [ ] Order form should be empty
 
@@ -53,27 +47,22 @@ Start creating a binary market. Then, when you get to the liquidity page:
 
 Add buy order with qty 0.1 and limit price 0.1
 
-*Verify:*
 - [ ] The market mid-point is set to 0.1 in both depth and order chart
 - [ ] The order shows up in the order book
 - [ ] Hover over order manifests depth chart lines accordingly
 
 Add a second buy order with qty 0.2 and limit price 0.2
 
-*Verify:*
 - [ ] The new order is shown at the top of the buy order listing
 - [ ] The axis labels are visible and readable
 - [ ] The market mid-point is set to 0.2 in both depth and order chart
 
 Add a sell order with qty 0.3 and limit price 0.3
 
-*Verify:*
 - [ ] The new order is shown at the bottom of the sell order listing
 - [ ] The axis labels are visible and readable
 - [ ] The market mid-point is set to 0.25 in both depth and order chart
 - [ ] Clicking on an order in the order book does not auto-fill the order form
-
-*Verify:*
 - [ ] Hit the "Next: Review" button, then hit "Previous: Liquidity". The orders you entered should still be listed in the depth chart/order book.
 
 ### Scalar Market
@@ -87,27 +76,22 @@ Start creating a scalar market. Then, when you get to the liquidity page:
 
 Add buy order with qty 0.1 and limit price 0.1
 
-*Verify:*
 - [ ] The market mid-point is set to 0.1 in both depth and order chart
 - [ ] The order shows up in the order book
 - [ ] Hover over order manifests depth chart lines accordingly
 
 Add a second buy order with qty 0.2 and limit price 0.2
 
-*Verify:*
 - [ ] The new order is shown at the top of the buy order listing
 - [ ] The axis labels are visible and readable
 - [ ] The market mid-point is set to 0.2 in both depth and order chart
 
 Add a sell order with qty 0.3 and limit price 0.3
 
-*Verify:*
 - [ ] The new order is shown at the bottom of the sell order listing
 - [ ] The axis labels are visible and readable
 - [ ] The market mid-point is set to 0.25 in both depth and order chart
 - [ ] Clicking on an order in the order book does not auto-fill the order form
-
-*Verify:*
 - [ ] Hit the "Next: Review" button, then hit "Previous: Liquidity". The orders you entered should still be listed in the depth chart/order book.
 
 
@@ -119,7 +103,7 @@ Add a sell order with qty 0.3 and limit price 0.3
 - [ ] - is limited to min 0 digits
 - [ ] Verify precision change affects all numbers visible (Including values shown on hover)
 - [ ] Hovering over the midline displays the same value in all three charts
-- [ ] Check PropType errors in console
+- [ ] There should be no PropType errors in console
 
 ### Depth Chart
 #### Setup
@@ -127,7 +111,7 @@ Several of the pre-populated markets have a few ask/sell orders in place.
 
 *Verify:*
 Hovering over chart notice the following
-- [ ] Depth header updates
+- [ ] Depth headers updates (bid price, qty, depth)
 - [ ] Vertical line "clamps" to depth of chart
 - [ ] Horizontal value is shown on candlestick chart
 
@@ -214,6 +198,7 @@ done
 
 *Verify:*
 - [ ] Per period Volume bars are appearing at the bottom of the chart
+- [ ] Candlesticks are populating correctly
 
 Hovering over a candlestick will....
 - [ ] Populate the candlestick header
