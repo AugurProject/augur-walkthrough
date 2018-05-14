@@ -27,7 +27,7 @@ Switch to an account with 0 ETH.
 - [ ] Verify that you are shown the "Add funds to begin trading." message and "Add Funds" button where the order form is normally displayed.
 - [ ] Verfiy that clicking on the "Add Funds" button brings you to the Account: Deposit page.
 
-Switch back to Account 1 (the account that created the market. We will now attempt to place an order. 
+Switch back to Account 1 (the account that created the market). We will now attempt to place an order. 
 
 Enter a number for the amount of shares you would like to buy, and enter a price between 0 and 1. 
 
@@ -40,20 +40,20 @@ Enter a number for the amount of shares you would like to buy, and enter a price
 Click the Review button.
 
 *Verify:*
-- [ ] Outcome is labeled correctly as "Yes".
-- [ ] Wuantity is accurate to what you entered.
+- [ ] Quantity is accurate to what you entered.
 - [ ] Limit price is accurate to what you entered.
 - [ ] For this trade, the Fee should be 0 because we won't be closing shares here.
 - [ ] Est. cost is still accurately calculated. (quantity * price)
 - [ ] Confirm that Profit & Loss calculations are correct.
 - [ ] Hit the "Back" button. Verify the original values you entered are still there. (Then hit "Review" again.)
+- [ ] Click "Review" again and then submit the transaction. Verify the transaction submits successfully.
 
 Note: an example of Profit Loss calculations would be doing a trade for 1 share at .9 ETH. In that case: Max Gain is .1 ETH (11.11%); Max Loss is 0.9 ETH (100%).
 
-After the transaction is complete and successful...
+After the transaction is complete and successful:
 
 *Verify:*
-- [ ] Your ETH balance has decreased by the amount of ETH the order cost.
+- [ ] Your ETH balance has decreased by the amount of ETH the order cost. This should show both in the core stats bar and on the Account page.
 - [ ] The "Yes" outcome has updated to show a Bid Qty and Best Bid value that match your order details.
 - [ ] The Order Book Chart should now show 1 order on the BID side (bottom) of the book. Confirm details.
 - [ ] You should see an open order row under the "Positions" section.
@@ -69,15 +69,15 @@ Click the Cancel button.
 - [ ] The Open Order row should say `Cancel order for N shares of "Yes" at X ETH?` Where N is the quantity of your order and X is the price.
 - [ ] There should be a Yes and a No button on the right side of the open order row.
 - [ ] Click No. The ribbon should disappear and the open order row should return to what it looked like prior to clicking the Cancel button.
-- [ ] Click Cancel again, then click Yes to cancel the open order. Verify you are prompted to sign a transaction to cancel the order.
+- [ ] Click Cancel again, then click Yes to cancel the open order. Verify that you can submit the cancelation transaction successfully.
 
-Sign the transaction to cancel the order. Once succesfully complete:
+Once succesfully complete:
 
 *Verify:*
 - [ ] the order has been removed from the open order table, and our positions/orders table is empty again.
 - [ ] The order has been removed from the orderbook chart
 - [ ] The Outcome bar shows `--` across the board again except for the LAST value which should be equal to 0.5
-- [ ] You should have been refunded ETH that was originally taken from placing the order.
+- [ ] You should have been refunded ETH that was originally taken from placing the order. This should display both in the core stats bar and on the Account page.
 
 With Account 1 still, place another BUY Order. You can use whatever values you want to test with, but for the sake of the walk through I'm going to use an example of 10 shares for 0.5 ETH.
 
@@ -88,7 +88,7 @@ After placing the order...
 - [ ] The Order Book Chart should now show 1 order on the BID side (bottom) of the book, again confirm details.
 - [ ] You should see an open order row under the "Positions" section. 
 - [ ] The Open Order should be labeled "Yes"
-- [ ] The Open Order should have a positive number for quantity
+- [ ] The Open Order should have a positive number for quantity that matches the quantity you entered.
 - [ ] The Open Order should have an average price set to the limit price of the order placed on the book.
 - [ ] The Open Order should have a clickable Cancel Button.
 
@@ -103,7 +103,7 @@ Navigate back to the market page.
 
 Click on the `Sell` button on the order form.
 
-Enter the same values you entered in the previous order (if following the example, 10 quantity, .5 limit price)
+Enter the same values you entered in the previous order (if following the example, this should be 10 quantity, 0.5 limit price)
 
 Click Review and then click Confirm.
 
@@ -111,15 +111,7 @@ Click Review and then click Confirm.
 
 *Verify:*
 - [ ] The "Approve Augur" modal displays on the screen
-
-Click the "Approve" button.
-
-*Verify:*
-- [ ] You are prompted to sign an approval transaction
-
-Sign the approval transaction.
-
-*Verify:*
+- [ ] You can click "Approve" and sign to successfully approve the transaction.
 - [ ] You are prompted to sign the order transaction immediately after signing approval.
 
 `Note: This is the end of the approval flow, anything below should happen every trade.`
@@ -128,7 +120,7 @@ Sign the trade transaction.
 
 After the transaction completes, we should now have a position, since this trade should result in a completely filled order from Account 1.
 
-while still logged into Account 2...
+While still logged into Account 2:
 
 *Verify:*
 - [ ] The Positions Table now has a row showing a "Yes" position
