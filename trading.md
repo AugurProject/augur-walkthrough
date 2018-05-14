@@ -159,47 +159,51 @@ Login to Account 2, navigate to market page.
 
 After creating a new categorical market, navigate to the markets page and find your new market's card.
 
-click on the "trade" button on the newly created market.
+Click on the "trade" button on the newly created market.
 
 When the market trading page loads, please *verfy* the following:
 
 *Verify:*
 
 - [ ] All outcomes are listed under the outcome table, with none of them pre-selected.
+- [ ] The Price History chart displays.
 - [ ] Fee % shown is the settlement Fee value set (default is 2%) at creation + the current reporting fee (hardcoded to 1% in tests)
 - [ ] Confirm the Expiration Date/time shown is accurate to your endtime set during market creation.
-- [ ] clicking on the positions title should drop down an empty postitions and open orders table.
+- [ ] Clicking on the positions title should drop down an empty postitions and open orders table.
 - [ ] The `LAST` price value should be equal to `1 / numOutcomes` on a new categorical market. (3 = .3333, 4 = .25, etc)
 
-Using Account 1 (remember, Account 1 is the account that created the market) we will now attempt to place an order.
+Using Account 1 (the account that created the market) we will now attempt to place an order.
 
 Select one of the outcomes.
 
 *Verify:*
+- [ ] The candlestick chart/market depth/order book for that outcome should display.
 - [ ] The Trading Form is now visible on the right hand side of your screen.
 
 Enter a number for the amount of shares you would like to buy, and enter a price between 0 and 1. 
 
 *Verify:*
 - [ ] The Trading Form displays the name of the outcome we have selected.
-- [ ] quantity cannot be 0 or negative.
-- [ ] limit price cannot be outside of the range for this market (0-1 in this case)
-- [ ] est. cost is calculated correctly (quantity * price)
+- [ ] Quantity cannot be 0 or negative.
+- [ ] Limit price cannot be outside of the range for this market (0-1 in this case)
+- [ ] Est. cost is calculated correctly (quantity * price)
 
 Click the Review button.
 
 *Verify:*
 - [ ] Outcome is labeled correctly as the outcome you have selected.
-- [ ] quantity is accurate to what you entered
-- [ ] limit price is accurate to what you entered
-- [ ] for this trade, fee should be only for the GAS cost because we won't be closing shares here
-- [ ] est. cost is still accurately calculated
+- [ ] Quantity is accurate to what you entered.
+- [ ] Limit price is accurate to what you entered.
+- [ ] For this trade, fee should be 0 because we won't be closing shares here.
+- [ ] Est. cost is still accurately calculated.
 - [ ] Confirm that Profit Loss calculations are correct. 
-- [ ] your ETH balance has decreased by the amount of ETH the order cost
+- [ ] You can place the trade successfully.
+- [ ] "Order Placed" notification displays at the bottom of the Trading Form and disappears after a couple seconds.
+- [ ] Your ETH balance has decreased by the amount of ETH the order cost. This should display both in the core stats bar and on the Account page.
 
 Note: an example of Profit Loss calculations would be doing a trade for 1 share at .9 ETH. In that case: Max Gain is .1 ETH (11.11%); Max Loss is 0.9 ETH (100%).
 
-After the transaction is complete and successful...
+After the transaction is complete and successful:
 
 *Verify:*
 - [ ] Outcomes table has updated to show a Bid Qty and Best Bid value, should match your order details.
@@ -217,7 +221,7 @@ Click the Cancel button.
 - [ ] The Open Order row should say `Cancel order for N shares of "<outcome label here>" at X ETH?` Where N is the quantity of your order and X is the price.
 - [ ] There should be a yes and a no button on the right side of the open order row.
 
-click no, the ribbon should disappear and the open order row should return to what it looked like prior to clicking the Cancel button.
+Click no, the ribbon should disappear and the open order row should return to what it looked like prior to clicking the Cancel button.
 
 Click Cancel.
 
