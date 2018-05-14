@@ -113,7 +113,7 @@ Submit 'SELL' orders until scrollbars appear
 NOTE: Be sure to use a privacy window for all of this. It would appear metamask prevents fake block time from propogating to the client.
 1. Start local docker compose env in augur repo `npm run docker:spin-up`
 2. Create a new market
-2. Populate candlestick chart with fake data by running the following script inside your [augur.js](https://github.com/AugurProject/augur.js) (Be sure to pass in the market ID create in step 2)
+2. For convenience the script below is provided in augur UI repo. Located at `augur/scripts/pop-candlesticks.sh`. It will populate candlestick chart with fake data. [augur](https://github.com/AugurProject/augur) (Be sure to pass in the market ID create in step 2)
 3. Navigate to relevent trade page and select relevant outcome. The script goes to work on outcome 1, you may need to click around a bit.
 
 ```bash
@@ -137,16 +137,16 @@ do
   for j in "${dataArray[@]}"
   do
     echo "Sell trade $j";
-    ETHEREUM_PRIVATE_KEY=fae42052f82bed612a724fec3632f325f377120592c75bb78adfcceae6470c5a node scripts/flash create-market-order --marketId $MARKET_ID --outcome $OUTCOME --orderType sell --shares "$(jot  -p 4 -r 1 0 1)" --price "$j"
+    ETHEREUM_PRIVATE_KEY=fae42052f82bed612a724fec3632f325f377120592c75bb78adfcceae6470c5a npx flash create-market-order --marketId $MARKET_ID --outcome $OUTCOME --orderType sell --shares "$(jot  -p 4 -r 1 0 1)" --price "$j"
 
     echo "Filling trade $j";
-    ETHEREUM_PRIVATE_KEY=48c5da6dff330a9829d843ea90c2629e8134635a294c7e62ad4466eb2ae03712 node scripts/flash fill-market-orders -m $MARKET_ID -o $OUTCOME -t buy;
+    ETHEREUM_PRIVATE_KEY=48c5da6dff330a9829d843ea90c2629e8134635a294c7e62ad4466eb2ae03712 npx flash fill-market-orders -m $MARKET_ID -o $OUTCOME -t buy;
 
-    node scripts/flash push-timestamp -s -c 600;
+    npx flash push-timestamp -s -c 600;
   done
 
   echo "Push time";
-  node scripts/flash push-timestamp -s -c 3600;
+  npx flash push-timestamp -s -c 3600;
 done
 ```
 
