@@ -159,8 +159,9 @@ Submit 'SELL' orders until scrollbars appear
 NOTE: Be sure to use a privacy window for all of this. It would appear metamask prevents fake block time from propogating to the client.
 1. Start local docker compose env in augur repo `npm run docker:spin-up`
 2. Create a new market
-2. For convenience the script below is provided in augur UI repo. Located at `augur/scripts/pop-candlesticks.sh`. It will populate candlestick chart with fake data. [augur](https://github.com/AugurProject/augur) (Be sure to pass in the market ID created in step 2)
-3. Navigate to relevent trade page and select relevant outcome. The script goes to work on outcome 1, you may need to click around a bit.
+3. For convenience the script below is provided in augur UI repo. Located at `scripts/pop-candlesticks.sh`. It will populate candlestick chart with fake data. [augur](https://github.com/AugurProject/augur) (Be sure to pass in the market ID created in step 2)
+4. Keep the above script running in the background. It will not complete.
+5. Navigate to relevent trade page and select relevant outcome. The script goes to work on outcome 1, you may need to click around a bit.
 
 *Verify:*
 - [ ] Per period Volume bars are appearing at the bottom of the chart
