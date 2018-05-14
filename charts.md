@@ -1,52 +1,114 @@
 # Testing Charts
 ## Create market liquidity charts
+
 ### Categorical Market
-#### Steps
-1. Click create market
-2. Enter Market question/tags, etc. 
-3. Click 'NEXT'
-4. Select 'Multiple Choice' option
-5. Add at least 3 potential outcomes
-6. Click 'NEXT'
-7. Fill out next page with valid info
-8. Click 'NEXT'
+Start creating a categorical market with at least three outcomes. Then, when you get to the liquidity page:
 
 *Verify:*
 - [ ] You are on the liquidity page
-- [ ] Buy 'create order' form is shown]
-- [ ] Outcome dropdown is empty
+- [ ] The 'create order' form is shown
+- [ ] Outcome dropdown is on the default state, and shows your outcomes when opened.
 - [ ] Charts display "No open Orders"
 - [ ] Depth Chart Precision +/- symbols are not visible.
 
-#### Further action:
 Add buy order for 1st outcome with qty 0.1 and limit price 0.1
 
 *Verify:*
-- [ ] The market mid-point is set to in both depth and order chart to 0.1
+- [ ] The market mid-point is set to 0.1 in both depth and order chart
 - [ ] The order shows up in the order book
 - [ ] Hover over order manifests depth chart lines accordingly
 
-#### Further action:
 Add a second buy order for 1st outcome with qty 0.2 and limit price 0.2
 
 *Verify:*
 - [ ] The new order is shown at the top of the buy order listing
 - [ ] The axis labels are visible and readable
-- [ ] @TODO What should happen to midpoint line
+- [ ] The market mid-point is set to 0.2 in both depth and order chart
 
-#### Further action:
 Add a sell order for 1st outcome with qty 0.3 and limit price 0.3
 
 *Verify:*
-- [ ] @TODO Should form reset on tab change?
+- [ ] The new order is shown at the bottom of the sell order listing
+- [ ] The axis labels are visible and readable
+- [ ] The market mid-point is set to 0.25 in both depth and order chart
+- [ ] Clicking on an order in the order book does not auto-fill the order form
 
-#### Further action:
-Select second outcome on form
+*Verify:*
+- [ ] Hit the "Next: Review" button, then hit "Previous: Liquidity". The orders you entered should still be listed in the depth chart/order book.
+
+Select second outcome in the order form
 
 *Verify:*
 - [ ] Charts again display "No open Orders"
-- [ ] @TODO Should form reset?
-- [ ] @TODO Should order book click populate form?
+- [ ] Order form should be empty
+
+### Binary Market
+Start creating a binary market. Then, when you get to the liquidity page:
+
+*Verify:*
+- [ ] The 'create order' form is shown
+- [ ] There are no outcomes to select from.
+- [ ] Charts display "No open Orders"
+- [ ] Depth Chart Precision +/- symbols are not visible.
+
+Add buy order with qty 0.1 and limit price 0.1
+
+*Verify:*
+- [ ] The market mid-point is set to 0.1 in both depth and order chart
+- [ ] The order shows up in the order book
+- [ ] Hover over order manifests depth chart lines accordingly
+
+Add a second buy order with qty 0.2 and limit price 0.2
+
+*Verify:*
+- [ ] The new order is shown at the top of the buy order listing
+- [ ] The axis labels are visible and readable
+- [ ] The market mid-point is set to 0.2 in both depth and order chart
+
+Add a sell order with qty 0.3 and limit price 0.3
+
+*Verify:*
+- [ ] The new order is shown at the bottom of the sell order listing
+- [ ] The axis labels are visible and readable
+- [ ] The market mid-point is set to 0.25 in both depth and order chart
+- [ ] Clicking on an order in the order book does not auto-fill the order form
+
+*Verify:*
+- [ ] Hit the "Next: Review" button, then hit "Previous: Liquidity". The orders you entered should still be listed in the depth chart/order book.
+
+### Scalar Market
+Start creating a scalar market. Then, when you get to the liquidity page:
+
+*Verify:*
+- [ ] The 'create order' form is shown
+- [ ] There are no outcomes to select from.
+- [ ] Charts display "No open Orders"
+- [ ] Depth Chart Precision +/- symbols are not visible.
+
+Add buy order with qty 0.1 and limit price 0.1
+
+*Verify:*
+- [ ] The market mid-point is set to 0.1 in both depth and order chart
+- [ ] The order shows up in the order book
+- [ ] Hover over order manifests depth chart lines accordingly
+
+Add a second buy order with qty 0.2 and limit price 0.2
+
+*Verify:*
+- [ ] The new order is shown at the top of the buy order listing
+- [ ] The axis labels are visible and readable
+- [ ] The market mid-point is set to 0.2 in both depth and order chart
+
+Add a sell order with qty 0.3 and limit price 0.3
+
+*Verify:*
+- [ ] The new order is shown at the bottom of the sell order listing
+- [ ] The axis labels are visible and readable
+- [ ] The market mid-point is set to 0.25 in both depth and order chart
+- [ ] Clicking on an order in the order book does not auto-fill the order form
+
+*Verify:*
+- [ ] Hit the "Next: Review" button, then hit "Previous: Liquidity". The orders you entered should still be listed in the depth chart/order book.
 
 
 ## Trading
