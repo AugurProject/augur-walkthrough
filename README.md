@@ -9,6 +9,8 @@ This guide assumes you  are running a local environment and you have access to m
 
 # [Testing Create Market](/createMarket.md)
 
+# [Testing Charts](/charts.md)
+
 # [Testing Markets List](/marketsList.md)
 
 # [Testing Trading](/trading.md)
