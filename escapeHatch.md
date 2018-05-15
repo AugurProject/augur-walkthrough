@@ -35,6 +35,17 @@ Pull the escape hatch.
 
 ### Participation Tokens
 
+With a fresh account (with no previous txs) purchase PTs in the current fee window. Keep track of the total.
+
+Pull the escape hatch.
+
+- [ ] [ch10630](https://app.clubhouse.io/augur/story/10630/pts-are-not-redeemable-through-the-escape-hatch-modal) The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [ ] The withdraw funds button should bring up a Review screen.
+- [ ] The amount of funds available to withdraw should be correct. 
+- [ ] The tx(s) to withdraw should succeed.
+- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+
 ### Designated Report
 
 ### Initial Report (on market in Open Reporting)
