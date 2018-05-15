@@ -48,11 +48,24 @@ Pull the escape hatch.
 
 ### Designated Report
 
+With a fresh account (with no previous txs) create a market and assign yourself as the designated reporter. Move time forward and submit a designated report. Keep track of the total (including the market creation bonds you should get back).
+
+Pull the escape hatch.
+
+- [ ] [ch10431](https://app.clubhouse.io/augur/story/10431/escape-hatch-modal-does-not-appear) The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [ ] The withdraw funds button should bring up a Review screen.
+- [ ] The amount of funds available to withdraw should be correct. 
+- [ ] The tx(s) to withdraw should succeed.
+- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+
 ### Initial Report (on market in Open Reporting)
 
 ### Dispute Bond (filled)
 
 ### Dispute Bond (partially filled)
+
+### Finalized market
 
 ### Trading
 
