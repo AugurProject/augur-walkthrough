@@ -14,13 +14,13 @@ Pulling the escape hatch is done with this command:
 flash escape-hatch
 ```
 
-### Variations
+## Variations
 
-## No Funds
+### No Funds
 
 - [x] Pull the escape hatch while logged into a user account that has had no transactions. Verify that the escape hatch notice comes up, but with a message saying you have no funds to withdraw.
 
-## Create Market bonds
+### Create Market bonds
 
 With a fresh account (with no previous txs) create a market so you have funds locked up in the no-show bond, validity bond, and reporter gas bond. Keep track of the total.
 
@@ -28,24 +28,24 @@ Pull the escape hatch.
 
 - [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
 - [x] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct.
+- [ ] (FAILED) The amount of funds available to withdraw should be correct.
 - [x] The tx(s) to withdraw should succeed.
-- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message.
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+- [ ] (FAILED) After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message.
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
-## Participation Tokens
+### Participation Tokens
 
-## Designated Report
+### Designated Report
 
-## Initial Report (on market in Open Reporting)
+### Initial Report (on market in Open Reporting)
 
-## Dispute Bond (filled)
+### Dispute Bond (filled)
 
-## Dispute Bond (partially filled)
+### Dispute Bond (partially filled)
 
-## Trading
+### Trading
 
-## All of the above
+### All of the above
 
 
 ## Notes
