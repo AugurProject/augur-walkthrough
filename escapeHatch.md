@@ -16,6 +16,7 @@ Before placing funds into the system keep track of what you initially start with
  - [ ] Do a designated or initial report on a market
  - [ ] Participate in at least one market dispute (The market does not need to finalize)
  - [ ] Purchase shares in a market either by filling an order or by purchasing complete sets
+ - [ ] Create a market so you have some REP held in bonds
 
  Keep track of the funds 
 
