@@ -61,6 +61,17 @@ Pull the escape hatch.
 
 ### Initial Report (on market in Open Reporting)
 
+With a fresh account (with no previous txs) move time forward so one of the default-created markets moves into Open Reporting. Submit a report. Keep track of the total.
+
+Pull the escape hatch.
+
+- [ ] [ch10431](https://app.clubhouse.io/augur/story/10431/escape-hatch-modal-does-not-appear) The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [ ] The withdraw funds button should bring up a Review screen.
+- [ ] The amount of funds available to withdraw should be correct. 
+- [ ] The tx(s) to withdraw should succeed.
+- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+
 ### Dispute Bond (filled)
 
 ### Dispute Bond (partially filled)
