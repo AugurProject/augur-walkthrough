@@ -8,37 +8,42 @@ There are 5 different methods available to users to salvage funds when the escap
 
 The populated geth node will already have some of this set up for you since it creates markets.
 
-## Getting funds to be trapped
-
-Before placing funds into the system keep track of what you initially start with. This value will be needed later
-
- - [ ] Purchase Participation tokens in the reporting UI
- - [ ] Do a designated or initial report on a market
- - [ ] Participate in at least one market dispute (The market does not need to finalize)
- - [ ] Purchase shares in a market either by filling an order or by purchasing complete sets
- - [ ] Create a market so you have some REP held in bonds
-
- Keep track of the funds 
-
-## Pull the escape hatch
-
-Now that funds have been tied up in the systems you should pull the escape hatch
+Pulling the escape hatch is done with this command:
 
 ```
 flash escape-hatch
 ```
 
-## Use the escape hatch UI to get back funds
+### Variations
 
-Now that the escape hatch has been pulled the UI should present a blocking modal dialog for the escape hatch.
+## No Funds
 
 - [x] Pull the escape hatch while logged into a user account that has had no transactions. Verify that the escape hatch notice comes up, but with a message saying you have no funds to withdraw.
- - [ ] Verify that the escape hatch dialog now appears and prevents interaction with the UI as normal
- - [ ] Proceed by clicking "Withdraw all funds"
- - [ ] Click the button to retrieve funds
- - [ ] You should get _many_ transaction approval messages. One for each market, one for participation tokens, one for the initial report, one for any dispute crowdsourcers you participated in, and one for each market you own shares in.
- - [ ] After approving the transactions your ETH and REP balance should be back to what it was initally but minus all of the gas that has been used to get this far.
- - [ ] Reload the UI and confirm that the dialog now does not present an option to "Withdraw all funds"
+
+## Create Market bonds
+
+With a fresh account (with no previous txs) create a market so you have funds locked up in the no-show bond, validity bond, and reporter gas bond. Keep track of the total.
+
+Pull the escape hatch.
+
+- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [ ] The amount of funds available to withdraw should be correct.
+- [x] The tx(s) to withdraw should succeed.
+- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message.
+- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+
+## Participation Tokens
+
+## Designated Report
+
+## Initial Report (on market in Open Reporting)
+
+## Dispute Bond (filled)
+
+## Dispute Bond (partially filled)
+
+## Trading
 
 
 ## Notes
