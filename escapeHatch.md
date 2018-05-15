@@ -74,13 +74,32 @@ Pull the escape hatch.
 
 ### Dispute Bond (filled)
 
+(Waiting till report bug is fixed before doing this variation)
+
 ### Dispute Bond (partially filled)
+
+(Waiting till report bug is fixed before doing this variation)
 
 ### Finalized market
 
+(Waiting till report bug is fixed before doing this variation)
+
 ### Trading
 
+With a fresh account (with no previous txs) place an order on a market. Keep track of the total.
+
+Pull the escape hatch.
+
+- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [ ] [ch10636](https://app.clubhouse.io/augur/story/10636/withdrawing-funds-from-escape-hatch-after-trading-doesn-t-transfer-correct-amounts) The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [ ] [ch10628](https://app.clubhouse.io/augur/story/10628/after-withdrawing-funds-review-screen-continues-to-be-shown) After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [ ] [ch10636](https://app.clubhouse.io/augur/story/10636/withdrawing-funds-from-escape-hatch-after-trading-doesn-t-transfer-correct-amounts) Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+
 ### All of the above
+
+(Waiting till report bug is fixed before doing this variation)
 
 
 ## Notes
