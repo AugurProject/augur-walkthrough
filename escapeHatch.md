@@ -28,9 +28,9 @@ Pull the escape hatch.
 
 - [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
 - [x] The withdraw funds button should bring up a Review screen.
-- [ ] (FAILED) The amount of funds available to withdraw should be correct. (ch10627)[https://app.clubhouse.io/augur/story/10627/escape-hatch-with-create-market-funds-to-withdraw-incorrect]
+- [ ] (FAILED) The amount of funds available to withdraw should be correct. [ch10627](https://app.clubhouse.io/augur/story/10627/escape-hatch-with-create-market-funds-to-withdraw-incorrect)
 - [x] The tx(s) to withdraw should succeed.
-- [ ] (FAILED) After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. (ch10628) [https://app.clubhouse.io/augur/story/10628/after-withdrawing-funds-review-screen-continues-to-be-shown]
+- [ ] (FAILED) After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. [ch10628] (https://app.clubhouse.io/augur/story/10628/after-withdrawing-funds-review-screen-continues-to-be-shown)
 - [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Participation Tokens
