@@ -81,10 +81,10 @@ My markets is strictly for markets created by the user account.
 Currently this section is for claiming ETH/REP reporting fees from fee window participation tokens, initial reports/dispute crowdsourcers of non-forked markets. If a forked market exists and the user has claimable ETH/REP in it, a Forked Market card should be displayed under the Claim button for non-forked markets, and the user should be able to click the Claim button to migrate those fees to the corresponding child universe.
 
 Use multiple users to create positions on a market and have open orders so those positions can be closed. For example, on a binary market use three users:
-User1 creates buy open order for 100 shares at .1
-User2 takes that order
-User1 creates sell open order for 100 shares at .5
-User2 closes position therefore taking that order
+* User1 creates buy open order for 100 shares at .1
+* User2 takes that order
+* User1 creates sell open order for 100 shares at .5
+* User2 closes position therefore taking that order
 
 
 ### Participation Tokens
