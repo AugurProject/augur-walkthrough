@@ -28,9 +28,9 @@ Pull the escape hatch.
 
 - [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
 - [x] The withdraw funds button should bring up a Review screen.
-- [ ] [ch10627](https://app.clubhouse.io/augur/story/10627/escape-hatch-with-create-market-funds-to-withdraw-incorrect) The amount of funds available to withdraw should be correct. 
+- [x] ~~[ch10627](https://app.clubhouse.io/augur/story/10627/escape-hatch-with-create-market-funds-to-withdraw-incorrect)~~ The amount of funds available to withdraw should be correct. 
 - [x] The tx(s) to withdraw should succeed.
-- [ ] [ch10628](https://app.clubhouse.io/augur/story/10628/after-withdrawing-funds-review-screen-continues-to-be-shown) After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] ~~[ch10628](https://app.clubhouse.io/augur/story/10628/after-withdrawing-funds-review-screen-continues-to-be-shown)~~ After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
 - [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Participation Tokens
@@ -39,12 +39,12 @@ With a fresh account (with no previous txs) purchase PTs in the current fee wind
 
 Pull the escape hatch.
 
-- [ ] [ch10630](https://app.clubhouse.io/augur/story/10630/pts-are-not-redeemable-through-the-escape-hatch-modal) The escape hatch modal should come up, with a message saying you have funds to withdraw.
-- [ ] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct. 
-- [ ] The tx(s) to withdraw should succeed.
-- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+- [x] ~~[ch10630](https://app.clubhouse.io/augur/story/10630/pts-are-not-redeemable-through-the-escape-hatch-modal)~~ The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [x] The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Designated Report
 
@@ -52,12 +52,12 @@ With a fresh account (with no previous txs) create a market and assign yourself 
 
 Pull the escape hatch.
 
-- [ ] [ch10431](https://app.clubhouse.io/augur/story/10431/escape-hatch-modal-does-not-appear) The escape hatch modal should come up, with a message saying you have funds to withdraw.
-- [ ] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct. 
-- [ ] The tx(s) to withdraw should succeed.
-- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+- [x] ~~[ch10431](https://app.clubhouse.io/augur/story/10431/escape-hatch-modal-does-not-appear)~~ The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [x] The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Initial Report (on market in Open Reporting)
 
@@ -65,24 +65,42 @@ With a fresh account (with no previous txs) move time forward so one of the defa
 
 Pull the escape hatch.
 
-- [ ] [ch10431](https://app.clubhouse.io/augur/story/10431/escape-hatch-modal-does-not-appear) The escape hatch modal should come up, with a message saying you have funds to withdraw.
-- [ ] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct. 
-- [ ] The tx(s) to withdraw should succeed.
-- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+- [x] ~~[ch10431](https://app.clubhouse.io/augur/story/10431/escape-hatch-modal-does-not-appear)~~ The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [x] The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Dispute Bond (filled)
 
-(Waiting till report bug is fixed before doing this variation)
+With a fresh account (with no previous txs) move time forward so one of the default-created markets moves into Open Reporting. Submit a report. Move time one week, to put the market in dispute phase, Dispute on an outcome and fill the bond, Keep track of the total.
+
+Pull the escape hatch.
+
+- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [x] The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Dispute Bond (partially filled)
 
-(Waiting till report bug is fixed before doing this variation)
+With a fresh account (with no previous txs) move time forward so one of the default-created markets moves into Open Reporting. Submit a report. Move time one week, to put the market in dispute phase, Dispute on an outcome and **partially** fill the bond, Keep track of the total.
+
+Pull the escape hatch.
+
+- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [x] The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Finalized market
 
-(Waiting till report bug is fixed before doing this variation)
+No special considerations for market or market's reporting state
 
 ### Trading - Open Order
 
@@ -90,12 +108,7 @@ With a fresh account (with no previous txs) place an order on a market. Keep tra
 
 Pull the escape hatch.
 
-- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
-- [x] The withdraw funds button should bring up a Review screen.
-- [ ] [ch10636](https://app.clubhouse.io/augur/story/10636/withdrawing-funds-from-escape-hatch-after-trading-doesn-t-transfer-correct-amounts) The amount of funds available to withdraw should be correct. 
-- [x] The tx(s) to withdraw should succeed.
-- [ ] [ch10628](https://app.clubhouse.io/augur/story/10628/after-withdrawing-funds-review-screen-continues-to-be-shown) After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] [ch10636](https://app.clubhouse.io/augur/story/10636/withdrawing-funds-from-escape-hatch-after-trading-doesn-t-transfer-correct-amounts) Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+- [x] The escape hatch modal should come up, with a message saying you have **no** funds to withdraw.
 
 ### Trading - Position
 
@@ -103,17 +116,12 @@ With a fresh account (with no previous txs) fill a market order so you have a po
 
 Pull the escape hatch.
 
-- [ ] The escape hatch modal should come up, with a message saying you have funds to withdraw.
-- [ ] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct. 
-- [ ] The tx(s) to withdraw should succeed.
-- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
-
-### All of the above
-
-(Waiting till report bug is fixed before doing this variation)
-
+- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [x] The amount of funds available to withdraw should be correct. 
+- [x] The tx(s) to withdraw should succeed.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ## Notes
 
