@@ -22,20 +22,22 @@ This state occurs when at least one dispute bond is greater than 2.5% of all REP
 
 Initiate a fork and then test the follow:
 
-- [ ] Verify there is a forking banner along the top of the app (directly below the core stats bar) and that this is visible throughout the whole app.
-- [ ] "Additional Details" in the forking banner should be clickable to expand the additional details section.
-- [ ] Verify that the forking window end date is correct, both in the header ("Forking Window Ends...") and in the paragraph ("The forking period will end...").
-- [ ] Verify that the forking progress bar progress and "X days left" is correct.
-- [ ] Verfiy that when the forking progress bar is nearly complete, the "X days left" text switches to the left side of the progress bar so it doesn't run off the page (see the Dispute progress bar for an example).
-- [ ] Clicking on the "Migrate REP" button should bring you to the Migrate REP form.
-- [ ] On the Dispute page, verify that the forking header is displaying (see mocks). (This is the same content as shown in the forking banner additional details.)
-- [ ] On the Dispute page, verify that the market that forced the fork is shown as the forking market.
-- [ ] That forking market should have a red bar across the top and be labeled with text that says "Forking" (see mocks).
+- [x] Verify there is a forking banner along the top of the app (directly below the core stats bar) and that this is visible throughout the whole app.
+- [x] "Additional Details" in the forking banner should be clickable to expand the additional details section.
+- [ ] [ch10772](https://app.clubhouse.io/augur/story/10772/design-for-forking-additional-details-needs-to-be-adjusted) Styles for the additional details section should match the design.
+- [x] Verify that the forking window end date is correct, both in the header ("Forking Window Ends...") and in the paragraph ("The forking period will end...").
+- [x] Verify that the forking progress bar progress and "X days left" is correct.
+- [x] Verfiy that when the forking progress bar is nearly complete, the "X days left" text switches to the left side of the progress bar so it doesn't run off the page (see the Dispute progress bar for an example).
+- [x] Clicking on the "Migrate REP" button should bring you to the Migrate REP form.
+- [x] On the Dispute page, verify that the forking header is displaying (see mocks). (This is the same content as shown in the forking banner additional details.)
+- [x] On the Dispute page, verify that the market that forced the fork is shown as the forking market.
+- [x] That forking market should have a red bar across the top and be labeled with text that says "Forking" (see mocks).
 - [ ] Verify that all other markets that were already in Dispute are now listed under Dispute Paused.
-- [ ] Navigate directly to the dispute form for a market and verify that a dispute cannot be submitted.
-- [ ] Verify that, after a market is reported on, it is moved to the "Dispute Paused" list.
-- [ ] The Create menu item should be disabled. If you navigate directly to the Create Market url, the tx to create a market should fail.
-- [ ] Verify that it is still possible to trade on markets, including the forking market.
+- [x] Navigate directly to the dispute form for a market and verify that a dispute cannot be submitted.
+- [ ] [ch10790](https://app.clubhouse.io/augur/story/10790/upcoming-dispute-window-should-change-to-dispute-paused-during-and-after-a-fork) "Upcoming Dispute Window" should now be "Dispute Paused"
+- [x] Verify that, after a market is reported on, it is moved to the "Dispute Paused" list.
+- [x] The Create menu item should be disabled. If you navigate directly to the Create Market url, the tx to create a market should fail.
+- [x] Verify that it is still possible to trade on markets, including the forking market.
 - [ ] Verify that the forking market can't be finalized during forking period. This can be attempted using the flash script.
 
 ## Disavow REP
