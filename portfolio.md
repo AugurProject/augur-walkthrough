@@ -114,9 +114,22 @@ For resporters to get their REP the market has to be in awaiting finalization or
 
 ### Dispute Contributor
 
-- [x] Verify contributor can claim correct amount of REP from finalized markets that resolve on same outcome as their successful dispute rounds
-- [ ] [10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)Verify contributor can reclaim amount of REP originally staked on dispute bonds that didn't make crowdsourcing goal
-- [x] Verify contributor can't claim REP from finalized markets that resolve on different outcome as their successful dispute rounds
+Using Account1 & Account2, do the following on a market:
+
+1. Make sure both accounts have lots of REP.
+2. Use Account1 to stake 0.3497 REP an initial report for outcome 0.
+3. Push time to reach Crowdsourcing Dispute phase.
+4. Use Account2 to dispute by staking max (0.6994 REP) on outcome 1.
+5. Push time to go to next fee window.
+6. Use Account1 to dispute by staking max (1.0491 REP) on outcome 0.
+7. Push time to go to next fee window.
+8. Use Account2 to dispute by staking some amount less than the max (1.9 REP) on outcome 1.
+9. Push time until market state is AWAITING_FINALIZATION.
+10. Finalize the market.
+
+- [x] Verify that Account1 can claim: 1.5x the amount of REP originally staked on the initial report & crowdsourcer for outcome 0; ETH fees for staking REP on the intial report & crowdsourcer for outcome 0.
+- [ ] [10851](https://app.clubhouse.io/augur/story/10851/getreportingfees-not-returning-unclaimedeth-as-expected)Verify that Account2 can claim: the amount of REP staked on the crowdsourcer for outcome 1 (when it didn't reach its goal); ETH fees for staking on the crodwsourcer for outcome 1 twice.
+- [ ] [10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)Verify that Account2 cannot claim REP staked on crowdsourcer for outcome 1 in the rounds where the max was reached for that crowdsourcer.
 
 ### Forked Market Initial Reporter/Dispute Contributor
 
