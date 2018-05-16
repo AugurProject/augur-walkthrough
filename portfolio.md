@@ -86,7 +86,7 @@ Currently this section is for claiming ETH/REP reporting fees from fee window pa
 
 ### Designated Reporters
 
-- [ ] Verify designated reporter can claim correct amount for reporting in fee window (should be additional REP if the reported correctly plus original amount staked)
+- [ ] Verify designated reporter can claim correct amount for reporting in fee window (should be additional REP if they reported correctly plus original amount staked)
 - [ ] Verify designated reporter can reclaim correct amount of REP on multiple finalized markets where their outcome won
 - [ ] Verify designated reporter can't reclaim REP on any finalized markets where their outcome lost
 
