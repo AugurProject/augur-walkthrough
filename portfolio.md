@@ -82,24 +82,25 @@ Currently this section is for claiming ETH/REP reporting fees from fee window pa
 
 ### Participation Tokens
 
-- [ ] Verify user can claim participation tokens for fee windows in whch they have participation tokens
+- [ ] Verify user can claim the correct amount of participation tokens when they have participation tokens across multiple fee windows
 
 ### Designated Reporters
 
-- [ ] Verify designated reporter can claim settlement fees for reporting in fee window
-- [ ] Verify designated reporter can reclaim REP on finalized markets where their outcome won
-- [ ] Verify designated reporter can't reclaim REP on finalized markets where their outcome lost
+- [ ] Verify designated reporter can claim correct amount for reporting in fee window (should be additional REP if the reported correctly plus original amount staked)
+- [ ] Verify designated reporter can reclaim correct amount of REP on multiple finalized markets where their outcome won
+- [ ] Verify designated reporter can't reclaim REP on any finalized markets where their outcome lost
 
 ### Initial Reporters (i.e. reporters other than the designated reporter)
 
-- [ ] Verify initial reporter can claim settlement fees for reporting in fee window
+- [ ] Verify initial reporter can claim correct amount for reporting in fee window (should be additional REP if the reported correctly plus original amount staked)
+- [ ] Verify initial reporter can claim correct amount of REP for reporting in fee window
 - [ ] Verify initial reporter can reclaim REP on finalized markets where their outcome won
 - [ ] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
 
 ### Dispute Contributor
 
-- [ ] Verify contributor can claim REP from finalized markets that resolve on same outcome as their successful dispute rounds
-- [ ] Verify contributor can reclaim REP on dispute bonds that didn't make crowdsourcing goal
+- [ ] Verify contributor can claim correct amount of REP from finalized markets that resolve on same outcome as their successful dispute rounds
+- [ ] Verify contributor can reclaim amount of REP originally staked on dispute bonds that didn't make crowdsourcing goal
 - [ ] Verify contributor can't claim REP from finalized markets that resolve on different outcome as their successful dispute rounds
 
 ### Forked Market Initial Reporter/Dispute Contributor
