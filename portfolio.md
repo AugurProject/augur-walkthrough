@@ -78,17 +78,22 @@ My markets is strictly for markets created by the user account.
 
 ## Reporting
 
-Currently this section is for claiming ETH/REP reporting fees from fee window participation tokens, initial reports/dispute crowdsourcers of non-forked markets. If a forked market exists and the user has claimable ETH/REP in it, a Forked Market card should be displayed under the Claim button for non-forked markets, and the user should be able to click the Claim button to migrate those fees to the corresponding child universe.
+Currently this section is for claiming ETH/REP reporting fees from fee window participation tokens, initial reports/dispute crowdsourcers of non-forked markets. If a forked market exists and the user has claimable ETH/REP in it, a Forked Market card will be displayed under the Claim button for non-forked markets, and the user should be able to click the Claim button to migrate those fees to the corresponding child universe.
 
+#### Settlement Fees
 Use multiple users to create positions on a market and have open orders so those positions can be closed. For example, on a binary market use three users:
 * User1 creates buy open order for 100 shares at .1
 * User2 takes that order
 * User1 creates sell open order for 100 shares at .5
 * User2 closes position therefore taking that order
 
+#### Getting REP
+For resporters to get their REP the market has to be in awaiting finalization or finalized. Reporters get a portion of the settlement fees on the fee window they report in.
+
 
 ### Participation Tokens
 
+- [x] Verify user can claim correct amount of paricipation tokens on one fee window
 - [x] Verify user can claim the correct amount of participation tokens when they have participation tokens across multiple fee windows
 
 ### Designated Reporters
@@ -100,8 +105,8 @@ Use multiple users to create positions on a market and have open orders so those
 
 ### Initial Reporters (i.e. reporters other than the designated reporter)
 
-- [ ] Verify initial reporter can claim correct amount for reporting in fee window (should be additional REP if the reported correctly plus original amount staked)
 - [ ] Verify initial reporter can claim correct amount of REP for reporting in fee window
+- [ ] Verify initial reporter can claim correct amount of ETH from tradding fees for reporting in fee window
 - [ ] Verify initial reporter can reclaim REP on finalized markets where their outcome won
 - [ ] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
 
