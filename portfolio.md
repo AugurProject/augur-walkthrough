@@ -95,6 +95,7 @@ For resporters to get their REP the market has to be in awaiting finalization or
 
 - [x] Verify user can claim correct amount of paricipation tokens on one fee window
 - [x] Verify user can claim the correct amount of participation tokens when they have participation tokens across multiple fee windows
+- [X] Verify user has claim button disabled when there is nothing to claim
 
 ### Designated Reporters
 
@@ -105,16 +106,17 @@ For resporters to get their REP the market has to be in awaiting finalization or
 
 ### Initial Reporters (i.e. reporters other than the designated reporter)
 
-- [ ] Verify initial reporter can claim correct amount of REP for reporting in fee window
-- [ ] Verify initial reporter can claim correct amount of ETH from tradding fees for reporting in fee window
-- [ ] Verify initial reporter can reclaim REP on finalized markets where their outcome won
-- [ ] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
+- [ ] [10832](https://app.clubhouse.io/augur/story/10832/unclaimedrepearned-has-balance-getreportingfee-when-it-should-be-0) Verify initial reporter can claim correct amount of REP for reporting in fee window
+- [ ] [10842](https://app.clubhouse.io/augur/story/10842/unclaimedeth-has-incorrect-balance-for-initial-reporter-when-there-was-no-dispute)Verify initial reporter can claim correct amount of ETH from trading fees for reporting in fee window
+- [x] Verify initial reporter can reclaim REP on finalized markets where their outcome won
+- [x] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
+- [x] Verify initial reporter can claim ETH from trading fees when reporting on failed outcome
 
 ### Dispute Contributor
 
-- [ ] Verify contributor can claim correct amount of REP from finalized markets that resolve on same outcome as their successful dispute rounds
-- [ ] Verify contributor can reclaim amount of REP originally staked on dispute bonds that didn't make crowdsourcing goal
-- [ ] Verify contributor can't claim REP from finalized markets that resolve on different outcome as their successful dispute rounds
+- [x] Verify contributor can claim correct amount of REP from finalized markets that resolve on same outcome as their successful dispute rounds
+- [ ] [10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)Verify contributor can reclaim amount of REP originally staked on dispute bonds that didn't make crowdsourcing goal
+- [x] Verify contributor can't claim REP from finalized markets that resolve on different outcome as their successful dispute rounds
 
 ### Forked Market Initial Reporter/Dispute Contributor
 
