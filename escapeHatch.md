@@ -98,17 +98,20 @@ Pull the escape hatch.
 - [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
 - [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
-### Finalized market
-
-No special considerations for market or market's reporting state
-
 ### Trading - Open Order
+
+[ch10734](https://app.clubhouse.io/augur/story/10734/add-shares-to-escape-hatch)
 
 With a fresh account (with no previous txs) place an order on a market. Keep track of the total.
 
-Pull the escape hatch.
+Pull the escape hatch. The TXs presented will including claiming escrowed shares, which will update the funds available, and then more TXs will appear to claim those funds.
 
-- [x] The escape hatch modal should come up, with a message saying you have **no** funds to withdraw.
+- [ ] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [ ] The withdraw funds button should bring up a Review screen.
+- [ ] The amount of funds available to withdraw should be correct. 
+- [ ] The tx(s) to withdraw should succeed.
+- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ### Trading - Position
 
