@@ -119,6 +119,8 @@ With a fresh account (with no previous txs) fill a market order so you have a po
 
 Pull the escape hatch.
 
+[ch10968](https://app.clubhouse.io/augur/story/10968/escape-hatch-for-positions-is-failing)
+
 - [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
 - [x] The withdraw funds button should bring up a Review screen.
 - [ ] The amount of funds available to withdraw should be correct.
