@@ -72,6 +72,11 @@ My markets is strictly for markets created by the user account.
 - [ ] Verify that trade transactions are shown when the user makes successful trade and that details are accurate.
 - [ ] Verify all sub trades are included as linked trades in trade transactions.
 - [ ] Verify open order transactions get created when user creates open orders.
+- [ ] Verify that once an order tx is complete it shows:
+  - [ ] Frozen Funds
+  - [ ] Gas Cost
+  - [ ] Status
+  - [ ] Confirmations
 - [ ] Verify that the date on the transaction is correct.
 - [ ] Verify that the most recent transactions are listed first.
 - [ ] Verify that range dropdown filters correctly.
