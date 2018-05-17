@@ -44,8 +44,8 @@ Initiate a fork and then test the follow:
 
 Any REP that the user had staked on a dispute in a non-forking market should be claimable when the Fork begins. Stake placed on a dispute in a forking market should not be claimable. Stake placed on a report on any market should not be claimable.
 
-- [ ] Add REP to a couple dispute bonds in a couple different rounds on a couple different markets. Keep track of the total in each market. Cause one of those markets to fork. (1) Verify that you can claim all of the REP you placed in dispute bonds in non-forking markets by clicking the "Claim All" button on the Portfolio: Reporting page. (2) Verify that the REP you staked on a dispute bond in the forking market is not claimable.
-- [ ] Prior to a fork, place stake on a report. Initiate a fork on that market. Verify that you cannot claim the stake you placed on the report.
+- [ ] [ch10912](https://app.clubhouse.io/augur/story/10912/can-t-claim-disavow-rep) Add REP to a couple dispute bonds in a couple different rounds. Keep track of the total. Cause one of those markets to fork. (1) Verify that you can claim all of the REP you placed in dispute bonds in non-forking markets by clicking the "Claim All" button on the Portfolio: Reporting page. (2) Verify that the REP you staked on a dispute bond in the forking market is not claimable.
+- [x] Prior to a fork, place stake on a report. Initiate a fork on that market. Verify that you cannot claim the stake you placed on the report.
 - [ ] Prior to a fork, place stake on a report. Initiate a fork on a different market. Verify that you cannot claim the stake you placed on the report.
 - [ ] Initiate a fork. Verify that you can still report on markets that were in Designated Reporting when the fork began.
 - [ ] Initiate a fork. Verify that you can still report on markets that were in Open Reporting when the fork began.
