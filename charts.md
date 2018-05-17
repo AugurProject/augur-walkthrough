@@ -176,6 +176,6 @@ Select various period/range combinations
 
 *Verify:*
 - [x] Time scale changes in chart
-- [ ] If period/range is invalid "NO COMPLETE TRADES" is shown
+- [ ] User is unable to select invalid period/range. (invalid == period > range)
 
 
