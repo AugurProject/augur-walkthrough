@@ -153,7 +153,8 @@ Login to Account 2, navigate to market page.
 *Verify:*
 - [ ] The Position and Open Order bar are now empty again
 - [ ] Verify that Account 2 Recieved `5 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~4.925 ETH` assuming 3% settlement).
-
+- [ ] Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [ ] Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
 
 ### Categorical Market Trading
 
@@ -322,6 +323,8 @@ Login to Account 2, navigate to market page.
 *Verify:*
 - [ ] The Position and Open Order bar are now empty again
 - [ ] Verify that Account 2 Recieved `5 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~4.925 ETH` assuming 3% settlement).
+- [ ] Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [ ] Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
 
 ### Scalar Market Trading
 
@@ -474,6 +477,8 @@ Login to Account 2, navigate to market page.
 *Verify:*
 - [ ] The Position and Open Order bar are now empty again
 - [ ] Verify that Account 2 Recieved `50 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~49.25 ETH` assuming 3% settlement)
+- [ ] Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [ ] Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
 
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
