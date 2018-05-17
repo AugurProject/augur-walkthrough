@@ -133,8 +133,8 @@ Using Account1 & Account2, do the following on a market:
 
 ### Forked Market Initial Reporter/Dispute Contributor
 
-- [ ] Verify that if user is a designated reporter or inital reporter, they can migrate their REP to the correct child universe of the forked market
-- [ ] Verify that if user contributed to a dispute crowdsourcer of a forked market, they can migrate their REP to the correct child universe
-
+- [x] Verify that if user is a designated reporter or inital reporter, they can migrate their REP to the correct child universe of the forked market
+- [x] Verify that if user contributed to a dispute crowdsourcer of a forked market, they can migrate their REP to the correct child universe
+- [ ] [10864](https://app.clubhouse.io/augur/story/10864/getreportingfees-returns-unclaimedforkfees-after-rep-is-migrated)Verify that, after migrating unclaimed fork REP to the child universe, the Forked Market card no longer displays on the Portfolio: Reporting page
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
