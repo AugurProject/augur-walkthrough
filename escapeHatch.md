@@ -102,22 +102,9 @@ Pull the escape hatch.
 
 [ch10734](https://app.clubhouse.io/augur/story/10734/add-shares-to-escape-hatch)
 
-With a fresh account (with no previous txs) place an order on a market. Keep track of the total. To create an order using shares, gain a Position then place an order, the place trade should cost 0 ETH, since the user already has shares.
+With a fresh account (with no previous txs) place an order on a market. Keep track of the total.
 
 Pull the escape hatch. The TXs presented will including claiming escrowed shares, which will update the funds available, and then more TXs will appear to claim those funds.
-
-- [ ] The escape hatch modal should come up, with a message saying you have funds to withdraw.
-- [ ] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct. 
-- [ ] The tx(s) to withdraw should succeed.
-- [ ] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
-
-### Trading - Position
-
-With a fresh account (with no previous txs) fill a market order so you have a position. Keep track of the total.
-
-Pull the escape hatch.
 
 - [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
 - [x] The withdraw funds button should bring up a Review screen.
@@ -125,6 +112,20 @@ Pull the escape hatch.
 - [x] The tx(s) to withdraw should succeed.
 - [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
 - [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+
+### Trading - Position
+
+With a fresh account (with no previous txs) fill a market order so you have a position. Keep track of the total ETH tied up in the position and the number of shares you hold.
+
+Pull the escape hatch.
+
+- [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
+- [x] The withdraw funds button should bring up a Review screen.
+- [ ] The amount of funds available to withdraw should be correct.
+- [ ] The amount of shares avilable to withdraw should be correct.
+- [ ] The tx(s) to withdraw should succeed, including the tx(s) to convert shares into ETH.
+- [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
+- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ## Notes
 
