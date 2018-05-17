@@ -66,20 +66,20 @@ My markets is strictly for markets created by the user account.
 ## Transactions
 
 - [x] Verify view shows a null state if user hasn't created any transactions.
-- [ ] [10970] (https://app.clubhouse.io/augur/story/10970/market-created-in-transactions-date-is-wrong) Verify create market transaction is shown when a market is successfully created and that details are accurate.
-- [ ] [10967] (https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions) Verify that transfer transactions are shown when ETH is successfully transferred and that details are accurate.
-- [ ] [10967] (https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions) Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
+- [ ] [10970](https://app.clubhouse.io/augur/story/10970/market-created-in-transactions-date-is-wrong) Verify create market transaction is shown when a market is successfully created and that details are accurate.
+- [ ] [10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions) Verify that transfer transactions are shown when ETH is successfully transferred and that details are accurate.
+- [ ] [10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions) Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
 - [x] Verify that trade transactions are shown when the user makes successful trade and that details are accurate.
 - [x] Verify all sub trades are included as linked trades in trade transactions.
 - [x] Verify open order transactions get created when user creates open orders.
-- [ ] [10974] (https://app.clubhouse.io/augur/story/10974/order-transactions-don-t-show-all-info) Verify that once an order tx is complete it shows:
+- [ ] [10974](https://app.clubhouse.io/augur/story/10974/order-transactions-don-t-show-all-info) Verify that once an order tx is complete it shows:
   - [ ] Frozen Funds
   - [ ] Gas Cost
   - [ ] Status
   - [ ] Confirmations
-- [ ] [10970] (https://app.clubhouse.io/augur/story/10970/market-created-in-transactions-date-is-wrong) Verify that the date on the transaction is correct.
+- [ ] [10970](https://app.clubhouse.io/augur/story/10970/market-created-in-transactions-date-is-wrong) Verify that the date on the transaction is correct.
 - [x] Verify that the most recent transactions are listed first.
-- [ ] [10972] (https://app.clubhouse.io/augur/story/10972/range-dropdown-not-filtering-correctly-for-transactions) Verify that range dropdown filters correctly.
+- [ ] [10972](https://app.clubhouse.io/augur/story/10972/range-dropdown-not-filtering-correctly-for-transactions) Verify that range dropdown filters correctly.
 
 ## Reporting
 
