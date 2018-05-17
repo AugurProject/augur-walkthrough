@@ -16,7 +16,7 @@ This state occurs when at least one dispute bond is greater than 2.5% of all REP
 - [x] The potentially forking market should be the first market listed on the Dispute page.
 - [x] The potentially forking market should have a red bar along the top, and be labeled with "Potential Fork" (see mocks).
 - [x] The outcomes with a dispute bond greater than 2.5% of all REP should have a red "!" icon to the left of the outcome name (see mocks).
-- [ ] [ch10767](https://app.clubhouse.io/augur/story/10767/fork-not-caused-when-2-5-rep-dispute-bond-filled) Filling the dispute bond that's at least 2.5% of all REP should trigger the During Fork state.
+- [x] ~~[ch10767](https://app.clubhouse.io/augur/story/10767/fork-not-caused-when-2-5-rep-dispute-bond-filled)~~ Filling the dispute bond that's at least 2.5% of all REP should trigger the During Fork state.
 
 ## During Fork
 
