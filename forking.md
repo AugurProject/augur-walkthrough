@@ -34,7 +34,7 @@ Initiate a fork and then test the follow:
 - [x] That forking market should have a red bar across the top and be labeled with text that says "Forking" (see mocks).
 - [ ] Verify that all other markets that were already in Dispute are now listed under Dispute Paused.
 - [x] Navigate directly to the dispute form for a market and verify that a dispute cannot be submitted.
-- [ ] [ch10790](https://app.clubhouse.io/augur/story/10790/upcoming-dispute-window-should-change-to-dispute-paused-during-and-after-a-fork) "Upcoming Dispute Window" should now be "Dispute Paused"
+- [x] ~~[ch10790](https://app.clubhouse.io/augur/story/10790/upcoming-dispute-window-should-change-to-dispute-paused-during-and-after-a-fork)~~ "Upcoming Dispute Window" should now be "Dispute Paused"
 - [x] Verify that, after a market is reported on, it is moved to the "Dispute Paused" list.
 - [x] The Create menu item should be disabled. If you navigate directly to the Create Market url, the tx to create a market should fail.
 - [x] Verify that it is still possible to trade on markets, including the forking market.
