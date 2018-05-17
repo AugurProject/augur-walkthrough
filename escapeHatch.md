@@ -102,7 +102,7 @@ Pull the escape hatch.
 
 [ch10734](https://app.clubhouse.io/augur/story/10734/add-shares-to-escape-hatch)
 
-With a fresh account (with no previous txs) place an order on a market. Keep track of the total.
+With a fresh account (with no previous txs) place an order on a market. Keep track of the total. To create an order using shares, gain a Position then place an order, the place trade should cost 0 ETH, since the user already has shares.
 
 Pull the escape hatch. The TXs presented will including claiming escrowed shares, which will update the funds available, and then more TXs will appear to claim those funds.
 
