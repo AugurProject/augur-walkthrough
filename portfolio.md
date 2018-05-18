@@ -67,8 +67,8 @@ My markets is strictly for markets created by the user account.
 
 - [x] Verify view shows a null state if user hasn't created any transactions.
 - [ ] Verify create market transaction is shown when a market is successfully created and that details are accurate.
-- [ ] [10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions) Verify that transfer transactions are shown when ETH is successfully transferred and that details are accurate.
-- [ ] [10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions) Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
+- [ ] ~~[10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions)~~ Verify that transfer transactions are shown when ETH is successfully transferred and that details are accurate.
+- [ ] ~~[10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions)~~ Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
 - [x] Verify that trade transactions are shown when the user makes successful trade and that details are accurate.
 - [x] Verify all sub trades are included as linked trades in trade transactions.
 - [x] Verify open order transactions get created when user creates open orders.
@@ -106,8 +106,8 @@ For resporters to get their REP the market has to be in awaiting finalization or
 
 ### Initial Reporters (i.e. reporters other than the designated reporter)
 
-- [ ] [10832](https://app.clubhouse.io/augur/story/10832/unclaimedrepearned-has-balance-getreportingfee-when-it-should-be-0) Verify initial reporter can claim correct amount of REP for reporting in fee window
-- [ ] [10842](https://app.clubhouse.io/augur/story/10842/unclaimedeth-has-incorrect-balance-for-initial-reporter-when-there-was-no-dispute)Verify initial reporter can claim correct amount of ETH from trading fees for reporting in fee window
+- [ ] ~~[10832](https://app.clubhouse.io/augur/story/10832/unclaimedrepearned-has-balance-getreportingfee-when-it-should-be-0)~~ Verify initial reporter can claim correct amount of REP for reporting in fee window
+- [ ] ~~[10842](https://app.clubhouse.io/augur/story/10842/unclaimedeth-has-incorrect-balance-for-initial-reporter-when-there-was-no-dispute)~~ Verify initial reporter can claim correct amount of ETH from trading fees for reporting in fee window
 - [x] Verify initial reporter can reclaim REP on finalized markets where their outcome won
 - [x] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
 - [x] Verify initial reporter can claim ETH from trading fees when reporting on failed outcome
@@ -128,13 +128,13 @@ Using Account1 & Account2, do the following on a market:
 10. Finalize the market.
 
 - [x] Verify that Account1 can claim: 1.5x the amount of REP originally staked on the initial report & crowdsourcer for outcome 0; ETH fees for staking REP on the intial report & crowdsourcer for outcome 0.
-- [ ] [10851](https://app.clubhouse.io/augur/story/10851/getreportingfees-not-returning-unclaimedeth-as-expected)Verify that Account2 can claim: the amount of REP staked on the crowdsourcer for outcome 1 (when it didn't reach its goal); ETH fees for staking on the crodwsourcer for outcome 1 twice.
-- [ ] [10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)Verify that Account2 cannot claim REP staked on crowdsourcer for outcome 1 in the rounds where the max was reached for that crowdsourcer.
+- [ ] ~~[10851](https://app.clubhouse.io/augur/story/10851/getreportingfees-not-returning-unclaimedeth-as-expected)~~ Verify that Account2 can claim: the amount of REP staked on the crowdsourcer for outcome 1 (when it didn't reach its goal); ETH fees for staking on the crodwsourcer for outcome 1 twice.
+- [ ] ~~[10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)~~ Verify that Account2 cannot claim REP staked on crowdsourcer for outcome 1 in the rounds where the max was reached for that crowdsourcer.
 
 ### Forked Market Initial Reporter/Dispute Contributor
 
 - [x] Verify that if user is a designated reporter or inital reporter, they can migrate their REP to the correct child universe of the forked market
 - [x] Verify that if user contributed to a dispute crowdsourcer of a forked market, they can migrate their REP to the correct child universe
-- [ ] [10864](https://app.clubhouse.io/augur/story/10864/getreportingfees-returns-unclaimedforkfees-after-rep-is-migrated)Verify that, after migrating unclaimed fork REP to the child universe, the Forked Market card no longer displays on the Portfolio: Reporting page
+- [ ] ~~[10864](https://app.clubhouse.io/augur/story/10864/getreportingfees-returns-unclaimedforkfees-after-rep-is-migrated)~~ Verify that, after migrating unclaimed fork REP to the child universe, the Forked Market card no longer displays on the Portfolio: Reporting page
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
