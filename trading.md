@@ -33,8 +33,8 @@ Enter a number for the amount of shares you would like to buy, and enter a price
 
 *Verify:*
 
-- [ ] [ch10925](https://app.clubhouse.io/augur/story/10925/making-an-order-with-0-shares-is-not-prevented-well)Quantity cannot be 0 or negative.
-- [ ] [ch10925](https://app.clubhouse.io/augur/story/10925/making-an-order-with-0-shares-is-not-prevented-well)Limit price cannot be outside of the range for this market (0-1 in this case)
+- [X] Quantity cannot be 0 or negative.
+- [X] Limit price cannot be outside of the range for this market (0-1 in this case)
 - [X] Est. cost is calculated correctly (quantity * price)
 
 Click the Review button.
@@ -185,8 +185,8 @@ Enter a number for the amount of shares you would like to buy, and enter a price
 
 *Verify:*
 - [X] The Trading Form displays the name of the outcome we have selected.
-- [ ] [ch10925](https://app.clubhouse.io/augur/story/10925/making-an-order-with-0-shares-is-not-prevented-well)Quantity cannot be 0 or negative.
-- [ ] [ch10925](https://app.clubhouse.io/augur/story/10925/making-an-order-with-0-shares-is-not-prevented-well)Limit price cannot be outside of the range for this market (0-1 in this case)
+- [X] Quantity cannot be 0 or negative.
+- [X] Limit price cannot be outside of the range for this market (0-1 in this case)
 - [X] Est. cost is calculated correctly (quantity * price)
 
 Click the Review button.
