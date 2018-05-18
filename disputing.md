@@ -51,9 +51,9 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [x] The Dispute Round # should have been incremented by 1.
 - [x] Verfiy the amount of REP that you staked has been deducted from your account balance.
 - [x] Verify that the amount of REP you staked is reflected in "X REP Staked" (next to the dispute window end time).
-- [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User2 is the winning outcome. 
-- [ ] (2.) Then, confirm that you can claim the User2 stake + 50% ROI via the Claim All button on Portfolio: Reporting.
-- [ ] (3.) Then, confirm that User1 has no REP to claim (since they reported on a losing outcome).
+- [x] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User2 is the winning outcome. 
+- [x] (2.) Then, confirm that you can claim the User2 stake + 50% ROI via the Claim All button on Portfolio: Reporting.
+- [ ] [11034](https://app.clubhouse.io/augur/story/11034/incorrect-values-displayed-for-designated-reporter-for-get-reporting-fees)(3.) Then, confirm that User1 has no REP to claim (since they reported on a losing outcome).
 
 ### Failed dispute round
 
@@ -82,16 +82,16 @@ Navigate to Reporting -> Dispute to see the PARTICIPATION button
 
 - [x] Verify only users with REP can buy participation tokens
 - [x] Verfiy REP balance reduces correctly after user buys participation tokens
-- [ ] Verify that the amount of participation tokens you purchased has been added to "X REP Staked" on the Reporting: Dispute page.
-- [ ] Place and settle a couple trades on a market to create reporting fees. Push time forward to the next fee window. Then, verify that the Portfolio: Reporting page is showing the correct balance for REP available to claim (plus some ETH for reporting fees) and that you can claim it.
-- [ ] Verify that your account balance updates correctly after redeeming
+- [x] Verify that the amount of participation tokens you purchased has been added to "X REP Staked" on the Reporting: Dispute page.
+- [x] Place and settle a couple trades on a market to create reporting fees. Push time forward to the next fee window. Then, verify that the Portfolio: Reporting page is showing the correct balance for REP available to claim (plus some ETH for reporting fees) and that you can claim it.
+- [x] Verify that your account balance updates correctly after redeeming
 
 ## Resolved
 
 - [x] Verify non-disputed finalized markets move to Reporting: Resolved.
 - [x] Verify unsuccessful disputed finalized markets move to Reporting: Resolved.
 - [x] Verify successfully disputed finalized markets move to Reporting: Resolved.
-- [ ] The Winning outcome should be listed on the Reporting: Resolved market card.
+- [x] The Winning outcome should be listed on the Reporting: Resolved market card.
 
 ## Notes
 
