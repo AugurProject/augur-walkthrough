@@ -153,8 +153,8 @@ Login to Account 2, navigate to market page.
 *Verify:*
 - [X] The Position and Open Order bar are now empty again
 - [X] Verify that Account 2 Recieved `5 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~4.925 ETH` assuming 3% settlement).
-- [ ] [ch10949](https://app.clubhouse.io/augur/story/10949/pl-in-top-bar-doesn-t-update-until-a-market-is-refreshed-or-the-portfolio-page-is-loaded)Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
-- [ ] [ch10949](https://app.clubhouse.io/augur/story/10949/pl-in-top-bar-doesn-t-update-until-a-market-is-refreshed-or-the-portfolio-page-is-loaded)Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [X] Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [X] Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
 
 ### Categorical Market Trading
 
@@ -323,8 +323,8 @@ Login to Account 2, navigate to market page.
 *Verify:*
 - [X] The Position and Open Order bar are now empty again
 - [X] Verify that Account 2 Recieved `5 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~4.925 ETH` assuming 3% settlement).
-- [ ] [ch10949](https://app.clubhouse.io/augur/story/10949/pl-in-top-bar-doesn-t-update-until-a-market-is-refreshed-or-the-portfolio-page-is-loaded)Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
-- [ ] [ch10949](https://app.clubhouse.io/augur/story/10949/pl-in-top-bar-doesn-t-update-until-a-market-is-refreshed-or-the-portfolio-page-is-loaded)Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [X] Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [X] Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
 
 ### Scalar Market Trading
 
@@ -359,7 +359,7 @@ Click the Review button.
 - [X] limit price is accurate to what you entered
 - [X] for this trade, fee should be only for the GAS cost because we won't be closing shares here
 - [X] est. cost is still accurately calculated
-- [ ] [ch10953](https://app.clubhouse.io/augur/story/10953/potential-profit-loss-for-scalar-orders-is-always-0)Confirm that Profit Loss calculations are correct. 
+- [X] Confirm that Profit Loss calculations are correct. 
 - [X] your ETH balance has decreased by the amount of ETH the order cost
 
 After the transaction is successful...
@@ -477,8 +477,8 @@ Login to Account 2, navigate to market page.
 *Verify:*
 - [X] The Position and Open Order bar are now empty again
 - [X] Verify that Account 2 Recieved `50 ETH - (Settlement Fee % / 2)` (assumes example trade, answer should be `~49.25 ETH` assuming 3% settlement)
-- [ ] [ch10949](https://app.clubhouse.io/augur/story/10949/pl-in-top-bar-doesn-t-update-until-a-market-is-refreshed-or-the-portfolio-page-is-loaded)Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
-- [ ] [ch10949](https://app.clubhouse.io/augur/story/10949/pl-in-top-bar-doesn-t-update-until-a-market-is-refreshed-or-the-portfolio-page-is-loaded)Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [X] Account 1 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
+- [X] Account 2 has updated Profit Loss Data. Check: positions bar, topbar, portfolio graph
 
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
