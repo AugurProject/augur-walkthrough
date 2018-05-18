@@ -57,12 +57,15 @@ When the user don't find any markets to dispute in a fee window they can buy par
 
 ### Failed dispute round
 
-If Outcome1's dispute bond is not filled by the time Outcome2's dispute bond is successfully filled or the dispute window ends, then stake placed on Outcome1's dispute bond can be reclaimed.
+Incomplete Disputes can be redeemed for the staked REP and any share of fees collected in the fee window they placed stake in.
 
-- [ ] Place and settle a couple trades on a market to create reporting fees. Move time forward to the next fee window. Report on the market with User2 in the Open Reporting phase. Move time forward to bring it into its first dispute window. Halfway-fill an outcome's dispute bond with User1. Push time forward to the next dispute window. Then, confirm that you can claim the REP you staked in the unsuccessful dispute + a share of the reporting fees from the previous fee window via the Claim All button on Portfolio: Reporting.
-- [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Halfway-fill Outcome1's dispute bond. Switch to User2, and completely fill Outcome2's dispute bond so Outcome2 becomes the new tentative winning outcome and the market is moved to the Upcoming Dispute Window. Place and settle a couple trades on a market to creat reporting fees.
-- [ ] (2.) Confirm that nothing is available to claim for either user via the Portfolio: Reporting page (nothing should be available because the dispute window hasn't ended.
-- [ ] (3.) Push time forward to the next dispute window. Then, switch to User1 and confirm that you can claim the REP you staked in the unsuccessful dispute + a share of the reporting fees from the previous fee window via the Claim All button on Portfolio: Reporting.
+- [X] Move a market into Open Reporting
+- [X] Purchase and sell complete sets in the market
+- [X] Do an Initial Report with User 1
+- [X] Move time into the dispute fee window for the market
+- [X] Halfway-fill a dispute bond with User 2.
+- [X] Move time to the next fee window
+- [X] As User 1 confirm that you can claim the REP you staked in the unsuccessful dispute + all of the reporting fees via the Claim All button on Portfolio: Reporting.
 
 ## Multiple dispute rounds
 
