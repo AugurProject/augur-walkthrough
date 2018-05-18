@@ -123,11 +123,11 @@ Pull the escape hatch.
 
 - [x] The escape hatch modal should come up, with a message saying you have funds to withdraw.
 - [x] The withdraw funds button should bring up a Review screen.
-- [ ] The amount of funds available to withdraw should be correct.
-- [ ] The amount of shares avilable to withdraw should be correct.
-- [ ] The tx(s) to withdraw should succeed, including the tx(s) to convert shares into ETH.
+- [x] The amount of funds available to withdraw should be correct.
+- [x] The amount of shares avilable to withdraw should be correct.
+- [x] The tx(s) to withdraw should succeed, including the tx(s) to convert shares into ETH.
 - [x] After you've withdrawn the available funds, you should be shown the "no funds" escape hatch message. 
-- [ ] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
+- [x] Your total funds should reflect your new, correct balance (minus gas for the withdraw tx).
 
 ## Notes
 
