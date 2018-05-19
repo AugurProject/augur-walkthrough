@@ -24,7 +24,7 @@ Initiate a fork and then test the follow:
 
 - [x] Verify there is a forking banner along the top of the app (directly below the core stats bar) and that this is visible throughout the whole app.
 - [x] "Additional Details" in the forking banner should be clickable to expand the additional details section.
-- [ ] [ch10772](https://app.clubhouse.io/augur/story/10772/design-for-forking-additional-details-needs-to-be-adjusted) Styles for the additional details section should match the design.
+- [x] [ch10772](https://app.clubhouse.io/augur/story/10772/design-for-forking-additional-details-needs-to-be-adjusted) Styles for the additional details section should match the design.
 - [x] Verify that the forking window end date is correct, both in the header ("Forking Window Ends...") and in the paragraph ("The forking period will end...").
 - [x] Verify that the forking progress bar progress and "X days left" is correct.
 - [x] Verfiy that when the forking progress bar is nearly complete, the "X days left" text switches to the left side of the progress bar so it doesn't run off the page (see the Dispute progress bar for an example).
