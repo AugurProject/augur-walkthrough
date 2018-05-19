@@ -44,6 +44,8 @@ Initiate a fork and then test the follow:
 
 Any REP that the user had staked on a dispute in a non-forking market should be claimable when the Fork begins. Stake placed on a dispute in a forking market should not be claimable. Stake placed on a report on any market should not be claimable.
 
+Blocking: [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue)
+
 - [ ] [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue) ~~[ch10912](https://app.clubhouse.io/augur/story/10912/can-t-claim-disavow-rep)~~ Add REP to a couple dispute bonds in a couple different rounds. Keep track of the total. Cause one of those markets to fork. (1) Verify that you can claim all of the REP you placed in dispute bonds in non-forking markets by clicking the "Claim All" button on the Portfolio: Reporting page. (2) Verify that the REP you staked on a dispute bond in the forking market is not claimable.
 - [x] Prior to a fork, place stake on a report. Initiate a fork on that market. Verify that you cannot claim the stake you placed on the report.
 - [ ] Prior to a fork, place stake on a report. Initiate a fork on a different market. Verify that you cannot claim the stake you placed on the report.
@@ -81,13 +83,13 @@ During and after a fork:
 
 ## Migrating Markets
 
-- [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared via the 50% REP Migrated method.
+- [x] Verify the "Migrate" button only displays on the market card after a winning universe is declared via the 50% REP Migrated method.
 - [x] Verify the "Migrate" button only displays on the market card after a winning universe is declared when the forking period ends and the forked market has been finalized (and less than 50% of REP has been migrated).
-- [ ] Verify market can't be migrated before a winning universe is declared.
+- [x] Verify market can't be migrated before a winning universe is declared.
 - [x] Verify markets only migrate to the winning universe.
 - [ ] [ch11140](https://app.clubhouse.io/augur/story/11140/when-markets-are-migrated-categories-do-not-show-up-in-child-universe) Once a market has been migrated, its categories should display in the child universe.
 - [ ] Verify that you can migrate a market in any phase (pre-reporting, designated reporting, open reporting, waiting for dispute).
-- [ ] Verify that if a market was already reported on in the forking universe, the report and associated REP get migrated with the market.
+- [x] Verify that if a market was already reported on in the forking universe, the report and associated REP get migrated with the market.
 - [x] Verify markets are no longer listed in the parent universe after they are migrated.
 - [x] Verify anyone can migrate markets after a winning universe is declared.
 - [ ] Verify that trading on a migrated market works in the child universe.
