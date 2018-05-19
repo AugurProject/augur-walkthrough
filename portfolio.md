@@ -106,8 +106,8 @@ For resporters to get their REP the market has to be in awaiting finalization or
 
 ### Initial Reporters (i.e. reporters other than the designated reporter)
 
-- [ ] ~~[10832](https://app.clubhouse.io/augur/story/10832/unclaimedrepearned-has-balance-getreportingfee-when-it-should-be-0)~~ Verify initial reporter can claim correct amount of REP for reporting in fee window
-- [ ] ~~[10842](https://app.clubhouse.io/augur/story/10842/unclaimedeth-has-incorrect-balance-for-initial-reporter-when-there-was-no-dispute)~~ Verify initial reporter can claim correct amount of ETH from trading fees for reporting in fee window
+- [x] ~~[10832](https://app.clubhouse.io/augur/story/10832/unclaimedrepearned-has-balance-getreportingfee-when-it-should-be-0)~~ Verify initial reporter can claim correct amount of REP for reporting in fee window
+- [x] ~~[10842](https://app.clubhouse.io/augur/story/10842/unclaimedeth-has-incorrect-balance-for-initial-reporter-when-there-was-no-dispute)~~ Verify initial reporter can claim correct amount of ETH from trading fees for reporting in fee window
 - [x] Verify initial reporter can reclaim REP on finalized markets where their outcome won
 - [x] Verify initial reporter can't reclaim REP on finalized markets where their outcome lost
 - [x] Verify initial reporter can claim ETH from trading fees when reporting on failed outcome
