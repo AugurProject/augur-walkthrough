@@ -24,7 +24,7 @@ Initiate a fork and then test the follow:
 
 - [x] Verify there is a forking banner along the top of the app (directly below the core stats bar) and that this is visible throughout the whole app.
 - [x] "Additional Details" in the forking banner should be clickable to expand the additional details section.
-- [ ] ~~[ch10772](https://app.clubhouse.io/augur/story/10772/design-for-forking-additional-details-needs-to-be-adjusted)~~ Styles for the additional details section should match the design.
+- [ ] [ch10772](https://app.clubhouse.io/augur/story/10772/design-for-forking-additional-details-needs-to-be-adjusted) Styles for the additional details section should match the design.
 - [x] Verify that the forking window end date is correct, both in the header ("Forking Window Ends...") and in the paragraph ("The forking period will end...").
 - [x] Verify that the forking progress bar progress and "X days left" is correct.
 - [x] Verfiy that when the forking progress bar is nearly complete, the "X days left" text switches to the left side of the progress bar so it doesn't run off the page (see the Dispute progress bar for an example).
@@ -55,15 +55,15 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 
 ## Migrating REP
 
-- [ ] Verify user gets 5% bonus when migrating REP during the 60 day forking period both before 50% of REP has been migrated and after 50% of REP has been migrated. (This 5% bonus will be available in the child universe that the REP was migrated to.)
+- [x] Verify user gets 5% bonus when migrating REP during the 60 day forking period both before 50% of REP has been migrated and after 50% of REP has been migrated. (This 5% bonus will be available in the child universe that the REP was migrated to.)
 - [x] Verify that users can still migrate REP after the forking period ends.
-- [ ] Verify that the user doesn't get the 5% bonus if they migrate after the forking period has ended.
+- [x] Verify that the user doesn't get the 5% bonus if they migrate after the forking period has ended.
 - [x] Verify that the user can't migrate REP if they don't have any.
 - [x] Verify that the user can migrate REP to any outcome of forking market, including Market is Invalid.
-- [ ] Verify that the user can migrate REP to a chosen scalar outcome.
+- [x] Verify that the user can migrate REP to a chosen scalar outcome.
 - [x] Verify that the user can migrate only some of their REP at a time. Verify balance after Tx confirmation.
 - [x] Verify that the user can migrate all their REP at one time. Verify balance after Tx confirmation.
-- [ ] Initiate a fork and migrate at least 50% of REP (5.5 mil REP). Verify that the winning universe is declared. It should be labeled both in the Migrate REP form and on the Account: Universes page.
+- [x] Initiate a fork and migrate at least 50% of REP (5.5 mil REP). Verify that the winning universe is declared. It should be labeled both in the Migrate REP form and on the Account: Universes page.
 - [ ] Initiate a fork and migrate less than 50% of REP. Verify that the winning universe is declared when the 60 day window ends.
 - [ ] Verify that REP can be migrated after being disavowed.
 - [ ] Verify that the forking market can be manually finalized when the 60 day forking window ends (when less that 50% of REP has been migrated during that window). The flash script can be used to do this.
@@ -72,12 +72,12 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 
 During and after a fork:
 
-- [ ] Migrate REP to an outcome/universe using the Migrate REP form. This should automatically create a universe for that outcome if it didn't already exist. Verify user can switch to universe on the Account: Universes page.
+- [x] Migrate REP to an outcome/universe using the Migrate REP form. This should automatically create a universe for that outcome if it didn't already exist. Verify user can switch to universe on the Account: Universes page.
 - [x] Verify user account balances update correctly when universe is changed. This should change on the Account page and in the Core Stats bar.
 - [x] Verify that the forking universe is listed in the left-hand column and the child universes are listed in the middle column.
 - [x] Switch around to a couple different universes. Verify that your current universe is always correctly labeled "Current".
 - [x] Verify that the winning universe from fork is labeled as the winning universe.
-- [ ] Verify that the stats shown about each universe are correct (your REP, total REP, and # of markets).
+- [x] Verify that the stats shown about each universe are correct (your REP, total REP, and # of markets).
 
 ## Migrating Markets
 
