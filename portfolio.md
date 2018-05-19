@@ -128,8 +128,8 @@ Using Account1 & Account2, do the following on a market:
 10. Finalize the market.
 
 - [x] Verify that Account1 can claim: 1.5x the amount of REP originally staked on the initial report & crowdsourcer for outcome 0; ETH fees for staking REP on the intial report & crowdsourcer for outcome 0.
-- [ ] ~~[10851](https://app.clubhouse.io/augur/story/10851/getreportingfees-not-returning-unclaimedeth-as-expected)~~ Verify that Account2 can claim: the amount of REP staked on the crowdsourcer for outcome 1 (when it didn't reach its goal); ETH fees for staking on the crodwsourcer for outcome 1 twice.
-- [ ] ~~[10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)~~ Verify that Account2 cannot claim REP staked on crowdsourcer for outcome 1 in the rounds where the max was reached for that crowdsourcer.
+- [x] ~~[10851](https://app.clubhouse.io/augur/story/10851/getreportingfees-not-returning-unclaimedeth-as-expected)~~ Verify that Account2 can claim: the amount of REP staked on the crowdsourcer for outcome 1 (when it didn't reach its goal); ETH fees for staking on the crodwsourcer for outcome 1 twice.
+- [x] ~~[10843](https://app.clubhouse.io/augur/story/10843/unmade-unfilled-dispute-bonds-can-t-be-reclaimed-by-disputer)~~ Verify that Account2 cannot claim REP staked on crowdsourcer for outcome 1 in the rounds where the max was reached for that crowdsourcer.
 
 ### Forked Market Initial Reporter/Dispute Contributor
 
