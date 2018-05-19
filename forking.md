@@ -32,7 +32,7 @@ Initiate a fork and then test the follow:
 - [x] On the Dispute page, verify that the forking header is displaying (see mocks). (This is the same content as shown in the forking banner additional details.)
 - [x] On the Dispute page, verify that the market that forced the fork is shown as the forking market.
 - [x] That forking market should have a red bar across the top and be labeled with text that says "Forking" (see mocks).
-- [ ] [ch10911](https://app.clubhouse.io/augur/story/10911/markets-that-were-in-dispute-don-t-move-down-to-dispute-paused) Verify that all other markets that were already in Dispute are now listed under Dispute Paused.
+- [x] [ch10911](https://app.clubhouse.io/augur/story/10911/markets-that-were-in-dispute-don-t-move-down-to-dispute-paused) Verify that all other markets that were already in Dispute are now listed under Dispute Paused.
 - [x] Navigate directly to the dispute form for a market and verify that a dispute cannot be submitted.
 - [x] ~~[ch10790](https://app.clubhouse.io/augur/story/10790/upcoming-dispute-window-should-change-to-dispute-paused-during-and-after-a-fork)~~ "Upcoming Dispute Window" should now be "Dispute Paused"
 - [x] Verify that, after a market is reported on, it is moved to the "Dispute Paused" list.
