@@ -53,7 +53,7 @@ When the user don't find any markets to dispute in a fee window they can buy par
 - [x] Verify that the amount of REP you staked is reflected in "X REP Staked" (next to the dispute window end time).
 - [x] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User2 is the winning outcome. 
 - [x] (2.) Then, confirm that you can claim the User2 stake + 50% ROI via the Claim All button on Portfolio: Reporting.
-- [ ] [11034](https://app.clubhouse.io/augur/story/11034/incorrect-values-displayed-for-designated-reporter-for-get-reporting-fees)(3.) Then, confirm that User1 has no REP to claim (since they reported on a losing outcome).
+- [x] (3.) Then, confirm that User1 has no REP to claim (since they reported on a losing outcome).
 
 ### Failed dispute round
 
