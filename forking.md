@@ -64,9 +64,9 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 - [x] Verify that the user can migrate only some of their REP at a time. Verify balance after Tx confirmation.
 - [x] Verify that the user can migrate all their REP at one time. Verify balance after Tx confirmation.
 - [x] Initiate a fork and migrate at least 50% of REP (5.5 mil REP). Verify that the winning universe is declared. It should be labeled both in the Migrate REP form and on the Account: Universes page.
-- [ ] Initiate a fork and migrate less than 50% of REP. Verify that the winning universe is declared when the 60 day window ends.
-- [ ] Verify that REP can be migrated after being disavowed.
-- [ ] Verify that the forking market can be manually finalized when the 60 day forking window ends (when less that 50% of REP has been migrated during that window). The flash script can be used to do this.
+- [x] Initiate a fork and migrate less than 50% of REP. Verify that the winning universe is declared when the 60 day window ends and the market is finalized.
+- [ ] [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue) Verify that REP can be migrated after being disavowed.
+- [x] Verify that the forking market can be manually finalized when the 60 day forking window ends (when less that 50% of REP has been migrated during that window). The flash script can be used to do this.
 
 ## Universe Page:
 
