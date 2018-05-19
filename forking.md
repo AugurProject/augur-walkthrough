@@ -82,9 +82,10 @@ During and after a fork:
 ## Migrating Markets
 
 - [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared via the 50% REP Migrated method.
-- [ ] Verify the "Migrate" button only displays on the market card after a winning universe is declared when the forking period ends (and less than 50% of REP has been migrated).
+- [x] Verify the "Migrate" button only displays on the market card after a winning universe is declared when the forking period ends and the forked market has been finalized (and less than 50% of REP has been migrated).
 - [ ] Verify market can't be migrated before a winning universe is declared.
-- [ ] Verify markets only migrate to the winning universe.
+- [x] Verify markets only migrate to the winning universe.
+- [ ] [ch11140](https://app.clubhouse.io/augur/story/11140/when-markets-are-migrated-categories-do-not-show-up-in-child-universe) Once a market has been migrated, its categories should display in the child universe.
 - [ ] Verify that you can migrate a market in any phase (pre-reporting, designated reporting, open reporting, waiting for dispute, in dispute, resolved).
 - [ ] Verify that if a market was already reported on in the forking universe, the report and associated REP get migrated with the market.
 - [ ] Verify markets are no longer listed in the parent universe after they are migrated.
