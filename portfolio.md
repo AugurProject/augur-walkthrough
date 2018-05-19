@@ -66,15 +66,16 @@ My markets is strictly for markets created by the user account.
 ## Transactions
 
 - [x] Verify view shows a null state if user hasn't created any transactions.
-- [ ] Verify create market transaction is shown when a market is successfully created and that details are accurate.
-- [ ] ~~[10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions)~~ Verify that transfer transactions are shown when ETH is successfully transferred and that details are accurate.
-- [ ] ~~[10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions)~~ Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
+- [x] Verify create market transaction is shown when a market is successfully created and that details are accurate.
+- [x] Verify open orders show up with creating a market with liquidity.
+- [x] ~~[10967](https://app.clubhouse.io/augur/story/10967/eth-and-rep-transfers-don-t-show-up-in-transactions)~~ Verify that transfer transactions are shown then REP is successfully transferred and that details are accurate.
+- [x] Verify REP transfers are displayed and information is correct
 - [x] Verify that trade transactions are shown when the user makes successful trade and that details are accurate.
 - [x] Verify all sub trades are included as linked trades in trade transactions.
 - [x] Verify open order transactions get created when user creates open orders.
-- [ ] Verify that the date on the transaction is correct.
+- [x] Verify that the transactions with date is correct, some just have blockNumber.
 - [x] Verify that the most recent transactions are listed first.
-- [ ] Verify that range dropdown filters correctly.
+- [x] Verify that range dropdown filters correctly.
 
 ## Reporting
 
