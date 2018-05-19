@@ -75,9 +75,9 @@ When a dispute round completes successfully it will be available for dispute in 
 - [x] Verify the dispute bond amounts are correct. 
 * Note: To verify bond amounts are correct, report on a market and then walk it through multiple dispute rounds, with varying amounts staked on different outcomes. Keep track of the amounts on each outcome as you do this. The dispute bond of an Outcome should be equal to 2x the amount staked successfully staked on all other outcomes (including stake from the initial report) minus the stake placed on that Outcome in previous rounds/reports. REP staked in unsuccessful disputes (where the REP is returned to its owner after the dispute window) does not count toward this calculation.
 - [x] Verify a fork is forced when a market is disputed to the point where the successful bond equals 275K REP
-- [ ] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward to the next dispute window, switch to User1, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User1 is the winning outcome. 
-- [ ] (2.) Then, confirm that you can claim the User1 stake (from reporting and disputing) + 50% ROI via the Claim All button on Portfolio: Reporting.
-- [ ] (3.) Then, confirm that User2 has no REP to claim (since they reported on a losing outcome).
+- [x] (1.) Report on a new market with User1 and move time forward to bring it into its first dispute window. Switch to User2, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward to the next dispute window, switch to User1, and fill an outcome's dispute bond so that outcome becomes the new winning outcome. Push time forward so that the market goes through another dispute round with no successful disputes. Confirm that the outcome you placed stake on with User1 is the winning outcome. 
+- [x] (2.) Then, confirm that you can claim the User1 stake (from reporting and disputing) + 50% ROI via the Claim All button on Portfolio: Reporting.
+- [x] (3.) Then, confirm that User2 has no REP to claim (since they reported on a losing outcome).
 
 ## Participation
 
