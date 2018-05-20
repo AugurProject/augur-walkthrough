@@ -10,7 +10,7 @@ Load up Augur and Navigate to the "Markets" tab on the sidebar.
 
 - [x] Assuming there are more than 10 markets in this universe, confirm that we are properly paginating in chunks of 10.
 - [x] The sidebar should have 1 submenu displaying (categories)
-- [ ] The sidebar submenu should list all the categories for every market that has been loaded.
+- [x] The sidebar submenu should list all the categories for every market that has been loaded.
 
 Now look at each Market Card and verify the following:
 
@@ -50,10 +50,10 @@ Click on the search bar on the top of the page.
 Enter in a keyword to search for, such as "augur" and "Augur". 
 
 *Verify:*
-- [ ] The markets should be filtered to only show you markets where the search keyword matches info on that market.
-- [ ] The markets shown should include _all_ markets that match the keyword entered in the search.
+- [x] The markets should be filtered to only show you markets where the search keyword matches info on that market.
+- [x] The markets shown should include _all_ markets that match the keyword entered in the search.
 - [x] Clicking the X on the search bar (right side) should clear Search and show all markets again (still paginated of course).
-- [ ] Search should not be case sensitive
+- [x] Search should not be case sensitive
 - [ ] Markets should be searchable by title, tag, or category.
 
 

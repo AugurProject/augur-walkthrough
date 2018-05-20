@@ -51,7 +51,7 @@ To create a Categorical Market select "Multiple Choice".
 *Verify:* 
 - [x] You should see 8 smaller inputs under the "Potential Outcomes" label.
 - [x] The first two outcomes are required.
-- [ ] Outcome names must be unique.
+- [x] Outcome names must be unique.
 - [x] You should be greeted with a input for "Additional Information" as well. This is an optional field.
 - [x] Confirm that when you create a market with two or more outcomes, that those outcomes are properly listed as the market's outcomes.
 

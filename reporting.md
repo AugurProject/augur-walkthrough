@@ -12,7 +12,7 @@ Navigate to Reporting -> Reporting to see the markets in designated reporting st
 - [x] Create a market where the market creator is the designated reporter and then move time forward so the market is in the DR stage. Verify that only the market creator can see the market listed under Designated Reporting, and verify that only the market creator can report on the market.
 - [x] Create a market where the someone other than the market creator is the designated reporter. Then, move time forward so the market is in the DR stage. Verify that only the designated reporter can see the market listed under Designated Reporting, and verify that only the designated reporter can report on the market.
 - [x] Verify market creator gets their no-show REP bond when non market creator designated reporter reports
-- [ ] Verify market creator gets their initial reporter gas bond when non market creator designated reporter reports
+- [x] Verify market creator gets their initial reporter gas bond when non market creator designated reporter reports
 - [x] Verify that the end date shown on the market card is correct.
 - [x] Verify that the reporting end date shown on the market card is correct.
 - [x] Verify that the pie chart showing time elapsed is correct (try this with a couple different times).
