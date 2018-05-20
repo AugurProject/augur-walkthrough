@@ -44,9 +44,7 @@ Initiate a fork and then test the follow:
 
 Any REP that the user had staked on a dispute in a non-forking market should be claimable when the Fork begins. Stake placed on a dispute in a forking market should not be claimable. Stake placed on a report on any market should not be claimable.
 
-Blocking: [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue)
-
-- [ ] [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue) ~~[ch10912](https://app.clubhouse.io/augur/story/10912/can-t-claim-disavow-rep)~~ Add REP to a couple dispute bonds in a couple different rounds. Keep track of the total. Cause one of those markets to fork. (1) Verify that you can claim all of the REP you placed in dispute bonds in non-forking markets by clicking the "Claim All" button on the Portfolio: Reporting page. (2) Verify that the REP you staked on a dispute bond in the forking market is not claimable.
+- [ ] ~~[ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue)~~ ~~[ch10912](https://app.clubhouse.io/augur/story/10912/can-t-claim-disavow-rep)~~ Add REP to a couple dispute bonds in a couple different rounds. Keep track of the total. Cause one of those markets to fork. (1) Verify that you can claim all of the REP you placed in dispute bonds in non-forking markets by clicking the "Claim All" button on the Portfolio: Reporting page. (2) Verify that the REP you staked on a dispute bond in the forking market is not claimable.
 - [x] Prior to a fork, place stake on a report. Initiate a fork on that market. Verify that you cannot claim the stake you placed on the report.
 - [ ] Prior to a fork, place stake on a report. Initiate a fork on a different market. Verify that you cannot claim the stake you placed on the report.
 - [ ] Initiate a fork. Verify that you can still report on markets that were in Designated Reporting when the fork began.
@@ -67,7 +65,7 @@ Blocking: [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-c
 - [x] Verify that the user can migrate all their REP at one time. Verify balance after Tx confirmation.
 - [x] Initiate a fork and migrate at least 50% of REP (5.5 mil REP). Verify that the winning universe is declared. It should be labeled both in the Migrate REP form and on the Account: Universes page.
 - [x] Initiate a fork and migrate less than 50% of REP. Verify that the winning universe is declared when the 60 day window ends and the market is finalized.
-- [ ] [ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue) Verify that REP can be migrated after being disavowed.
+- [ ] ~~[ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue)~~ Verify that REP can be migrated after being disavowed.
 - [x] Verify that the forking market can be manually finalized when the 60 day forking window ends (when less that 50% of REP has been migrated during that window). The flash script can be used to do this.
 
 ## Universe Page:
