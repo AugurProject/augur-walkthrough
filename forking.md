@@ -39,6 +39,7 @@ Initiate a fork and then test the follow:
 - [x] The Create menu item should be disabled. If you navigate directly to the Create Market url, the tx to create a market should fail.
 - [x] Verify that it is still possible to trade on markets, including the forking market.
 - [x] Verify that the forking market can't be finalized during forking period. This can be attempted using the flash script.
+- [ ] Verify that you can claim your REP from the forking market and that the REP is migrated to the appropriate universe.
 
 ## Disavow REP
 
