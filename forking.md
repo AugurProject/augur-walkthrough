@@ -89,14 +89,14 @@ During and after a fork:
 - [x] Verify markets only migrate to the winning universe.
 - [x] ~~[ch11140](https://app.clubhouse.io/augur/story/11140/when-markets-are-migrated-categories-do-not-show-up-in-child-universe)~~ Once a market has been migrated, its categories should display in the child universe.
 - [x] Verify that you can migrate a market in pre-reporting.
-- [ ] Verify that you can migrate a market in designated reporting.
-- [ ] Verify that you can migrate a market in open reporting.
-- [ ] Verify that you can migrate a market in Dispute Paused.
+- [x] Verify that you can migrate a market in designated reporting.
+- [x] Verify that you can migrate a market in open reporting.
+- [x] Verify that you can migrate a market in Dispute Paused.
 - [x] Verify that if a market was already reported on in the forking universe, the report and associated REP get migrated with the market.
 - [x] Verify markets are no longer listed in the parent universe after they are migrated.
 - [x] Verify anyone can migrate markets after a winning universe is declared.
-- [ ] Verify that trading on a migrated market works in the child universe.
-- [ ] Verify that the migrated market can go through the normal reporting & dispute cycle after migration to the child universe.
+- [x] Verify that trading on a migrated market works in the child universe.
+- [x] Verify that the migrated market can go through the normal reporting & dispute cycle after migration to the child universe.
 
 ## Child Universes
 
