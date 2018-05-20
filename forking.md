@@ -104,11 +104,11 @@ During and after a fork:
 - [ ] Prior to a fork, place stake in a report. Initiate a fork on that market, then cause a _different_ outcome to be the winning outcome. Switch to both the winning universe and the universe corresponding to your outcome and verify that the REP from your report is not claimable.
 - [ ] Prior to a fork, fill a dispute bond on a market to cause a successful dispute. Force a fork on the same market, then cause the outcome you placed dispute stake on to be the winning universe. Switch to that universe and verify that you can claim your REP from that dispute + 50% ROI.
 - [ ] Prior to a fork, fill a dispute bond on a market to cause a successful dispute. Force a fork on the same market, then cause a _different_ outcome to be the winning universe. Switch to both the winning universe and the universe corresponding to your outcome and verify that the REP from your dispute is not claimable.
-- [ ] Verify that a child universe starts out with no markets.
-- [ ] Verify you can create markets in a child universe and that the created market only shows up in the child universe.
-- [ ] Verify that you can trade on markets in a child universe.
-- [ ] Verify that the reporting & dispute cycle works in the child universe.
-- [ ] Cause a fork in the child universe, migrate REP to an outcome, then check the Universes page. The current universe should be shown in the middle column, the parent universe in the left column, and the child universes of the current universe should be shown in the right column. (see ch7720 for a more detailed description)
-- [ ] Cause one of the child universes from the most recent fork to be declared the winning outcome. Make sure this is labeled on the Universe page.
+- [x] Verify that a child universe starts out with no markets.
+- [x] Verify you can create markets in a child universe and that the created market only shows up in the child universe.
+- [x] Verify that you can trade on markets in a child universe.
+- [x] Verify that the reporting & dispute cycle works in the child universe.
+- [x] Cause a fork in the child universe, migrate REP to an outcome, then check the Universes page. The current universe should be shown in the middle column, the parent universe in the left column, and the child universes of the current universe should be shown in the right column. (see ch7720 for a more detailed description)
+- [x] Cause one of the child universes from the most recent fork to be declared the winning outcome. Make sure this is labeled on the Universe page.
 
 [Back to Main Menu/Intro](https://github.com/AugurProject/augur-walkthrough/)
