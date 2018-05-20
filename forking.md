@@ -53,6 +53,7 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 - [x] Initiate a fork. Verify that you can still report on markets whose end date passes after the fork begins. The market should move into Designated Reporting like normal.
 - [ ] [ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market) Prior to a fork, add REP to a dispute bond (but don't fill the bond). Initiate a fork on the same market. Verify that you can claim your REP from the failed dispute.
 - [x] Prior to a fork, add REP to a dispute bond (but don't fill the bond). Initiate a fork on a different market. Verify that you can claim your REP from the failed dispute.
+- [ ] [ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market) Any markets that were in Dispute when the fork occurred should show empty dispute bonds and be in Round 0.
 
 ## Migrating REP
 
@@ -66,7 +67,7 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 - [x] Verify that the user can migrate all their REP at one time. Verify balance after Tx confirmation.
 - [x] Initiate a fork and migrate at least 50% of REP (5.5 mil REP). Verify that the winning universe is declared. It should be labeled both in the Migrate REP form and on the Account: Universes page.
 - [x] Initiate a fork and migrate less than 50% of REP. Verify that the winning universe is declared when the 60 day window ends and the market is finalized.
-- [ ] ~~[ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue)~~ Verify that REP can be migrated after being disavowed.
+- [x] ~~[ch11120](https://app.clubhouse.io/augur/story/11120/for-disavowinig-crowdsourcers-clicking-claim-does-not-bring-up-a-tx-dialogue)~~ Verify that REP can be migrated after being disavowed.
 - [x] Verify that the forking market can be manually finalized when the 60 day forking window ends (when less that 50% of REP has been migrated during that window). The flash script can be used to do this.
 
 ## Universe Page:
