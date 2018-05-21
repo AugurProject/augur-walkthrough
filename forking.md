@@ -40,7 +40,7 @@ Initiate a fork and then test the follow:
 - [x] Verify that it is still possible to trade on markets, including the forking market.
 - [x] Verify that the forking market can't be finalized during forking period. This can be attempted using the flash script.
 - [ ] [ch11188](https://app.clubhouse.io/augur/story/11188/getting-errors-trying-to-claim-outstanding-returns-on-forking-market) Verify that you can claim your REP from the forking market and that the REP is migrated to the appropriate universe.
-- [ ] [ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market) Any markets that were in Dispute with partially or fully filled dispute bonds when the fork occurred should show empty dispute bonds and be in Round 0 after the fork begins. (These will be listed underneath the Dispute Paused heading.)
+- [ ] ~~[ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market)~~ Any markets that were in Dispute with partially or fully filled dispute bonds when the fork occurred should show empty dispute bonds and be in Round 0 after the fork begins. (These will be listed underneath the Dispute Paused heading.)
 
 ## Disavow REP
 
@@ -52,7 +52,7 @@ Any REP that the user had staked on a dispute in a non-forking market should be 
 - [x] Initiate a fork. Verify that you can still report on markets in Designated Reporting.
 - [x] Initiate a fork. Verify that you can still report on markets in Open Reporting.
 - [x] Initiate a fork. Verify that you can still report on markets whose end date passes after the fork begins. The market should move into Designated Reporting like normal.
-- [ ] [ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market) Prior to a fork, add REP to a dispute bond (but don't fill the bond). Initiate a fork on the same market. Verify that you can claim your REP from the failed dispute.
+- [ ] ~~[ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market)~~ Prior to a fork, add REP to a dispute bond (but don't fill the bond). Initiate a fork on the same market. Verify that you can claim your REP from the failed dispute.
 - [x] Prior to a fork, add REP to a dispute bond (but don't fill the bond). Initiate a fork on a different market. Verify that you can claim your REP from the failed dispute.
 
 ## Migrating REP
@@ -100,7 +100,7 @@ During and after a fork:
 
 ## Child Universes
 
-Blocking: [ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market)
+Blocking: ~~[ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market)~~
 
 - [ ] Prior to a fork, place stake in a report. Initiate a fork on that market, then cause the outcome you reported on to be the winning outcome. Claim your REP from the forking market, switch to the universe corresponding to your report, and verify that your REP from that report + 50% ROI is there.
 - [ ] Prior to a fork, place stake in a report. Initiate a fork on that market, then cause a _different_ outcome to be the winning outcome. Claim your REP from the forking market, switch to the universe corresponding to your report, and verify that your REP from that report is _not_ there (you should not get it back).
