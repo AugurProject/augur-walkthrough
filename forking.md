@@ -39,7 +39,7 @@ Initiate a fork and then test the follow:
 - [x] The Create menu item should be disabled. If you navigate directly to the Create Market url, the tx to create a market should fail.
 - [x] Verify that it is still possible to trade on markets, including the forking market.
 - [x] Verify that the forking market can't be finalized during forking period. This can be attempted using the flash script.
-- [ ] [ch11188](https://app.clubhouse.io/augur/story/11188/getting-errors-trying-to-claim-outstanding-returns-on-forking-market) Verify that you can claim your REP from the forking market and that the REP is migrated to the appropriate universe.
+- [ ] ~~[ch11188](https://app.clubhouse.io/augur/story/11188/getting-errors-trying-to-claim-outstanding-returns-on-forking-market)~~ Verify that you can claim your REP from the forking market and that the REP is migrated to the appropriate universe.
 - [ ] ~~[ch11265](https://app.clubhouse.io/augur/story/11265/can-t-claim-rep-from-failed-dispute-bond-on-forking-market)~~ Any markets that were in Dispute with partially or fully filled dispute bonds when the fork occurred should show empty dispute bonds and be in Round 0 after the fork begins. (These will be listed underneath the Dispute Paused heading.)
 
 ## Disavow REP
