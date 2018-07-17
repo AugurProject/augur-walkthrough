@@ -22,7 +22,7 @@ flash escape-hatch
 
 ### Create Market bonds
 
-With a fresh account (with no previous txs) create a market so you have funds locked up in the no-show bond, validity bond, and reporter gas bond. Keep track of the total.
+With a fresh account (with no previous txs) create a market so you have funds locked up in the no-show bond and validity bond. Keep track of the total.
 
 Pull the escape hatch.
 
