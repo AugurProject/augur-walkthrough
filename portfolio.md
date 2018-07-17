@@ -53,7 +53,6 @@ My markets is strictly for markets created by the user account.
 - [x] Verify that outstanding returns become available to the market creator when complete sets settle, and that the amount that becomes available is correct.
 - [x] Verify that those outstanding returns from settled trades can be collected and the Collected Returns balance on the market updates correctly.
 - [x] Verify that, when a market is resolved to something other than "Market is Invalid" (and the reporter claims their REP which triggers market finalization), the Validity bond becomes available in "Outstanding Returns", is claimable, and the Collected Returns balance updates properly.
-- [x] Verify that, when a market is reported on by the Designated Reporter, the reporter gas bond becomes available in "Outstanding Returns", is claimable, and the Collected Returns balance updates properly.
 - [x] Verify that most recently resolved markets appear at the top of the Resolved list.
 
 ## Favorites
